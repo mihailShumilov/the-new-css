@@ -38,11 +38,6 @@ try {
   // Core entry may not exist yet
 }
 
-// Also copy to site directory for local dev
-import { cpSync } from 'fs';
-try {
-  cpSync(join(dist, 'the-new-css.min.css'), join(root, 'site', 'the-new-css.min.css'));
-} catch { /* site dir may not exist */ }
 
 console.log('Build complete.');
 console.log(`  dist/the-new-css.css      (${(bundled.length / 1024).toFixed(1)} KB)`);

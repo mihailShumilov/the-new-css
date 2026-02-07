@@ -34,6 +34,7 @@
     .md\:text-2xl { font-size: var(--text-2xl); }
     .md\:text-3xl { font-size: var(--text-3xl); }
     .md\:text-4xl { font-size: var(--text-4xl); }
+    .md\:w-1\/4 { width: 25%; }
     .md\:w-1\/2 { width: 50%; }
     .md\:max-w-2xl { max-width: 42rem; }
     .md\:mt-0 { margin-block-start: 0; }
