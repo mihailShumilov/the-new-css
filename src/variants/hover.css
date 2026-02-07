@@ -1,0 +1,20 @@
+@layer variants {
+  .hover\:text-blue-600:hover { color: var(--color-blue-600); }
+  .hover\:text-blue-700:hover { color: var(--color-blue-700); }
+
+  .hover\:bg-gray-50:hover { background-color: var(--color-gray-50); }
+  .hover\:bg-gray-100:hover { background-color: var(--color-gray-100); }
+  .hover\:bg-blue-600:hover { background-color: var(--color-blue-600); }
+  .hover\:bg-blue-700:hover { background-color: var(--color-blue-700); }
+
+  .hover\:opacity-80:hover { opacity: 0.8; }
+
+  .hover\:shadow-md:hover { box-shadow: var(--shadow-md); }
+  .hover\:shadow-lg:hover { box-shadow: var(--shadow-lg); }
+
+  .hover\:underline:hover { text-decoration-line: underline; }
+  .hover\:no-underline:hover { text-decoration-line: none; }
+
+  .hover\:scale-105:hover { scale: 1.05; }
+  .hover\:-translate-y-1:hover { translate: 0 calc(var(--spacing-1) * -1); }
+}

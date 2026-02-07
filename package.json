@@ -1,0 +1,38 @@
+{
+  "name": "the-new-css",
+  "version": "1.0.0",
+  "description": "A super lightweight, utility-first CSS library. No build step required.",
+  "main": "dist/the-new-css.min.css",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:modules": "node scripts/build-modules.js",
+    "size": "node scripts/size-report.js",
+    "dev": "npx sirv-cli site --dev --port 3000",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:e2e"
+  },
+  "keywords": [
+    "css",
+    "utility-first",
+    "lightweight",
+    "modern-css",
+    "no-build"
+  ],
+  "author": "",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.0",
+    "@playwright/test": "^1.40.0",
+    "css-tree": "^2.3.0",
+    "gzip-size": "^7.0.0",
+    "lightningcss": "^1.22.0",
+    "sirv-cli": "^2.0.0",
+    "vitest": "^1.0.0"
+  }
+}

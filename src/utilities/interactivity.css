@@ -1,0 +1,24 @@
+@layer utilities {
+  .cursor-default { cursor: default; }
+  .cursor-pointer { cursor: pointer; }
+  .cursor-not-allowed { cursor: not-allowed; }
+
+  .pointer-events-none { pointer-events: none; }
+  .pointer-events-auto { pointer-events: auto; }
+
+  .select-none { user-select: none; }
+  .select-text { user-select: text; }
+  .select-all { user-select: all; }
+
+  .scroll-smooth { scroll-behavior: smooth; }
+
+  .touch-manipulation { touch-action: manipulation; }
+
+  .resize-none { resize: none; }
+
+  .appearance-none { appearance: none; }
+
+  .outline-none { outline: 2px solid transparent; outline-offset: 2px; }
+  .outline { outline-style: solid; }
+  .outline-offset-2 { outline-offset: 2px; }
+}

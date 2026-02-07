@@ -1,0 +1,63 @@
+@layer variants {
+  @media (min-width: 640px) {
+    .sm\:block { display: block; }
+    .sm\:hidden { display: none; }
+    .sm\:flex { display: flex; }
+    .sm\:grid { display: grid; }
+    .sm\:flex-row { flex-direction: row; }
+    .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sm\:gap-6 { gap: var(--spacing-6); }
+    .sm\:px-6 { padding-inline: var(--spacing-6); }
+    .sm\:text-lg { font-size: var(--text-lg); }
+    .sm\:text-left { text-align: left; }
+  }
+
+  @media (min-width: 768px) {
+    .md\:block { display: block; }
+    .md\:hidden { display: none; }
+    .md\:flex { display: flex; }
+    .md\:grid { display: grid; }
+    .md\:flex-row { flex-direction: row; }
+    .md\:items-center { align-items: center; }
+    .md\:justify-between { justify-content: space-between; }
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .md\:gap-6 { gap: var(--spacing-6); }
+    .md\:gap-8 { gap: var(--spacing-8); }
+    .md\:p-6 { padding: var(--spacing-6); }
+    .md\:px-6 { padding-inline: var(--spacing-6); }
+    .md\:px-8 { padding-inline: var(--spacing-8); }
+    .md\:py-12 { padding-block: var(--spacing-12); }
+    .md\:py-16 { padding-block: var(--spacing-16); }
+    .md\:text-lg { font-size: var(--text-lg); }
+    .md\:text-xl { font-size: var(--text-xl); }
+    .md\:text-2xl { font-size: var(--text-2xl); }
+    .md\:text-3xl { font-size: var(--text-3xl); }
+    .md\:text-4xl { font-size: var(--text-4xl); }
+    .md\:w-1\/2 { width: 50%; }
+    .md\:max-w-2xl { max-width: 42rem; }
+    .md\:mt-0 { margin-block-start: 0; }
+    .md\:sticky { position: sticky; }
+    .md\:text-left { text-align: left; }
+    .md\:col-span-2 { grid-column: span 2 / span 2; }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:block { display: block; }
+    .lg\:hidden { display: none; }
+    .lg\:flex { display: flex; }
+    .lg\:grid { display: grid; }
+    .lg\:flex-row { flex-direction: row; }
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .lg\:gap-8 { gap: var(--spacing-8); }
+    .lg\:gap-12 { gap: var(--spacing-12); }
+    .lg\:px-8 { padding-inline: var(--spacing-8); }
+    .lg\:py-16 { padding-block: var(--spacing-16); }
+    .lg\:py-20 { padding-block: var(--spacing-20); }
+    .lg\:py-24 { padding-block: var(--spacing-24); }
+    .lg\:text-xl { font-size: var(--text-xl); }
+    .lg\:text-4xl { font-size: var(--text-4xl); }
+    .lg\:max-w-4xl { max-width: 56rem; }
+  }
+}

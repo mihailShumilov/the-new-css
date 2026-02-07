@@ -1,0 +1,63 @@
+@layer utilities {
+  .font-sans { font-family: var(--font-sans); }
+  .font-serif { font-family: var(--font-serif); }
+  .font-mono { font-family: var(--font-mono); }
+
+  .text-xs { font-size: var(--text-xs); line-height: var(--leading-normal); }
+  .text-sm { font-size: var(--text-sm); line-height: var(--leading-normal); }
+  .text-base { font-size: var(--text-base); line-height: var(--leading-normal); }
+  .text-lg { font-size: var(--text-lg); line-height: var(--leading-relaxed); }
+  .text-xl { font-size: var(--text-xl); line-height: var(--leading-relaxed); }
+  .text-2xl { font-size: var(--text-2xl); line-height: var(--leading-snug); }
+  .text-3xl { font-size: var(--text-3xl); line-height: var(--leading-snug); }
+  .text-4xl { font-size: var(--text-4xl); line-height: var(--leading-tight); }
+
+  .font-light { font-weight: var(--font-light); }
+  .font-normal { font-weight: var(--font-normal); }
+  .font-medium { font-weight: var(--font-medium); }
+  .font-semibold { font-weight: var(--font-semibold); }
+  .font-bold { font-weight: var(--font-bold); }
+  .font-extrabold { font-weight: var(--font-extrabold); }
+
+  .text-left { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+
+  .leading-none { line-height: var(--leading-none); }
+  .leading-tight { line-height: var(--leading-tight); }
+  .leading-snug { line-height: var(--leading-snug); }
+  .leading-normal { line-height: var(--leading-normal); }
+  .leading-relaxed { line-height: var(--leading-relaxed); }
+  .leading-loose { line-height: var(--leading-loose); }
+
+  .tracking-tight { letter-spacing: var(--tracking-tight); }
+  .tracking-normal { letter-spacing: var(--tracking-normal); }
+  .tracking-wide { letter-spacing: var(--tracking-wide); }
+
+  .underline { text-decoration-line: underline; }
+  .line-through { text-decoration-line: line-through; }
+  .no-underline { text-decoration-line: none; }
+
+  .uppercase { text-transform: uppercase; }
+  .lowercase { text-transform: lowercase; }
+  .capitalize { text-transform: capitalize; }
+  .normal-case { text-transform: none; }
+
+  .whitespace-normal { white-space: normal; }
+  .whitespace-nowrap { white-space: nowrap; }
+  .whitespace-pre { white-space: pre; }
+  .whitespace-pre-wrap { white-space: pre-wrap; }
+
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .italic { font-style: italic; }
+  .not-italic { font-style: normal; }
+
+  .antialiased { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+  .text-balance { text-wrap: balance; }
+}

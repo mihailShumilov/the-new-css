@@ -1,0 +1,42 @@
+@layer base, utilities, variants;
+
+/* Tokens (no layer - custom properties are global) */
+@import "./tokens/colors.css";
+@import "./tokens/spacing.css";
+@import "./tokens/typography.css";
+@import "./tokens/shadows.css";
+@import "./tokens/borders.css";
+@import "./tokens/transitions.css";
+@import "./tokens/z-index.css";
+
+/* Base (@layer base) */
+@import "./base/reset.css";
+@import "./base/root.css";
+@import "./base/typography.css";
+@import "./base/forms.css";
+
+/* Utilities (@layer utilities) */
+@import "./utilities/layout.css";
+@import "./utilities/flexbox.css";
+@import "./utilities/grid.css";
+@import "./utilities/spacing.css";
+@import "./utilities/sizing.css";
+@import "./utilities/typography.css";
+@import "./utilities/colors.css";
+@import "./utilities/borders.css";
+@import "./utilities/effects.css";
+@import "./utilities/transforms.css";
+@import "./utilities/transitions.css";
+@import "./utilities/interactivity.css";
+@import "./utilities/container.css";
+
+/* Components (@layer utilities) */
+@import "./components/sr-only.css";
+
+/* Variants (@layer variants) */
+@import "./variants/responsive.css";
+@import "./variants/hover.css";
+@import "./variants/focus.css";
+@import "./variants/active.css";
+@import "./variants/dark.css";
+/* Container queries available as separate module: dist/modules/variants-container-query.min.css */

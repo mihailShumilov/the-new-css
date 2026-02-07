@@ -1,0 +1,25 @@
+@layer utilities {
+  .translate-x-0 { translate: 0 0; }
+  .translate-x-full { translate: 100% 0; }
+  .-translate-x-full { translate: -100% 0; }
+  .-translate-x-1\/2 { translate: -50% 0; }
+  .translate-y-0 { translate: 0 0; }
+  .-translate-y-1\/2 { translate: 0 -50%; }
+
+  .rotate-0 { rotate: 0deg; }
+  .rotate-45 { rotate: 45deg; }
+  .rotate-90 { rotate: 90deg; }
+  .rotate-180 { rotate: 180deg; }
+
+  .scale-0 { scale: 0; }
+  .scale-75 { scale: 0.75; }
+  .scale-90 { scale: 0.9; }
+  .scale-95 { scale: 0.95; }
+  .scale-100 { scale: 1; }
+  .scale-105 { scale: 1.05; }
+  .scale-110 { scale: 1.1; }
+  .scale-150 { scale: 1.5; }
+
+  .origin-center { transform-origin: center; }
+  .origin-top { transform-origin: top; }
+}

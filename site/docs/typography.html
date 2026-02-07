@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography - The New CSS</title>
+  <meta name="description" content="Typography utilities for font family, size, weight, alignment, line height, letter spacing, and text transforms in The New CSS.">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/the-new-css.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg">
+        <img src="/assets/images/logo.svg" alt="" width="32" height="32">
+        The New CSS
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/docs/getting-started.html" class="text-blue-600 font-medium text-sm">Docs</a>
+        <a href="/donate/" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Donate</a>
+        <button data-theme-toggle class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="md:sticky md:top-0 w-full md:w-1\/4 shrink-0">
+      <nav class="space-y-1 text-sm">
+        <p class="font-semibold text-gray-900 mb-2">Getting Started</p>
+        <a href="/docs/getting-started.html" class="block py-1 text-gray-600 hover:text-blue-600">Installation</a>
+
+        <p class="font-semibold text-gray-900 mt-4 mb-2">Utilities</p>
+        <a href="/docs/layout.html" class="block py-1 text-gray-600 hover:text-blue-600">Layout</a>
+        <a href="/docs/flexbox.html" class="block py-1 text-gray-600 hover:text-blue-600">Flexbox</a>
+        <a href="/docs/grid.html" class="block py-1 text-gray-600 hover:text-blue-600">Grid</a>
+        <a href="/docs/spacing.html" class="block py-1 text-gray-600 hover:text-blue-600">Spacing</a>
+        <a href="/docs/sizing.html" class="block py-1 text-gray-600 hover:text-blue-600">Sizing</a>
+        <a href="/docs/typography.html" class="block py-1 text-blue-600 font-medium">Typography</a>
+        <a href="/docs/colors.html" class="block py-1 text-gray-600 hover:text-blue-600">Colors</a>
+        <a href="/docs/borders.html" class="block py-1 text-gray-600 hover:text-blue-600">Borders</a>
+        <a href="/docs/effects.html" class="block py-1 text-gray-600 hover:text-blue-600">Effects</a>
+        <a href="/docs/responsive.html" class="block py-1 text-gray-600 hover:text-blue-600">Responsive</a>
+        <a href="/docs/dark-mode.html" class="block py-1 text-gray-600 hover:text-blue-600">Dark Mode</a>
+        <a href="/docs/customization.html" class="block py-1 text-gray-600 hover:text-blue-600">Customization</a>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 min-w-0 max-w-prose">
+      <h1 class="text-3xl font-bold mb-6">Typography</h1>
+      <p class="text-gray-600 mb-6">Utilities for controlling font family, size, weight, alignment, line height, letter spacing, decoration, transforms, whitespace, and text rendering.</p>
+
+      <!-- Font Family -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Font Family</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">font-sans</code></td><td>font-family: var(--font-sans)</td></tr>
+          <tr><td><code class="text-sm">font-serif</code></td><td>font-family: var(--font-serif)</td></tr>
+          <tr><td><code class="text-sm">font-mono</code></td><td>font-family: var(--font-mono)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Font Size -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Font Size</h2>
+      <p class="text-gray-600 mb-3">Each font size class also sets an appropriate line-height.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">text-xs</code></td><td>font-size: var(--text-xs); line-height: var(--leading-normal)</td></tr>
+          <tr><td><code class="text-sm">text-sm</code></td><td>font-size: var(--text-sm); line-height: var(--leading-normal)</td></tr>
+          <tr><td><code class="text-sm">text-base</code></td><td>font-size: var(--text-base); line-height: var(--leading-normal)</td></tr>
+          <tr><td><code class="text-sm">text-lg</code></td><td>font-size: var(--text-lg); line-height: var(--leading-relaxed)</td></tr>
+          <tr><td><code class="text-sm">text-xl</code></td><td>font-size: var(--text-xl); line-height: var(--leading-relaxed)</td></tr>
+          <tr><td><code class="text-sm">text-2xl</code></td><td>font-size: var(--text-2xl); line-height: var(--leading-snug)</td></tr>
+          <tr><td><code class="text-sm">text-3xl</code></td><td>font-size: var(--text-3xl); line-height: var(--leading-snug)</td></tr>
+          <tr><td><code class="text-sm">text-4xl</code></td><td>font-size: var(--text-4xl); line-height: var(--leading-tight)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Font Size Example -->
+      <h3 class="font-semibold mt-6 mb-2">Example: Font size scale</h3>
+      <div class="mb-4 rounded-lg border border-gray-200 p-4 space-y-2">
+        <p class="text-xs">text-xs - Extra small</p>
+        <p class="text-sm">text-sm - Small</p>
+        <p class="text-base">text-base - Base</p>
+        <p class="text-lg">text-lg - Large</p>
+        <p class="text-xl">text-xl - Extra large</p>
+        <p class="text-2xl">text-2xl</p>
+        <p class="text-3xl">text-3xl</p>
+        <p class="text-4xl">text-4xl</p>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;p class="text-xs"&gt;Extra small&lt;/p&gt;
+&lt;p class="text-sm"&gt;Small&lt;/p&gt;
+&lt;p class="text-base"&gt;Base&lt;/p&gt;
+&lt;p class="text-lg"&gt;Large&lt;/p&gt;
+&lt;p class="text-xl"&gt;Extra large&lt;/p&gt;
+&lt;p class="text-2xl"&gt;2XL&lt;/p&gt;
+&lt;p class="text-3xl"&gt;3XL&lt;/p&gt;
+&lt;p class="text-4xl"&gt;4XL&lt;/p&gt;</code>
+      </div>
+
+      <!-- Font Weight -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Font Weight</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">font-light</code></td><td>font-weight: var(--font-light)</td></tr>
+          <tr><td><code class="text-sm">font-normal</code></td><td>font-weight: var(--font-normal)</td></tr>
+          <tr><td><code class="text-sm">font-medium</code></td><td>font-weight: var(--font-medium)</td></tr>
+          <tr><td><code class="text-sm">font-semibold</code></td><td>font-weight: var(--font-semibold)</td></tr>
+          <tr><td><code class="text-sm">font-bold</code></td><td>font-weight: var(--font-bold)</td></tr>
+          <tr><td><code class="text-sm">font-extrabold</code></td><td>font-weight: var(--font-extrabold)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Text Alignment -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Text Alignment</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">text-left</code></td><td>text-align: left</td></tr>
+          <tr><td><code class="text-sm">text-center</code></td><td>text-align: center</td></tr>
+          <tr><td><code class="text-sm">text-right</code></td><td>text-align: right</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Line Height -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Line Height</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">leading-none</code></td><td>line-height: var(--leading-none)</td></tr>
+          <tr><td><code class="text-sm">leading-tight</code></td><td>line-height: var(--leading-tight)</td></tr>
+          <tr><td><code class="text-sm">leading-snug</code></td><td>line-height: var(--leading-snug)</td></tr>
+          <tr><td><code class="text-sm">leading-normal</code></td><td>line-height: var(--leading-normal)</td></tr>
+          <tr><td><code class="text-sm">leading-relaxed</code></td><td>line-height: var(--leading-relaxed)</td></tr>
+          <tr><td><code class="text-sm">leading-loose</code></td><td>line-height: var(--leading-loose)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Letter Spacing -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Letter Spacing</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">tracking-tight</code></td><td>letter-spacing: var(--tracking-tight)</td></tr>
+          <tr><td><code class="text-sm">tracking-normal</code></td><td>letter-spacing: var(--tracking-normal)</td></tr>
+          <tr><td><code class="text-sm">tracking-wide</code></td><td>letter-spacing: var(--tracking-wide)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Text Decoration -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Text Decoration</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">underline</code></td><td>text-decoration-line: underline</td></tr>
+          <tr><td><code class="text-sm">line-through</code></td><td>text-decoration-line: line-through</td></tr>
+          <tr><td><code class="text-sm">no-underline</code></td><td>text-decoration-line: none</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Text Transform -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Text Transform</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">uppercase</code></td><td>text-transform: uppercase</td></tr>
+          <tr><td><code class="text-sm">lowercase</code></td><td>text-transform: lowercase</td></tr>
+          <tr><td><code class="text-sm">capitalize</code></td><td>text-transform: capitalize</td></tr>
+          <tr><td><code class="text-sm">normal-case</code></td><td>text-transform: none</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Whitespace -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Whitespace</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">whitespace-normal</code></td><td>white-space: normal</td></tr>
+          <tr><td><code class="text-sm">whitespace-nowrap</code></td><td>white-space: nowrap</td></tr>
+          <tr><td><code class="text-sm">whitespace-pre</code></td><td>white-space: pre</td></tr>
+          <tr><td><code class="text-sm">whitespace-pre-wrap</code></td><td>white-space: pre-wrap</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Truncate -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Truncate</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">truncate</code></td><td>overflow: hidden; text-overflow: ellipsis; white-space: nowrap</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Truncate Example -->
+      <h3 class="font-semibold mt-6 mb-2">Example: Truncating text</h3>
+      <div class="mb-4 rounded-lg border border-gray-200 p-4">
+        <p class="truncate max-w-sm text-sm">This is a very long paragraph that will be truncated with an ellipsis when it overflows its container width.</p>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;p class="truncate max-w-sm"&gt;
+  This is a very long paragraph that will be truncated...
+&lt;/p&gt;</code>
+      </div>
+
+      <!-- Font Style & Misc -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Font Style &amp; Miscellaneous</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr><th>Class</th><th>CSS Property</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="text-sm">italic</code></td><td>font-style: italic</td></tr>
+          <tr><td><code class="text-sm">not-italic</code></td><td>font-style: normal</td></tr>
+          <tr><td><code class="text-sm">antialiased</code></td><td>-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale</td></tr>
+          <tr><td><code class="text-sm">text-balance</code></td><td>text-wrap: balance</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Composition Example -->
+      <h3 class="font-semibold mt-6 mb-2">Example: Composing typography utilities</h3>
+      <div class="mb-4 rounded-lg border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold tracking-tight mb-2">Article Title</h2>
+        <p class="text-sm uppercase tracking-wide font-semibold text-gray-500 mb-2">Category</p>
+        <p class="text-base leading-relaxed text-gray-600">Body text with relaxed line-height for comfortable reading across long paragraphs of content.</p>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;h2 class="text-2xl font-bold tracking-tight mb-2"&gt;Article Title&lt;/h2&gt;
+&lt;p class="text-sm uppercase tracking-wide font-semibold text-gray-500 mb-2"&gt;Category&lt;/p&gt;
+&lt;p class="text-base leading-relaxed text-gray-600"&gt;Body text...&lt;/p&gt;</code>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="py-8 border-t border-gray-200">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-500">The New CSS - MIT License</div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

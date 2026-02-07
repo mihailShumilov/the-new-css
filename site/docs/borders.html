@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borders - The New CSS</title>
+  <meta name="description" content="Border utilities in The New CSS. Border width, style, color, radius, ring, and divide classes.">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/the-new-css.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg">
+        <img src="/assets/images/logo.svg" alt="" width="32" height="32">
+        The New CSS
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/docs/getting-started.html" class="text-blue-600 font-medium text-sm">Docs</a>
+        <a href="/donate/" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Donate</a>
+        <button data-theme-toggle class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="md:sticky md:top-0 w-full md:w-1\/4 shrink-0">
+      <nav class="space-y-1 text-sm">
+        <p class="font-semibold text-gray-900 mb-2">Getting Started</p>
+        <a href="/docs/getting-started.html" class="block py-1 text-gray-600 hover:text-blue-600">Installation</a>
+
+        <p class="font-semibold text-gray-900 mt-4 mb-2">Utilities</p>
+        <a href="/docs/layout.html" class="block py-1 text-gray-600 hover:text-blue-600">Layout</a>
+        <a href="/docs/flexbox.html" class="block py-1 text-gray-600 hover:text-blue-600">Flexbox</a>
+        <a href="/docs/grid.html" class="block py-1 text-gray-600 hover:text-blue-600">Grid</a>
+        <a href="/docs/spacing.html" class="block py-1 text-gray-600 hover:text-blue-600">Spacing</a>
+        <a href="/docs/sizing.html" class="block py-1 text-gray-600 hover:text-blue-600">Sizing</a>
+        <a href="/docs/typography.html" class="block py-1 text-gray-600 hover:text-blue-600">Typography</a>
+        <a href="/docs/colors.html" class="block py-1 text-gray-600 hover:text-blue-600">Colors</a>
+        <a href="/docs/borders.html" class="block py-1 text-blue-600 font-medium">Borders</a>
+        <a href="/docs/effects.html" class="block py-1 text-gray-600 hover:text-blue-600">Effects</a>
+        <a href="/docs/responsive.html" class="block py-1 text-gray-600 hover:text-blue-600">Responsive</a>
+        <a href="/docs/dark-mode.html" class="block py-1 text-gray-600 hover:text-blue-600">Dark Mode</a>
+        <a href="/docs/customization.html" class="block py-1 text-gray-600 hover:text-blue-600">Customization</a>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 min-w-0 max-w-prose">
+      <h1 class="text-3xl font-bold mb-6">Borders</h1>
+      <p class="text-gray-600 mb-6">Utilities for controlling border width, style, color, radius, ring outlines, and dividers between child elements.</p>
+
+      <!-- Border Width -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Border Width</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>border-0</code></td><td>border-width: var(--border-width-0)</td></tr>
+          <tr><td><code>border</code></td><td>border-width: var(--border-width)</td></tr>
+          <tr><td><code>border-2</code></td><td>border-width: var(--border-width-2)</td></tr>
+          <tr><td><code>border-t</code></td><td>border-top-width: var(--border-width)</td></tr>
+          <tr><td><code>border-b</code></td><td>border-bottom-width: var(--border-width)</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Border Style -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Border Style</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>border-solid</code></td><td>border-style: solid</td></tr>
+          <tr><td><code>border-dashed</code></td><td>border-style: dashed</td></tr>
+          <tr><td><code>border-none</code></td><td>border-style: none</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Border Color -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Border Color</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>border-transparent</code></td><td>border-color: transparent</td></tr>
+          <tr><td><code>border-current</code></td><td>border-color: currentColor</td></tr>
+          <tr><td><code>border-gray-200</code></td><td>border-color: var(--color-gray-200)</td></tr>
+          <tr><td><code>border-gray-300</code></td><td>border-color: var(--color-gray-300)</td></tr>
+          <tr><td><code>border-blue-500</code></td><td>border-color: var(--color-blue-500)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-4">
+        <div class="p-4 border border-gray-200 rounded">border-gray-200</div>
+        <div class="p-4 border-2 border-blue-500 rounded">border-2 border-blue-500</div>
+        <div class="p-4 border-2 border-dashed border-gray-300 rounded">border-dashed</div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="border border-gray-200 rounded p-4"&gt;Default border&lt;/div&gt;
+&lt;div class="border-2 border-blue-500 rounded p-4"&gt;Thick blue border&lt;/div&gt;
+&lt;div class="border-2 border-dashed border-gray-300 rounded p-4"&gt;Dashed border&lt;/div&gt;</code>
+      </div>
+
+      <!-- Border Radius -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Border Radius</h2>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>rounded-none</code></td><td>border-radius: var(--radius-none)</td></tr>
+          <tr><td><code>rounded-sm</code></td><td>border-radius: var(--radius-sm)</td></tr>
+          <tr><td><code>rounded</code></td><td>border-radius: var(--radius)</td></tr>
+          <tr><td><code>rounded-md</code></td><td>border-radius: var(--radius-md)</td></tr>
+          <tr><td><code>rounded-lg</code></td><td>border-radius: var(--radius-lg)</td></tr>
+          <tr><td><code>rounded-xl</code></td><td>border-radius: var(--radius-xl)</td></tr>
+          <tr><td><code>rounded-2xl</code></td><td>border-radius: var(--radius-2xl)</td></tr>
+          <tr><td><code>rounded-full</code></td><td>border-radius: var(--radius-full)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-4 items-end">
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-none"></div>
+          <span class="text-xs text-gray-500">none</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-sm"></div>
+          <span class="text-xs text-gray-500">sm</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded"></div>
+          <span class="text-xs text-gray-500">default</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-md"></div>
+          <span class="text-xs text-gray-500">md</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg"></div>
+          <span class="text-xs text-gray-500">lg</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-xl"></div>
+          <span class="text-xs text-gray-500">xl</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-2xl"></div>
+          <span class="text-xs text-gray-500">2xl</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-full"></div>
+          <span class="text-xs text-gray-500">full</span>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="bg-blue-500 rounded-none"&gt;...&lt;/div&gt;
+&lt;div class="bg-blue-500 rounded-lg"&gt;...&lt;/div&gt;
+&lt;div class="bg-blue-500 rounded-full"&gt;...&lt;/div&gt;</code>
+      </div>
+
+      <!-- Ring -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Ring</h2>
+      <p class="text-gray-600 mb-4">Ring utilities add box-shadow outlines, useful for focus states.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>ring-0</code></td><td>box-shadow: 0 0 0 0px var(--ring-color)</td></tr>
+          <tr><td><code>ring-1</code></td><td>box-shadow: 0 0 0 1px var(--ring-color)</td></tr>
+          <tr><td><code>ring-2</code></td><td>box-shadow: 0 0 0 2px var(--ring-color)</td></tr>
+          <tr><td><code>ring-blue-500</code></td><td>--ring-color: var(--color-blue-500)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-6">
+        <div class="p-4 rounded-lg ring-1 ring-blue-500">ring-1</div>
+        <div class="p-4 rounded-lg ring-2 ring-blue-500">ring-2</div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="ring-2 ring-blue-500 rounded-lg p-4"&gt;
+  Ring outline
+&lt;/div&gt;</code>
+      </div>
+
+      <!-- Divide -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Divide</h2>
+      <p class="text-gray-600 mb-4">Add borders between child elements.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>divide-y</code></td><td>> * + * { border-top-width: 1px }</td></tr>
+          <tr><td><code>divide-x</code></td><td>> * + * { border-left-width: 1px }</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3">
+        <div class="divide-y">
+          <div class="py-3">First item</div>
+          <div class="py-3">Second item</div>
+          <div class="py-3">Third item</div>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="divide-y"&gt;
+  &lt;div class="py-3"&gt;First item&lt;/div&gt;
+  &lt;div class="py-3"&gt;Second item&lt;/div&gt;
+  &lt;div class="py-3"&gt;Third item&lt;/div&gt;
+&lt;/div&gt;</code>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="py-8 border-t border-gray-200">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-500">The New CSS - MIT License</div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

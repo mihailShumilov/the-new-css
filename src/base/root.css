@@ -1,0 +1,9 @@
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--color-gray-900);
+    background-color: var(--color-white);
+  }
+}

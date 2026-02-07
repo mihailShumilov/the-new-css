@@ -1,0 +1,18 @@
+@layer utilities {
+  .transition-none { transition-property: none; }
+  .transition-all { transition-property: all; transition-timing-function: var(--ease-in-out); transition-duration: var(--duration-150); }
+  .transition { transition-property: color, background-color, border-color, opacity, box-shadow, transform, filter; transition-timing-function: var(--ease-in-out); transition-duration: var(--duration-150); }
+  .transition-colors { transition-property: color, background-color, border-color; transition-timing-function: var(--ease-in-out); transition-duration: var(--duration-150); }
+  .transition-opacity { transition-property: opacity; transition-timing-function: var(--ease-in-out); transition-duration: var(--duration-150); }
+  .transition-transform { transition-property: transform, translate, scale, rotate; transition-timing-function: var(--ease-in-out); transition-duration: var(--duration-150); }
+
+  .duration-100 { transition-duration: var(--duration-100); }
+  .duration-150 { transition-duration: var(--duration-150); }
+  .duration-200 { transition-duration: var(--duration-200); }
+  .duration-300 { transition-duration: var(--duration-300); }
+  .duration-500 { transition-duration: var(--duration-500); }
+
+  .ease-in { transition-timing-function: var(--ease-in); }
+  .ease-out { transition-timing-function: var(--ease-out); }
+  .ease-in-out { transition-timing-function: var(--ease-in-out); }
+}

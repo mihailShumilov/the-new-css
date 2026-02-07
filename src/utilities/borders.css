@@ -1,0 +1,35 @@
+@layer utilities {
+  .border-0 { border-width: var(--border-width-0); }
+  .border { border-width: var(--border-width); }
+  .border-2 { border-width: var(--border-width-2); }
+  .border-t { border-top-width: var(--border-width); }
+  .border-b { border-bottom-width: var(--border-width); }
+
+  .border-solid { border-style: solid; }
+  .border-dashed { border-style: dashed; }
+  .border-none { border-style: none; }
+
+  .border-transparent { border-color: transparent; }
+  .border-current { border-color: currentColor; }
+  .border-gray-200 { border-color: var(--color-gray-200); }
+  .border-gray-300 { border-color: var(--color-gray-300); }
+  .border-blue-500 { border-color: var(--color-blue-500); }
+
+  .rounded-none { border-radius: var(--radius-none); }
+  .rounded-sm { border-radius: var(--radius-sm); }
+  .rounded { border-radius: var(--radius); }
+  .rounded-md { border-radius: var(--radius-md); }
+  .rounded-lg { border-radius: var(--radius-lg); }
+  .rounded-xl { border-radius: var(--radius-xl); }
+  .rounded-2xl { border-radius: var(--radius-2xl); }
+  .rounded-full { border-radius: var(--radius-full); }
+
+  .ring-0 { box-shadow: 0 0 0 0px var(--ring-color, var(--color-blue-500)); }
+  .ring-1 { box-shadow: 0 0 0 1px var(--ring-color, var(--color-blue-500)); }
+  .ring-2 { box-shadow: 0 0 0 2px var(--ring-color, var(--color-blue-500)); }
+
+  .ring-blue-500 { --ring-color: var(--color-blue-500); }
+
+  .divide-y > * + * { border-top-width: 1px; border-top-style: solid; border-color: var(--color-gray-200); }
+  .divide-x > * + * { border-left-width: 1px; border-left-style: solid; border-color: var(--color-gray-200); }
+}

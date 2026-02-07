@@ -1,0 +1,8 @@
+@layer base {
+  button, [role="button"] { cursor: pointer; }
+  :disabled { cursor: default; }
+  input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--color-blue-500);
+    outline-offset: 2px;
+  }
+}

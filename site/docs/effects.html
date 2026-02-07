@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effects - The New CSS</title>
+  <meta name="description" content="Effect utilities in The New CSS. Opacity, box shadows, blur, and backdrop blur classes.">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/the-new-css.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg">
+        <img src="/assets/images/logo.svg" alt="" width="32" height="32">
+        The New CSS
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/docs/getting-started.html" class="text-blue-600 font-medium text-sm">Docs</a>
+        <a href="/donate/" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Donate</a>
+        <button data-theme-toggle class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="md:sticky md:top-0 w-full md:w-1\/4 shrink-0">
+      <nav class="space-y-1 text-sm">
+        <p class="font-semibold text-gray-900 mb-2">Getting Started</p>
+        <a href="/docs/getting-started.html" class="block py-1 text-gray-600 hover:text-blue-600">Installation</a>
+
+        <p class="font-semibold text-gray-900 mt-4 mb-2">Utilities</p>
+        <a href="/docs/layout.html" class="block py-1 text-gray-600 hover:text-blue-600">Layout</a>
+        <a href="/docs/flexbox.html" class="block py-1 text-gray-600 hover:text-blue-600">Flexbox</a>
+        <a href="/docs/grid.html" class="block py-1 text-gray-600 hover:text-blue-600">Grid</a>
+        <a href="/docs/spacing.html" class="block py-1 text-gray-600 hover:text-blue-600">Spacing</a>
+        <a href="/docs/sizing.html" class="block py-1 text-gray-600 hover:text-blue-600">Sizing</a>
+        <a href="/docs/typography.html" class="block py-1 text-gray-600 hover:text-blue-600">Typography</a>
+        <a href="/docs/colors.html" class="block py-1 text-gray-600 hover:text-blue-600">Colors</a>
+        <a href="/docs/borders.html" class="block py-1 text-gray-600 hover:text-blue-600">Borders</a>
+        <a href="/docs/effects.html" class="block py-1 text-blue-600 font-medium">Effects</a>
+        <a href="/docs/responsive.html" class="block py-1 text-gray-600 hover:text-blue-600">Responsive</a>
+        <a href="/docs/dark-mode.html" class="block py-1 text-gray-600 hover:text-blue-600">Dark Mode</a>
+        <a href="/docs/customization.html" class="block py-1 text-gray-600 hover:text-blue-600">Customization</a>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 min-w-0 max-w-prose">
+      <h1 class="text-3xl font-bold mb-6">Effects</h1>
+      <p class="text-gray-600 mb-6">Utilities for controlling opacity, box shadows, blur, and backdrop blur filters.</p>
+
+      <!-- Opacity -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Opacity</h2>
+      <p class="text-gray-600 mb-4">Use <code class="bg-gray-100 px-2 py-1 rounded text-sm">opacity-{value}</code> to control the opacity of an element.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>opacity-0</code></td><td>opacity: 0</td></tr>
+          <tr><td><code>opacity-25</code></td><td>opacity: 0.25</td></tr>
+          <tr><td><code>opacity-50</code></td><td>opacity: 0.5</td></tr>
+          <tr><td><code>opacity-75</code></td><td>opacity: 0.75</td></tr>
+          <tr><td><code>opacity-100</code></td><td>opacity: 1</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-4 items-end">
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg opacity-100"></div>
+          <span class="text-xs text-gray-500">100</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg opacity-75"></div>
+          <span class="text-xs text-gray-500">75</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg opacity-50"></div>
+          <span class="text-xs text-gray-500">50</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg opacity-25"></div>
+          <span class="text-xs text-gray-500">25</span>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="bg-blue-500 opacity-100"&gt;...&lt;/div&gt;
+&lt;div class="bg-blue-500 opacity-75"&gt;...&lt;/div&gt;
+&lt;div class="bg-blue-500 opacity-50"&gt;...&lt;/div&gt;
+&lt;div class="bg-blue-500 opacity-25"&gt;...&lt;/div&gt;</code>
+      </div>
+
+      <!-- Shadow -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Box Shadow</h2>
+      <p class="text-gray-600 mb-4">Use <code class="bg-gray-100 px-2 py-1 rounded text-sm">shadow-{size}</code> to add box shadows to elements.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>shadow-sm</code></td><td>box-shadow: var(--shadow-sm)</td></tr>
+          <tr><td><code>shadow</code></td><td>box-shadow: var(--shadow)</td></tr>
+          <tr><td><code>shadow-md</code></td><td>box-shadow: var(--shadow-md)</td></tr>
+          <tr><td><code>shadow-lg</code></td><td>box-shadow: var(--shadow-lg)</td></tr>
+          <tr><td><code>shadow-xl</code></td><td>box-shadow: var(--shadow-xl)</td></tr>
+          <tr><td><code>shadow-none</code></td><td>box-shadow: var(--shadow-none)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-6 items-end">
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-20 h-20 bg-white rounded-lg shadow-sm"></div>
+          <span class="text-xs text-gray-500">sm</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-20 h-20 bg-white rounded-lg shadow"></div>
+          <span class="text-xs text-gray-500">default</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-20 h-20 bg-white rounded-lg shadow-md"></div>
+          <span class="text-xs text-gray-500">md</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-20 h-20 bg-white rounded-lg shadow-lg"></div>
+          <span class="text-xs text-gray-500">lg</span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-20 h-20 bg-white rounded-lg shadow-xl"></div>
+          <span class="text-xs text-gray-500">xl</span>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="shadow-sm rounded-lg p-6"&gt;Small shadow&lt;/div&gt;
+&lt;div class="shadow-md rounded-lg p-6"&gt;Medium shadow&lt;/div&gt;
+&lt;div class="shadow-xl rounded-lg p-6"&gt;Extra-large shadow&lt;/div&gt;</code>
+      </div>
+
+      <!-- Blur -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Blur</h2>
+      <p class="text-gray-600 mb-4">Use <code class="bg-gray-100 px-2 py-1 rounded text-sm">blur-{size}</code> to apply a blur filter to an element.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>blur-sm</code></td><td>filter: blur(4px)</td></tr>
+          <tr><td><code>blur</code></td><td>filter: blur(8px)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3 flex flex-wrap gap-6 items-end">
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-lg font-bold text-blue-600">Sharp</div>
+          <span class="text-xs text-gray-500">no blur</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-lg font-bold text-blue-600 blur-sm">Soft</div>
+          <span class="text-xs text-gray-500">blur-sm</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-lg font-bold text-blue-600 blur">Blurry</div>
+          <span class="text-xs text-gray-500">blur</span>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="blur-sm"&gt;Slightly blurred&lt;/div&gt;
+&lt;div class="blur"&gt;More blurred&lt;/div&gt;</code>
+      </div>
+
+      <!-- Backdrop Blur -->
+      <h2 class="text-xl font-semibold mt-8 mb-4">Backdrop Blur</h2>
+      <p class="text-gray-600 mb-4">Use <code class="bg-gray-100 px-2 py-1 rounded text-sm">backdrop-blur-{size}</code> to blur the content behind an element. Commonly used for frosted-glass overlays.</p>
+      <table class="comparison-table mb-6">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>CSS Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>backdrop-blur-sm</code></td><td>backdrop-filter: blur(4px)</td></tr>
+          <tr><td><code>backdrop-blur</code></td><td>backdrop-filter: blur(8px)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="font-semibold mt-6 mb-2">Example</h3>
+      <div class="p-6 border border-gray-200 rounded-lg mb-3">
+        <div class="relative rounded-lg overflow-hidden" style="height: 160px;">
+          <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-6 h-full flex items-center justify-center">
+            <span class="text-white text-xl font-bold">Background Content</span>
+          </div>
+          <div class="absolute inset-x-0 bottom-0 backdrop-blur bg-white/25 p-4">
+            <span class="text-white font-medium">Frosted glass overlay with backdrop-blur</span>
+          </div>
+        </div>
+      </div>
+      <div class="code-block mb-6">
+        <button class="copy-btn">Copy</button>
+        <code>&lt;div class="relative"&gt;
+  &lt;div class="bg-gradient-to-r from-blue-500 to-purple-500 p-6"&gt;
+    Background content
+  &lt;/div&gt;
+  &lt;div class="absolute inset-x-0 bottom-0 backdrop-blur bg-white/25 p-4"&gt;
+    Frosted glass overlay
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="py-8 border-t border-gray-200">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-500">The New CSS - MIT License</div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

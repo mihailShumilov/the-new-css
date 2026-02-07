@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New CSS - Lightweight Utility-First CSS Library</title>
+  <meta name="description" content="A super lightweight, utility-first CSS library under 5KB gzipped. Modern CSS, no build step required. Like Tailwind, but pure CSS.">
+  <meta name="keywords" content="CSS library, utility-first, lightweight, modern CSS, no build step">
+  <link rel="canonical" href="https://thenewcss.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The New CSS - Lightweight Utility-First CSS Library">
+  <meta property="og:description" content="A super lightweight, utility-first CSS library under 5KB gzipped. No build step required.">
+  <meta property="og:url" content="https://thenewcss.dev/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The New CSS">
+  <meta name="twitter:description" content="Utility-first CSS under 5KB. No build step required.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "The New CSS",
+    "description": "A super lightweight, utility-first CSS library",
+    "programmingLanguage": "CSS",
+    "license": "https://opensource.org/licenses/MIT"
+  }
+  </script>
+
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/the-new-css.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg">
+        <img src="/assets/images/logo.svg" alt="" width="32" height="32">
+        The New CSS
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/docs/getting-started.html" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Docs</a>
+        <a href="/docs/layout.html" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Utilities</a>
+        <a href="/donate/" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Donate</a>
+        <button data-theme-toggle class="p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+        </button>
+      </div>
+      <button data-nav-toggle class="md:hidden p-2" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div class="mobile-nav md:hidden flex-col gap-2 px-4 pb-4 border-t border-gray-200">
+      <a href="/docs/getting-started.html" class="block py-2 text-gray-600">Docs</a>
+      <a href="/docs/layout.html" class="block py-2 text-gray-600">Utilities</a>
+      <a href="/donate/" class="block py-2 text-gray-600">Donate</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-16 md:py-16 lg:py-24">
+    <div class="container mx-auto px-4 text-center">
+      <span class="size-badge mb-4 inline-flex">~5KB gzipped</span>
+      <h1 class="text-4xl md:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
+        <span class="gradient-text">The New CSS</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+        A super lightweight, utility-first CSS library. Modern CSS features, familiar class names, no build step required.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <a href="/docs/getting-started.html" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+          Get Started
+        </a>
+        <a href="https://github.com" class="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+          GitHub
+        </a>
+      </div>
+
+      <!-- CDN Install -->
+      <div class="max-w-lg mx-auto">
+        <div class="code-block text-left">
+          <button class="copy-btn">Copy</button>
+          <code>&lt;link rel="stylesheet" href="https://unpkg.com/the-new-css/dist/the-new-css.min.css"&gt;</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-12 md:py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Why The New CSS?</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-blue-50 text-blue-600">&#x2728;</div>
+          <h3 class="font-semibold text-lg mb-2">Modern CSS</h3>
+          <p class="text-gray-600 text-sm">Built with oklch() colors, @layer, container queries, :has(), and CSS nesting.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-green-50 text-green-600">&#x26A1;</div>
+          <h3 class="font-semibold text-lg mb-2">Under 5KB</h3>
+          <p class="text-gray-600 text-sm">Full library gzipped to under 5KB. Core bundle even smaller at ~4.5KB.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-purple-50 text-purple-600">&#x1F6E0;</div>
+          <h3 class="font-semibold text-lg mb-2">No Build Step</h3>
+          <p class="text-gray-600 text-sm">Just add a &lt;link&gt; tag. Works with any stack - HTML, React, Vue, Svelte, anything.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-yellow-50 text-yellow-600">&#x1F3A8;</div>
+          <h3 class="font-semibold text-lg mb-2">Customizable</h3>
+          <p class="text-gray-600 text-sm">Override CSS custom properties to match your brand. Design tokens make it easy.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-red-50 text-red-600">&#x1F4E6;</div>
+          <h3 class="font-semibold text-lg mb-2">Modular</h3>
+          <p class="text-gray-600 text-sm">Import only what you need. Each category is available as a separate module.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="feature-icon bg-blue-50 text-blue-600">&#x1F4F1;</div>
+          <h3 class="font-semibold text-lg mb-2">Responsive</h3>
+          <p class="text-gray-600 text-sm">Mobile-first responsive variants at sm, md, and lg breakpoints.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Examples -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Write Less, Do More</h2>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Example 1: Card -->
+        <div>
+          <h3 class="font-semibold mb-3">Responsive Card</h3>
+          <div class="code-block mb-4">
+            <button class="copy-btn">Copy</button>
+            <code>&lt;div class="bg-white p-6 rounded-lg shadow-md
+  hover:shadow-lg transition"&gt;
+  &lt;h3 class="font-bold text-lg mb-2"&gt;Title&lt;/h3&gt;
+  &lt;p class="text-gray-600 text-sm"&gt;Content&lt;/p&gt;
+&lt;/div&gt;</code>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h3 class="font-bold text-lg mb-2">Card Title</h3>
+            <p class="text-gray-600 text-sm">This card uses utility classes for padding, rounded corners, shadow, and hover effects.</p>
+          </div>
+        </div>
+
+        <!-- Example 2: Flex layout -->
+        <div>
+          <h3 class="font-semibold mb-3">Flex Layout</h3>
+          <div class="code-block mb-4">
+            <button class="copy-btn">Copy</button>
+            <code>&lt;div class="flex items-center gap-4"&gt;
+  &lt;div class="bg-blue-500 text-white
+    p-4 rounded-lg font-bold"&gt;A&lt;/div&gt;
+  &lt;div class="flex-1 bg-gray-100
+    p-4 rounded-lg"&gt;B (flex-1)&lt;/div&gt;
+&lt;/div&gt;</code>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="bg-blue-500 text-white p-4 rounded-lg font-bold">A</div>
+            <div class="flex-1 bg-gray-100 p-4 rounded-lg">B (flex-1)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="py-12 md:py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">How It Compares</h2>
+      <div class="max-w-3xl mx-auto overflow-x-auto">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>The New CSS</th>
+              <th>Tailwind</th>
+              <th>Bootstrap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Size (gzipped)</td>
+              <td class="text-green-600 font-semibold">~5KB</td>
+              <td>~30KB+</td>
+              <td>~23KB</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Build step required</td>
+              <td class="text-green-600 font-semibold">No</td>
+              <td>Yes</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Utility-first</td>
+              <td class="text-green-600 font-semibold">Yes</td>
+              <td>Yes</td>
+              <td>Partial</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Modern CSS</td>
+              <td class="text-green-600 font-semibold">oklch, @layer, container queries</td>
+              <td>Partial</td>
+              <td>Limited</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Dark mode</td>
+              <td class="text-green-600 font-semibold">Auto + toggle</td>
+              <td>Class/media</td>
+              <td>Data attribute</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Customizable</td>
+              <td class="text-green-600 font-semibold">CSS variables</td>
+              <td>Config file</td>
+              <td>Sass/CSS variables</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Quick Start</h2>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold mb-2">1. Add the stylesheet</h3>
+          <div class="code-block">
+            <button class="copy-btn">Copy</button>
+            <code>&lt;link rel="stylesheet" href="https://unpkg.com/the-new-css/dist/the-new-css.min.css"&gt;</code>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-2">2. Or install via npm</h3>
+          <div class="code-block">
+            <button class="copy-btn">Copy</button>
+            <code>npm install the-new-css</code>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-2">3. Start building</h3>
+          <div class="code-block">
+            <button class="copy-btn">Copy</button>
+            <code>&lt;div class="flex items-center gap-4 p-6 bg-white rounded-lg shadow"&gt;
+  &lt;h2 class="text-xl font-bold"&gt;Hello World&lt;/h2&gt;
+  &lt;p class="text-gray-600"&gt;Built with The New CSS&lt;/p&gt;
+&lt;/div&gt;</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-gray-200">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-500">The New CSS - MIT License</p>
+      <div class="flex gap-6 text-sm text-gray-500">
+        <a href="/docs/getting-started.html" class="hover:text-blue-600 transition-colors">Docs</a>
+        <a href="https://github.com" class="hover:text-blue-600 transition-colors">GitHub</a>
+        <a href="/donate/" class="hover:text-blue-600 transition-colors">Donate</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
