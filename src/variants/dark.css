@@ -1,22 +1,6 @@
-@layer variants {
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --color-gray-50: oklch(0.13 0.005 260);
-      --color-gray-100: oklch(0.17 0.007 260);
-      --color-gray-200: oklch(0.22 0.009 260);
-      --color-gray-300: oklch(0.31 0.012 260);
-      --color-gray-400: oklch(0.45 0.014 260);
-      --color-gray-500: oklch(0.55 0.014 260);
-      --color-gray-600: oklch(0.71 0.01 260);
-      --color-gray-700: oklch(0.79 0.008 260);
-      --color-gray-800: oklch(0.87 0.006 260);
-      --color-gray-900: oklch(0.92 0.004 260);
-      --color-gray-950: oklch(0.97 0.001 260);
-      color-scheme: dark;
-    }
-  }
-
-  [data-theme="dark"] {
+/* Dark mode token overrides — must be unlayered to beat unlayered :root tokens */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
     --color-gray-50: oklch(0.13 0.005 260);
     --color-gray-100: oklch(0.17 0.007 260);
     --color-gray-200: oklch(0.22 0.009 260);
@@ -30,4 +14,19 @@
     --color-gray-950: oklch(0.97 0.001 260);
     color-scheme: dark;
   }
+}
+
+[data-theme="dark"] {
+  --color-gray-50: oklch(0.13 0.005 260);
+  --color-gray-100: oklch(0.17 0.007 260);
+  --color-gray-200: oklch(0.22 0.009 260);
+  --color-gray-300: oklch(0.31 0.012 260);
+  --color-gray-400: oklch(0.45 0.014 260);
+  --color-gray-500: oklch(0.55 0.014 260);
+  --color-gray-600: oklch(0.71 0.01 260);
+  --color-gray-700: oklch(0.79 0.008 260);
+  --color-gray-800: oklch(0.87 0.006 260);
+  --color-gray-900: oklch(0.92 0.004 260);
+  --color-gray-950: oklch(0.97 0.001 260);
+  color-scheme: dark;
 }
