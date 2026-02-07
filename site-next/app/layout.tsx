@@ -14,11 +14,16 @@ export const metadata: Metadata = {
   },
 };
 
+const cssHref =
+  process.env.NODE_ENV === 'production'
+    ? 'https://unpkg.com/the-new-css/dist/the-new-css.min.css'
+    : '/the-new-css.css';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="stylesheet" href="/the-new-css.css" />
+        <link rel="stylesheet" href={cssHref} />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)})()`,
