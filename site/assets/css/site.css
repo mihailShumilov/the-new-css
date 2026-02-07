@@ -113,9 +113,20 @@
     display: flex;
   }
 
-  /* Dark mode adjustments */
+  /* Dark mode adjustments — use hardcoded values for elements that
+     should stay dark-on-light regardless of gray token inversion */
   [data-theme="dark"] .code-block {
     background-color: oklch(0.13 0.005 260);
+    color: oklch(0.92 0.004 260);
+  }
+
+  [data-theme="dark"] .copy-btn {
+    background: oklch(0.31 0.012 260);
+    color: oklch(0.79 0.008 260);
+  }
+
+  [data-theme="dark"] .copy-btn:hover {
+    background: oklch(0.45 0.014 260);
   }
 
   [data-theme="dark"] .comparison-table th,

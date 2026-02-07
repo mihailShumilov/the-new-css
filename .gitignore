@@ -1,6 +1,7 @@
 node_modules/
 dist/
 site/the-new-css.min.css
+site/the-new-css.css
 .DS_Store
 *.log
 .cache/
