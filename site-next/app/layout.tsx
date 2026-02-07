@@ -1,0 +1,35 @@
+import type { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'The New CSS - Lightweight Utility-First CSS Library',
+    template: '%s - The New CSS',
+  },
+  description: 'A super lightweight, utility-first CSS library under 5KB gzipped. Modern CSS, no build step required.',
+  icons: {
+    icon: { url: '/assets/images/favicon.svg', type: 'image/svg+xml' },
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="/the-new-css.css" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)})()`,
+          }}
+        />
+      </head>
+      <body className="bg-gray-50 text-gray-900">
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

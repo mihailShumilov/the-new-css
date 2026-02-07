@@ -18,7 +18,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npx sirv-cli site --dev --port 3000',
+    command: 'npm run build:site && cd site-next && npx serve out -l 3000',
     port: 3000,
     reuseExistingServer: !process.env.CI,
   },

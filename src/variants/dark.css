@@ -3,8 +3,8 @@
   :root:not([data-theme="light"]) {
     --color-gray-50: oklch(0.13 0.005 260);
     --color-gray-100: oklch(0.17 0.007 260);
-    --color-gray-200: oklch(0.22 0.009 260);
-    --color-gray-300: oklch(0.31 0.012 260);
+    --color-gray-200: oklch(0.28 0.009 260);
+    --color-gray-300: oklch(0.37 0.012 260);
     --color-gray-400: oklch(0.45 0.014 260);
     --color-gray-500: oklch(0.55 0.014 260);
     --color-gray-600: oklch(0.71 0.01 260);
@@ -19,8 +19,8 @@
 [data-theme="dark"] {
   --color-gray-50: oklch(0.13 0.005 260);
   --color-gray-100: oklch(0.17 0.007 260);
-  --color-gray-200: oklch(0.22 0.009 260);
-  --color-gray-300: oklch(0.31 0.012 260);
+  --color-gray-200: oklch(0.28 0.009 260);
+  --color-gray-300: oklch(0.37 0.012 260);
   --color-gray-400: oklch(0.45 0.014 260);
   --color-gray-500: oklch(0.55 0.014 260);
   --color-gray-600: oklch(0.71 0.01 260);

@@ -104,15 +104,6 @@
     border-bottom: none;
   }
 
-  /* Nav mobile */
-  .mobile-nav {
-    display: none;
-  }
-
-  .mobile-nav.is-open {
-    display: flex;
-  }
-
   /* Dark mode adjustments — use hardcoded values for elements that
      should stay dark-on-light regardless of gray token inversion.
      Duplicated for both manual toggle and auto prefers-color-scheme. */

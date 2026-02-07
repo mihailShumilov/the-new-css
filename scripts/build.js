@@ -38,11 +38,14 @@ try {
   // Core entry may not exist yet
 }
 
-// Copy unminified bundle to site/ for local dev
+// Copy unminified bundle to site/ and site-next/public/ for local dev
 import { cpSync } from 'fs';
 try {
   cpSync(join(dist, 'the-new-css.css'), join(root, 'site', 'the-new-css.css'));
 } catch { /* site dir may not exist */ }
+try {
+  cpSync(join(dist, 'the-new-css.css'), join(root, 'site-next', 'public', 'the-new-css.css'));
+} catch { /* site-next dir may not exist */ }
 
 console.log('Build complete.');
 console.log(`  dist/the-new-css.css      (${(bundled.length / 1024).toFixed(1)} KB)`);
