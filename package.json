@@ -1,6 +1,6 @@
 {
   "name": "the-new-css",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A super lightweight, utility-first CSS library. No build step required.",
   "main": "dist/the-new-css.min.css",
   "files": [
