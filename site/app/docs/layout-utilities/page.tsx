@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Layout',
-  description: 'Layout utilities for The New CSS. Control display, position, overflow, z-index, and visibility with utility classes.',
-};
+export const metadata = docMeta({
+  title: 'Layout Utilities',
+  description: 'CSS layout utility classes for display, position, overflow, z-index, and visibility. Control page structure with The New CSS utility classes.',
+  path: '/docs/layout-utilities',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Layout Utilities',
+  description: 'CSS layout utility classes for display, position, overflow, z-index, and visibility. Control page structure with The New CSS utility classes.',
+  path: '/docs/layout-utilities',
+});
 
 export default function LayoutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Layout</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling display, position, overflow, z-index, and visibility of elements.</p>
 

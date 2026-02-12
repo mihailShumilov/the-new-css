@@ -1,0 +1,29 @@
+name: SEO Audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'scripts/seo-audit.js'
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build CSS + Site
+        run: npm run build:site
+
+      - name: Run SEO audit
+        run: npm run seo:audit

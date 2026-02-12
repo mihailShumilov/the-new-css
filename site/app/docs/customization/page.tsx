@@ -1,15 +1,23 @@
-import type { Metadata } from 'next';
 import React from 'react';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
+export const metadata = docMeta({
   title: 'Customization',
-  description: 'Customize The New CSS by overriding design tokens for colors, spacing, and typography using CSS custom properties.',
-};
+  description: 'Customize The New CSS by overriding design tokens. Change colors, spacing, typography, and more using CSS custom properties on :root.',
+  path: '/docs/customization',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Customization',
+  description: 'Customize The New CSS by overriding design tokens. Change colors, spacing, typography, and more using CSS custom properties on :root.',
+  path: '/docs/customization',
+});
 
 export default function CustomizationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Customization</h1>
 
       <p className="text-gray-600 mb-6">The New CSS is built on CSS custom properties (design tokens). Override them in your own stylesheet to change colors, spacing, typography, and more -- no build step required.</p>

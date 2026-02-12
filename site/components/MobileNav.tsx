@@ -18,8 +18,10 @@ export default function MobileNav() {
       </button>
       {open && (
         <div className="md:hidden flex flex-col gap-2 px-4 pb-4 border-t border-gray-200">
-          <a href="/docs/getting-started" className="block py-2 text-gray-600">Docs</a>
-          <a href="/docs/layout-utilities" className="block py-2 text-gray-600">Utilities</a>
+          <a href="/docs" className="block py-2 text-gray-600">Docs</a>
+          <a href="/examples" className="block py-2 text-gray-600">Examples</a>
+          <a href="/compare" className="block py-2 text-gray-600">Compare</a>
+          <a href="/faq" className="block py-2 text-gray-600">FAQ</a>
           <a href="https://github.com/mihailShumilov/the-new-css" className="block py-2 text-gray-600">GitHub</a>
         </div>
       )}

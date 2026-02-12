@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Grid',
-  description: 'CSS Grid utilities for The New CSS. Control grid columns, column spans, row spans, flow direction, and placement.',
-};
+export const metadata = docMeta({
+  title: 'Grid Utilities',
+  description: 'CSS Grid utility classes for columns, column spans, row spans, flow direction, and placement. Build grid layouts with The New CSS.',
+  path: '/docs/grid',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Grid Utilities',
+  description: 'CSS Grid utility classes for columns, column spans, row spans, flow direction, and placement. Build grid layouts with The New CSS.',
+  path: '/docs/grid',
+});
 
 export default function GridPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Grid</h1>
       <p className="text-gray-600 mb-6">Utilities for creating CSS Grid layouts. Define column templates, span items across columns and rows, and control placement. Use with the <code className="bg-gray-100 px-2 py-1 rounded text-sm">.grid</code> display utility.</p>
 

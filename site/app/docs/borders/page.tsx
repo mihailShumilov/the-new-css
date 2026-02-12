@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Borders',
-  description: 'Border utilities in The New CSS. Border width, style, color, radius, ring, and divide classes.',
-};
+export const metadata = docMeta({
+  title: 'Border Utilities',
+  description: 'Border width, style, color, radius, ring, and divide utility classes for The New CSS. Style element boundaries with utility classes.',
+  path: '/docs/borders',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Border Utilities',
+  description: 'Border width, style, color, radius, ring, and divide utility classes for The New CSS. Style element boundaries with utility classes.',
+  path: '/docs/borders',
+});
 
 export default function BordersPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Borders</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling border width, style, color, radius, ring outlines, and dividers between child elements.</p>
 

@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "project": "The New CSS",
+    "url": "https://thenewcss.dev",
+    "updated": "2026-02-12"
+  },
+  "keywords": [
+    {
+      "keyword": "utility-first CSS library",
+      "intent": "informational/commercial",
+      "difficulty": "medium",
+      "targetPage": "/",
+      "type": "head"
+    },
+    {
+      "keyword": "lightweight CSS framework",
+      "intent": "commercial",
+      "difficulty": "medium",
+      "targetPage": "/",
+      "type": "head"
+    },
+    {
+      "keyword": "Tailwind alternative lightweight",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/compare",
+      "type": "head"
+    },
+    {
+      "keyword": "CSS utilities without build step",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS utility classes small",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "oklch CSS framework",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/colors",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "modern CSS utilities",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/",
+      "type": "head"
+    },
+    {
+      "keyword": "CSS library no build step",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "small CSS framework 2026",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/compare",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS @layer utilities",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/getting-started",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS custom properties framework",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/customization",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS dark mode auto toggle",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/dark-mode",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS container queries utilities",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/responsive",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "Tailwind vs Bootstrap vs alternatives",
+      "intent": "commercial",
+      "difficulty": "medium",
+      "targetPage": "/compare",
+      "type": "head"
+    },
+    {
+      "keyword": "best lightweight CSS framework",
+      "intent": "commercial",
+      "difficulty": "medium",
+      "targetPage": "/compare",
+      "type": "head"
+    },
+    {
+      "keyword": "CSS flexbox utility classes",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/docs/flexbox",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS grid utility classes",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/docs/grid",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS spacing utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/spacing",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "responsive CSS without JavaScript",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/responsive",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "pure CSS utility library",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS design tokens",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/docs/customization",
+      "type": "head"
+    },
+    {
+      "keyword": "oklch color palette CSS",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/colors",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS framework under 5KB",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "minimal CSS framework",
+      "intent": "commercial",
+      "difficulty": "medium",
+      "targetPage": "/",
+      "type": "head"
+    },
+    {
+      "keyword": "no build CSS framework",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS utility first approach",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/docs/getting-started",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "lightweight Tailwind alternative",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/compare",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS border utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/borders",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS shadow utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/effects",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS typography utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/typography",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS width height utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/sizing",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "responsive breakpoints CSS utility",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/responsive",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "prefers-color-scheme CSS framework",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/dark-mode",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS gradient utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/colors",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "Tailwind CSS alternative no build",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/compare",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "simple CSS framework for prototyping",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS opacity blur backdrop utility",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/effects",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS layout display position utilities",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/layout-utilities",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "HTML CSS examples utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/examples",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS card component utility classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/examples",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS hero section example",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/examples",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS pricing table example",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/examples",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "modern CSS features 2026",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS framework comparison 2026",
+      "intent": "commercial",
+      "difficulty": "medium",
+      "targetPage": "/compare",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "Tailwind too large alternative",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/compare",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "drop-in CSS library CDN",
+      "intent": "commercial",
+      "difficulty": "low",
+      "targetPage": "/docs/getting-started",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS padding margin classes",
+      "intent": "informational",
+      "difficulty": "medium",
+      "targetPage": "/docs/spacing",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS flex-1 items-center justify-between",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/flexbox",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS grid-cols responsive",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/grid",
+      "type": "long-tail"
+    },
+    {
+      "keyword": "CSS rounded-lg shadow-md classes",
+      "intent": "informational",
+      "difficulty": "low",
+      "targetPage": "/docs/borders",
+      "type": "long-tail"
+    }
+  ]
+}

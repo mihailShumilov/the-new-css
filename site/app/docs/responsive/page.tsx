@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
+export const metadata = docMeta({
   title: 'Responsive Design',
-  description: 'Learn how to build responsive layouts with The New CSS breakpoint system using sm, md, and lg prefixed utility classes.',
-};
+  description: 'Build responsive layouts with The New CSS breakpoint prefixes. Mobile-first sm, md, and lg variants for display, flex, grid, and more.',
+  path: '/docs/responsive',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Responsive Design',
+  description: 'Build responsive layouts with The New CSS breakpoint prefixes. Mobile-first sm, md, and lg variants for display, flex, grid, and more.',
+  path: '/docs/responsive',
+});
 
 export default function ResponsivePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Responsive Design</h1>
 
       <p className="text-gray-600 mb-6">The New CSS uses a mobile-first breakpoint system. Prefix any supported utility with <code className="bg-gray-100 px-2 py-1 rounded text-sm">sm:</code>, <code className="bg-gray-100 px-2 py-1 rounded text-sm">md:</code>, or <code className="bg-gray-100 px-2 py-1 rounded text-sm">lg:</code> to apply it at that breakpoint and above.</p>

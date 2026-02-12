@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <!-- Logo icon -->
+  <rect x="80" y="180" width="56" height="56" rx="12" fill="#3b82f6"/>
+  <path d="M94 208 L103 199 L103 204 L113 204 L113 199 L122 208 L113 217 L113 212 L103 212 L103 217 Z" fill="white"/>
+  <!-- Title -->
+  <text x="152" y="224" font-family="system-ui,-apple-system,sans-serif" font-size="48" font-weight="800" fill="white">The New CSS</text>
+  <!-- Tagline -->
+  <text x="82" y="300" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">Utility-first CSS library under 5KB gzipped</text>
+  <text x="82" y="345" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">No build step required. Modern CSS features.</text>
+  <!-- Feature pills -->
+  <rect x="82" y="400" width="130" height="40" rx="20" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="147" y="426" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#60a5fa" text-anchor="middle">oklch()</text>
+  <rect x="230" y="400" width="120" height="40" rx="20" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="290" y="426" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#60a5fa" text-anchor="middle">@layer</text>
+  <rect x="368" y="400" width="190" height="40" rx="20" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="463" y="426" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#60a5fa" text-anchor="middle">container queries</text>
+  <rect x="576" y="400" width="150" height="40" rx="20" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="651" y="426" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#60a5fa" text-anchor="middle">dark mode</text>
+  <!-- Size badge -->
+  <rect x="82" y="480" width="120" height="44" rx="22" fill="#064e3b"/>
+  <text x="142" y="508" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#34d399" text-anchor="middle">~5KB gzip</text>
+  <!-- URL -->
+  <text x="82" y="580" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#475569">thenewcss.dev</text>
+</svg>

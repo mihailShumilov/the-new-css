@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Spacing',
-  description: 'Spacing utilities for padding, margin, and space between elements in The New CSS.',
-};
+export const metadata = docMeta({
+  title: 'Spacing Utilities',
+  description: 'Padding, margin, and space-between utility classes for The New CSS. Complete spacing scale from 0 to 24 with consistent design tokens.',
+  path: '/docs/spacing',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Spacing Utilities',
+  description: 'Padding, margin, and space-between utility classes for The New CSS. Complete spacing scale from 0 to 24 with consistent design tokens.',
+  path: '/docs/spacing',
+});
 
 export default function SpacingPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Spacing</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling padding, margin, and space between child elements. All spacing values reference <code className="bg-gray-100 px-2 py-1 rounded text-sm">--spacing-*</code> design tokens.</p>
 

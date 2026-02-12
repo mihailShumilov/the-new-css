@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
+export const metadata = docMeta({
   title: 'Getting Started',
-  description: 'Get started with The New CSS. Install via CDN or npm and start building with utility-first CSS classes.',
-};
+  description: 'Install The New CSS via CDN or npm and learn the basics. Utility-first CSS classes, CSS layers, design tokens, and browser support guide.',
+  path: '/docs/getting-started',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Getting Started',
+  description: 'Install The New CSS via CDN or npm and learn the basics. Utility-first CSS classes, CSS layers, design tokens, and browser support guide.',
+  path: '/docs/getting-started',
+});
 
 export default function GettingStartedPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Getting Started</h1>
 
       <h2 className="text-xl font-semibold mt-8 mb-4">Installation</h2>

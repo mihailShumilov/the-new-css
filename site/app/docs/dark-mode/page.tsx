@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
+export const metadata = docMeta({
   title: 'Dark Mode',
-  description: 'Enable dark mode with The New CSS using automatic OS detection or a manual toggle. Learn the gray token swapping approach.',
-};
+  description: 'Enable automatic and manual dark mode with The New CSS. Gray token swapping approach with OS detection and data-theme toggle support.',
+  path: '/docs/dark-mode',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Dark Mode',
+  description: 'Enable automatic and manual dark mode with The New CSS. Gray token swapping approach with OS detection and data-theme toggle support.',
+  path: '/docs/dark-mode',
+});
 
 export default function DarkModePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Dark Mode</h1>
 
       <p className="text-gray-600 mb-6">The New CSS supports dark mode out of the box using a gray token swapping approach. No extra classes are needed -- your existing <code className="bg-gray-100 px-2 py-1 rounded text-sm">bg-gray-*</code> and <code className="bg-gray-100 px-2 py-1 rounded text-sm">text-gray-*</code> utilities automatically adapt.</p>

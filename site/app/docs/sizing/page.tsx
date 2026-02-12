@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Sizing',
-  description: 'Sizing utilities for width, height, min-width, max-width, min-height, and size in The New CSS.',
-};
+export const metadata = docMeta({
+  title: 'Sizing Utilities',
+  description: 'Width, height, min-width, max-width, and size utility classes for The New CSS. Control element dimensions with responsive utilities.',
+  path: '/docs/sizing',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Sizing Utilities',
+  description: 'Width, height, min-width, max-width, and size utility classes for The New CSS. Control element dimensions with responsive utilities.',
+  path: '/docs/sizing',
+});
 
 export default function SizingPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Sizing</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling the width, height, and overall size of elements.</p>
 

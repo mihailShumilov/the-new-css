@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Effects',
-  description: 'Effect utilities in The New CSS. Opacity, box shadows, blur, and backdrop blur classes.',
-};
+export const metadata = docMeta({
+  title: 'Effect Utilities',
+  description: 'Opacity, box shadow, blur, and backdrop blur utility classes for The New CSS. Add visual depth and effects with simple class names.',
+  path: '/docs/effects',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Effect Utilities',
+  description: 'Opacity, box shadow, blur, and backdrop blur utility classes for The New CSS. Add visual depth and effects with simple class names.',
+  path: '/docs/effects',
+});
 
 export default function EffectsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Effects</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling opacity, box shadows, blur, and backdrop blur filters.</p>
 

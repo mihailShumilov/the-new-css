@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Colors',
-  description: 'Color utilities in The New CSS. Text colors, background colors, and gradient classes.',
-};
+export const metadata = docMeta({
+  title: 'Color Utilities',
+  description: 'Text color, background color, and gradient utility classes using oklch() color space. Perceptually uniform color palettes in The New CSS.',
+  path: '/docs/colors',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Color Utilities',
+  description: 'Text color, background color, and gradient utility classes using oklch() color space. Perceptually uniform color palettes in The New CSS.',
+  path: '/docs/colors',
+});
 
 export default function ColorsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Colors</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling text color, background color, and gradients.</p>
 

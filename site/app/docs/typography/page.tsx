@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Typography',
-  description: 'Typography utilities for font family, size, weight, alignment, line height, letter spacing, and text transforms in The New CSS.',
-};
+export const metadata = docMeta({
+  title: 'Typography Utilities',
+  description: 'Font family, size, weight, alignment, line height, letter spacing, and text transform utility classes for The New CSS framework.',
+  path: '/docs/typography',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Typography Utilities',
+  description: 'Font family, size, weight, alignment, line height, letter spacing, and text transform utility classes for The New CSS framework.',
+  path: '/docs/typography',
+});
 
 export default function TypographyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Typography</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling font family, size, weight, alignment, line height, letter spacing, decoration, transforms, whitespace, and text rendering.</p>
 

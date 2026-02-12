@@ -13,6 +13,19 @@ export const metadata: Metadata = {
   icons: {
     icon: { url: '/assets/images/favicon.svg', type: 'image/svg+xml' },
   },
+  openGraph: {
+    type: 'website',
+    siteName: 'The New CSS',
+    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og.svg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const cssHref =

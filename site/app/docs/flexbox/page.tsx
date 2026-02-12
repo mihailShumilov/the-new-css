@@ -1,14 +1,22 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Flexbox',
-  description: 'Flexbox utilities for The New CSS. Control flex direction, wrapping, alignment, justification, grow, shrink, and gap.',
-};
+export const metadata = docMeta({
+  title: 'Flexbox Utilities',
+  description: 'Flexbox utility classes for direction, wrapping, alignment, justification, grow, shrink, and gap. Build flexible layouts with The New CSS.',
+  path: '/docs/flexbox',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Flexbox Utilities',
+  description: 'Flexbox utility classes for direction, wrapping, alignment, justification, grow, shrink, and gap. Build flexible layouts with The New CSS.',
+  path: '/docs/flexbox',
+});
 
 export default function FlexboxPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="text-3xl font-bold mb-6">Flexbox</h1>
       <p className="text-gray-600 mb-6">Utilities for controlling flex container direction, wrapping, alignment, and child sizing. Use with the <code className="bg-gray-100 px-2 py-1 rounded text-sm">.flex</code> display utility.</p>
 
