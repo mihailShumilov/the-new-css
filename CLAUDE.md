@@ -61,7 +61,7 @@ CSS is organized into four layers, declared in order: `@layer base, utilities, v
 
 ### Documentation Site (`site/`)
 
-Static HTML site served with sirv-cli. Uses the built CSS (`site/the-new-css.min.css`). Contains `index.html`, docs pages, and a donate page.
+Next.js 15 static site (SSG). Uses the library CSS via CDN in production and local unminified copy in dev (`site/public/the-new-css.css`). Built with `npm run build:site`, served from `site/out/`.
 
 ## Size Budget
 

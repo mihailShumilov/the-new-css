@@ -1,11 +1,9 @@
 node_modules/
 dist/
-site/the-new-css.min.css
-site/the-new-css.css
-site-next/.next/
-site-next/out/
-site-next/node_modules/
-site-next/public/the-new-css.css
+site/.next/
+site/out/
+site/node_modules/
+site/public/the-new-css.css
 .DS_Store
 *.log
 .cache/
