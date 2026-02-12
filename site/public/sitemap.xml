@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://thenewcss.dev</loc>
+    <loc>https://thenewcss.com</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs</loc>
+    <loc>https://thenewcss.com/docs</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/examples</loc>
+    <loc>https://thenewcss.com/examples</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/compare</loc>
+    <loc>https://thenewcss.com/compare</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/faq</loc>
+    <loc>https://thenewcss.com/faq</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/getting-started</loc>
+    <loc>https://thenewcss.com/docs/getting-started</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/layout-utilities</loc>
+    <loc>https://thenewcss.com/docs/layout-utilities</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/flexbox</loc>
+    <loc>https://thenewcss.com/docs/flexbox</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/grid</loc>
+    <loc>https://thenewcss.com/docs/grid</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/spacing</loc>
+    <loc>https://thenewcss.com/docs/spacing</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/sizing</loc>
+    <loc>https://thenewcss.com/docs/sizing</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/typography</loc>
+    <loc>https://thenewcss.com/docs/typography</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/colors</loc>
+    <loc>https://thenewcss.com/docs/colors</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/borders</loc>
+    <loc>https://thenewcss.com/docs/borders</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/effects</loc>
+    <loc>https://thenewcss.com/docs/effects</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/responsive</loc>
+    <loc>https://thenewcss.com/docs/responsive</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/dark-mode</loc>
+    <loc>https://thenewcss.com/docs/dark-mode</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thenewcss.dev/docs/customization</loc>
+    <loc>https://thenewcss.com/docs/customization</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

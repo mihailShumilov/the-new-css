@@ -1,7 +1,7 @@
 # SEO Audit Report - The New CSS
 
 **Date:** 2026-02-12
-**Domain:** thenewcss.dev
+**Domain:** thenewcss.com
 **CSS Bundle:** 22.3 KB raw / 5.0 KB gzipped (under 5 KB budget)
 
 ---
@@ -142,7 +142,7 @@ Result: 0 errors, 0 warnings
 ### Week 1: Verify Indexing
 - [ ] Submit sitemap via Google Search Console
 - [ ] Submit sitemap via Bing Webmaster Tools
-- [ ] Verify all 18 pages are indexed with `site:thenewcss.dev`
+- [ ] Verify all 18 pages are indexed with `site:thenewcss.com`
 - [ ] Test structured data with Google Rich Results Test
 
 ### Week 2: Monitor & Fix

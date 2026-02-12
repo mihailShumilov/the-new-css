@@ -32,5 +32,5 @@
   <rect x="82" y="480" width="120" height="44" rx="22" fill="#064e3b"/>
   <text x="142" y="508" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="600" fill="#34d399" text-anchor="middle">~5KB gzip</text>
   <!-- URL -->
-  <text x="82" y="580" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#475569">thenewcss.dev</text>
+  <text x="82" y="580" font-family="system-ui,-apple-system,sans-serif" font-size="20" fill="#475569">thenewcss.com</text>
 </svg>

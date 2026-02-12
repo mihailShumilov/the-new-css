@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const SITE_URL = 'https://thenewcss.dev';
+const SITE_URL = 'https://thenewcss.com';
 const SITE_NAME = 'The New CSS';
 const OG_IMAGE = `${SITE_URL}/og.svg`;
 

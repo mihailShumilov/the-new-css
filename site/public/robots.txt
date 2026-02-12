@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thenewcss.dev/sitemap.xml
+Sitemap: https://thenewcss.com/sitemap.xml

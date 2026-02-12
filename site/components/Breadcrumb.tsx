@@ -37,12 +37,12 @@ export default function Breadcrumb() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thenewcss.dev' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thenewcss.com' },
       ...crumbs.map((c, i) => ({
         '@type': 'ListItem',
         position: i + 2,
         name: c.label,
-        item: `https://thenewcss.dev${c.href}`,
+        item: `https://thenewcss.com${c.href}`,
       })),
     ],
   };

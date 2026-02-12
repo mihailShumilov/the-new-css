@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'oklch CSS',
     'CSS utility classes',
   ],
-  alternates: { canonical: 'https://thenewcss.dev/' },
+  alternates: { canonical: 'https://thenewcss.com/' },
   openGraph: {
     type: 'website',
     title: 'The New CSS - Utility-First CSS Under 5KB',
     description:
       'Lightweight utility-first CSS library. Modern CSS features, familiar class names, zero build step. Drop in a link tag and start building.',
-    url: 'https://thenewcss.dev/',
+    url: 'https://thenewcss.com/',
     siteName: 'The New CSS',
     images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS - Lightweight Utility-First CSS Library' }],
   },
@@ -52,7 +52,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'The New CSS',
-    url: 'https://thenewcss.dev',
+    url: 'https://thenewcss.com',
     description: 'Documentation and resources for The New CSS utility-first CSS library.',
   },
   {
