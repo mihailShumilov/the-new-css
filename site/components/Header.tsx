@@ -12,7 +12,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-6">
           <a href="/docs/getting-started" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Docs</a>
           <a href="/docs/layout-utilities" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Utilities</a>
-          <a href="/donate" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Donate</a>
+          <a href="https://github.com/mihailShumilov/the-new-css" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">GitHub</a>
           <ThemeToggle />
         </div>
         <MobileNav />

@@ -20,7 +20,7 @@ export default function MobileNav() {
         <div className="md:hidden flex flex-col gap-2 px-4 pb-4 border-t border-gray-200">
           <a href="/docs/getting-started" className="block py-2 text-gray-600">Docs</a>
           <a href="/docs/layout-utilities" className="block py-2 text-gray-600">Utilities</a>
-          <a href="/donate" className="block py-2 text-gray-600">Donate</a>
+          <a href="https://github.com/mihailShumilov/the-new-css" className="block py-2 text-gray-600">GitHub</a>
         </div>
       )}
     </>

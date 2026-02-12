@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thenewcss.dev'),
   title: {
     default: 'The New CSS - Lightweight Utility-First CSS Library',
     template: '%s - The New CSS',

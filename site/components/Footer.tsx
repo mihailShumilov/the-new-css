@@ -6,7 +6,6 @@ export default function Footer() {
         <div className="flex gap-6 text-sm text-gray-500">
           <a href="/docs/getting-started" className="hover:text-blue-600 transition-colors">Docs</a>
           <a href="https://github.com/mihailShumilov/the-new-css" className="hover:text-blue-600 transition-colors">GitHub</a>
-          <a href="/donate" className="hover:text-blue-600 transition-colors">Donate</a>
         </div>
       </div>
     </footer>
