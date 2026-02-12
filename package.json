@@ -11,7 +11,7 @@
     "build:modules": "node scripts/build-modules.js",
     "size": "node scripts/size-report.js",
     "dev": "npm run build && cd site && npx next dev --turbopack --port 3000",
-    "build:site": "npm run build && cd site && npx next build",
+    "build:site": "npm run build && cd site && npm ci && npx next build",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
