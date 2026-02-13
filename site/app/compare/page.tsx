@@ -366,7 +366,7 @@ export default function ComparePage() {
 
       <p className="text-gray-600 mt-8 mb-4">
         Ready to try The New CSS?{' '}
-        <a href="/docs/getting-started" className="text-blue-600 font-medium hover:underline">
+        <a href="/docs/getting-started" className="text-blue-600 font-medium underline hover:no-underline">
           Get started in under a minute
         </a>{' '}
         -- no install, no config, just a link tag.

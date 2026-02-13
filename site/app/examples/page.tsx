@@ -203,7 +203,7 @@ export default function ExamplesPage() {
           the source HTML and a live rendered preview so you can see the result right away. Copy the
           code, paste it into your project, and customize to fit your needs. For full details on
           individual utilities, visit the{' '}
-          <a href="/docs/getting-started" className="text-blue-600 hover:underline">documentation</a>.
+          <a href="/docs/getting-started" className="text-blue-600 underline hover:no-underline">documentation</a>.
         </p>
 
         {/* 1. Card Component */}
@@ -211,9 +211,9 @@ export default function ExamplesPage() {
           <h2 className="text-xl font-semibold mb-2">Card Component</h2>
           <p className="text-gray-600 mb-4">
             Cards are one of the most common UI patterns. This example uses{' '}
-            <a href="/docs/spacing" className="text-blue-600 hover:underline">padding</a>,{' '}
-            <a href="/docs/borders" className="text-blue-600 hover:underline">rounded corners</a>, and{' '}
-            <a href="/docs/effects" className="text-blue-600 hover:underline">shadow</a> utilities
+            <a href="/docs/spacing" className="text-blue-600 underline hover:no-underline">padding</a>,{' '}
+            <a href="/docs/borders" className="text-blue-600 underline hover:no-underline">rounded corners</a>, and{' '}
+            <a href="/docs/effects" className="text-blue-600 underline hover:no-underline">shadow</a> utilities
             to create a clean content block suitable for blog posts, product listings, or feature highlights.
           </p>
           <div className="border border-gray-200 rounded-lg p-6 mb-3">
@@ -235,9 +235,9 @@ export default function ExamplesPage() {
           <p className="text-gray-600 mb-4">
             A sticky header that stays at the top of the viewport as the user scrolls.
             Built with{' '}
-            <a href="/docs/flexbox" className="text-blue-600 hover:underline">flexbox</a> utilities
+            <a href="/docs/flexbox" className="text-blue-600 underline hover:no-underline">flexbox</a> utilities
             for alignment and{' '}
-            <a href="/docs/layout-utilities" className="text-blue-600 hover:underline">layout utilities</a>{' '}
+            <a href="/docs/layout-utilities" className="text-blue-600 underline hover:no-underline">layout utilities</a>{' '}
             for sticky positioning. The logo sits on the left while navigation links and a call-to-action
             button align to the right.
           </p>
@@ -263,11 +263,11 @@ export default function ExamplesPage() {
           <p className="text-gray-600 mb-4">
             A centered hero section with a bold headline, descriptive subtext, and two call-to-action buttons.
             This pattern uses{' '}
-            <a href="/docs/typography" className="text-blue-600 hover:underline">typography</a> utilities
+            <a href="/docs/typography" className="text-blue-600 underline hover:no-underline">typography</a> utilities
             for size and weight,{' '}
-            <a href="/docs/spacing" className="text-blue-600 hover:underline">spacing</a> for vertical rhythm,
+            <a href="/docs/spacing" className="text-blue-600 underline hover:no-underline">spacing</a> for vertical rhythm,
             and{' '}
-            <a href="/docs/colors" className="text-blue-600 hover:underline">color</a> utilities for the
+            <a href="/docs/colors" className="text-blue-600 underline hover:no-underline">color</a> utilities for the
             primary button. The layout centers automatically with text-center and mx-auto.
           </p>
           <div className="border border-gray-200 rounded-lg p-6 mb-3">
@@ -290,11 +290,11 @@ export default function ExamplesPage() {
           <h2 className="text-xl font-semibold mb-2">Pricing Table</h2>
           <p className="text-gray-600 mb-4">
             A three-column pricing layout using the{' '}
-            <a href="/docs/grid" className="text-blue-600 hover:underline">grid</a> system with{' '}
-            <a href="/docs/responsive" className="text-blue-600 hover:underline">responsive</a> breakpoints.
+            <a href="/docs/grid" className="text-blue-600 underline hover:no-underline">grid</a> system with{' '}
+            <a href="/docs/responsive" className="text-blue-600 underline hover:no-underline">responsive</a> breakpoints.
             The featured plan stands out with a thicker colored border. Each card uses consistent
             spacing and{' '}
-            <a href="/docs/borders" className="text-blue-600 hover:underline">border</a> utilities to
+            <a href="/docs/borders" className="text-blue-600 underline hover:no-underline">border</a> utilities to
             maintain visual hierarchy.
           </p>
           <div className="border border-gray-200 rounded-lg p-6 mb-3">
@@ -327,9 +327,9 @@ export default function ExamplesPage() {
           <h2 className="text-xl font-semibold mb-2">Responsive Grid Gallery</h2>
           <p className="text-gray-600 mb-4">
             A gallery that adapts from a single column on mobile to two columns at the{' '}
-            <a href="/docs/responsive" className="text-blue-600 hover:underline">sm breakpoint</a> and
+            <a href="/docs/responsive" className="text-blue-600 underline hover:no-underline">sm breakpoint</a> and
             three columns at the lg breakpoint. This is one of the most useful{' '}
-            <a href="/docs/grid" className="text-blue-600 hover:underline">grid</a> patterns
+            <a href="/docs/grid" className="text-blue-600 underline hover:no-underline">grid</a> patterns
             for image galleries, product listings, and portfolio pages. Resize your browser to see
             the layout change.
           </p>
@@ -352,7 +352,7 @@ export default function ExamplesPage() {
           <p className="text-gray-600 mb-4">
             A common application layout with a fixed-width sidebar and a flexible main content area.
             Uses{' '}
-            <a href="/docs/flexbox" className="text-blue-600 hover:underline">flexbox</a> with shrink-0
+            <a href="/docs/flexbox" className="text-blue-600 underline hover:no-underline">flexbox</a> with shrink-0
             on the sidebar so it maintains its width, while flex-1 on the main area lets it fill
             the remaining space. This pattern works well for dashboards, admin panels, and documentation
             sites.
@@ -381,11 +381,11 @@ export default function ExamplesPage() {
           <h2 className="text-xl font-semibold mb-2">Form Layout</h2>
           <p className="text-gray-600 mb-4">
             A clean contact form with labeled inputs, a textarea, and a submit button. Uses{' '}
-            <a href="/docs/sizing" className="text-blue-600 hover:underline">sizing</a> utilities
+            <a href="/docs/sizing" className="text-blue-600 underline hover:no-underline">sizing</a> utilities
             like w-full for full-width inputs,{' '}
-            <a href="/docs/borders" className="text-blue-600 hover:underline">border</a> and rounded-lg
+            <a href="/docs/borders" className="text-blue-600 underline hover:no-underline">border</a> and rounded-lg
             for styled inputs, and{' '}
-            <a href="/docs/spacing" className="text-blue-600 hover:underline">spacing</a> utilities
+            <a href="/docs/spacing" className="text-blue-600 underline hover:no-underline">spacing</a> utilities
             for consistent vertical rhythm between fields.
           </p>
           <div className="border border-gray-200 rounded-lg p-6 mb-3">
@@ -430,9 +430,9 @@ export default function ExamplesPage() {
           <h2 className="text-xl font-semibold mb-2">Footer</h2>
           <p className="text-gray-600 mb-4">
             A multi-column footer using{' '}
-            <a href="/docs/flexbox" className="text-blue-600 hover:underline">flexbox</a> with
+            <a href="/docs/flexbox" className="text-blue-600 underline hover:no-underline">flexbox</a> with
             flex-col on small screens and flex-row at the{' '}
-            <a href="/docs/responsive" className="text-blue-600 hover:underline">sm breakpoint</a>.
+            <a href="/docs/responsive" className="text-blue-600 underline hover:no-underline">sm breakpoint</a>.
             Each column contains a heading and a list of links arranged vertically with flex-col and gap
             utilities. The justify-between class distributes columns evenly across the full width.
           </p>
@@ -480,12 +480,12 @@ export default function ExamplesPage() {
             Explore the documentation to learn about every available class:
           </p>
           <ul className="text-gray-600 space-y-2 mb-6" style={{ listStyle: 'disc', paddingLeft: '1.5rem' }}>
-            <li><a href="/docs/getting-started" className="text-blue-600 hover:underline">Getting Started</a> - Installation and basic concepts</li>
-            <li><a href="/docs/flexbox" className="text-blue-600 hover:underline">Flexbox</a> - Direction, alignment, and sizing</li>
-            <li><a href="/docs/grid" className="text-blue-600 hover:underline">Grid</a> - Column templates and spanning</li>
-            <li><a href="/docs/responsive" className="text-blue-600 hover:underline">Responsive</a> - Breakpoints and mobile-first design</li>
-            <li><a href="/docs/dark-mode" className="text-blue-600 hover:underline">Dark Mode</a> - Automatic and manual theme switching</li>
-            <li><a href="/docs/customization" className="text-blue-600 hover:underline">Customization</a> - Override design tokens to match your brand</li>
+            <li><a href="/docs/getting-started" className="text-blue-600 underline hover:no-underline">Getting Started</a> - Installation and basic concepts</li>
+            <li><a href="/docs/flexbox" className="text-blue-600 underline hover:no-underline">Flexbox</a> - Direction, alignment, and sizing</li>
+            <li><a href="/docs/grid" className="text-blue-600 underline hover:no-underline">Grid</a> - Column templates and spanning</li>
+            <li><a href="/docs/responsive" className="text-blue-600 underline hover:no-underline">Responsive</a> - Breakpoints and mobile-first design</li>
+            <li><a href="/docs/dark-mode" className="text-blue-600 underline hover:no-underline">Dark Mode</a> - Automatic and manual theme switching</li>
+            <li><a href="/docs/customization" className="text-blue-600 underline hover:no-underline">Customization</a> - Override design tokens to match your brand</li>
           </ul>
         </section>
       </div>

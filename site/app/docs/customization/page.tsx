@@ -31,7 +31,7 @@ export default function CustomizationPage() {
       </div>
 
       <h2 className="text-xl font-semibold mt-8 mb-4">Color Tokens</h2>
-      <p className="text-gray-600 mb-4">All colors use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" className="text-blue-600 hover:underline">oklch()</a> color space for perceptual uniformity. Override any token to rebrand your project.</p>
+      <p className="text-gray-600 mb-4">All colors use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" className="text-blue-600 underline hover:no-underline">oklch()</a> color space for perceptual uniformity. Override any token to rebrand your project.</p>
 
       <h3 className="font-semibold mt-6 mb-2">Gray Scale</h3>
       <div className="overflow-x-auto mb-6">

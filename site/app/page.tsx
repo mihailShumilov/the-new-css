@@ -299,10 +299,10 @@ export default function HomePage() {
             </table>
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-6">
-            <a href="/vs-tailwind" className="text-blue-600 font-medium hover:underline text-sm">
+            <a href="/vs-tailwind" className="text-blue-600 font-medium underline hover:no-underline text-sm">
               Tailwind alternative &rarr;
             </a>
-            <a href="/vs-bootstrap" className="text-blue-600 font-medium hover:underline text-sm">
+            <a href="/vs-bootstrap" className="text-blue-600 font-medium underline hover:no-underline text-sm">
               Bootstrap alternative &rarr;
             </a>
           </div>
@@ -362,7 +362,7 @@ export default function HomePage() {
             />
           </div>
           <p className="text-center mt-8">
-            <a href="/examples" className="text-blue-600 font-medium hover:underline">
+            <a href="/examples" className="text-blue-600 font-medium underline hover:no-underline">
               More examples &rarr;
             </a>
           </p>
@@ -380,21 +380,21 @@ export default function HomePage() {
             <a href="/templates/landing" className="group p-6 border border-gray-200 rounded-lg hover:shadow-md transition bg-gray-100" data-event="open_template_landing">
               <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">Landing page</h3>
               <p className="text-sm text-gray-600 mb-3">Hero + features + CTA for product pages.</p>
-              <span className="text-xs text-gray-400">landing, marketing, product</span>
+              <span className="text-xs text-gray-500">landing, marketing, product</span>
             </a>
             <a href="/templates/dashboard" className="group p-6 border border-gray-200 rounded-lg hover:shadow-md transition bg-gray-100" data-event="open_template_dashboard">
               <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">Dashboard</h3>
               <p className="text-sm text-gray-600 mb-3">Nav + cards + tables for admin UIs.</p>
-              <span className="text-xs text-gray-400">dashboard, admin, data</span>
+              <span className="text-xs text-gray-500">dashboard, admin, data</span>
             </a>
             <a href="/templates/blog" className="group p-6 border border-gray-200 rounded-lg hover:shadow-md transition bg-gray-100" data-event="open_template_blog">
               <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">Blog layout</h3>
               <p className="text-sm text-gray-600 mb-3">Typography-first layout for content sites.</p>
-              <span className="text-xs text-gray-400">blog, content, article</span>
+              <span className="text-xs text-gray-500">blog, content, article</span>
             </a>
           </div>
           <p className="text-center mt-6">
-            <a href="/templates" className="text-blue-600 font-medium hover:underline text-sm">
+            <a href="/templates" className="text-blue-600 font-medium underline hover:no-underline text-sm">
               View all templates &rarr;
             </a>
           </p>
@@ -411,9 +411,9 @@ export default function HomePage() {
             That is everything most websites need in a single stylesheet — with no build step.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            If you are looking for a <a href="/minimal-css-framework" className="text-blue-600 hover:underline">minimal CSS framework</a> or
-            a <a href="/lightweight-css-library" className="text-blue-600 hover:underline">lightweight CSS library</a> that respects
-            <a href="/semantic-css" className="text-blue-600 hover:underline"> semantic HTML</a>, The New CSS is built for you.
+            If you are looking for a <a href="/minimal-css-framework" className="text-blue-600 underline hover:no-underline">minimal CSS framework</a> or
+            a <a href="/lightweight-css-library" className="text-blue-600 underline hover:no-underline">lightweight CSS library</a> that respects
+            <a href="/semantic-css" className="text-blue-600 underline hover:no-underline"> semantic HTML</a>, The New CSS is built for you.
           </p>
         </div>
       </section>
@@ -457,7 +457,7 @@ export default function HomePage() {
                   Tailwind is excellent for utility-driven workflows in large applications.
                   The New CSS is for developers who want clean, readable HTML without config files or
                   build pipelines. If your priority is fast adoption and a small footprint, The New CSS
-                  is a better fit. <a href="/vs-tailwind" className="text-blue-600 hover:underline">See the full comparison</a>.
+                  is a better fit. <a href="/vs-tailwind" className="text-blue-600 underline hover:no-underline">See the full comparison</a>.
                 </p>
               </div>
             </details>
@@ -469,7 +469,7 @@ export default function HomePage() {
                   properties on <code className="bg-gray-100 px-1 rounded">:root</code>.
                   Override them in your own stylesheet to match your brand.
                   No config files, no Sass, just CSS.
-                  <a href="/docs/customization" className="text-blue-600 hover:underline ml-1">Read the customization guide</a>.
+                  <a href="/docs/customization" className="text-blue-600 underline hover:no-underline ml-1">Read the customization guide</a>.
                 </p>
               </div>
             </details>

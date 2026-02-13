@@ -160,7 +160,7 @@ function renderAnswer(answer: string) {
     typeof part === 'string' ? (
       <span key={i}>{part}</span>
     ) : (
-      <a key={i} href={part.href} className="text-blue-600 hover:underline">
+      <a key={i} href={part.href} className="text-blue-600 underline hover:no-underline">
         {part.text}
       </a>
     )
@@ -194,7 +194,7 @@ export default function FAQPage() {
           is not listed here, feel free to open an issue on{' '}
           <a
             href="https://github.com/the-new-css/the-new-css/issues"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 underline hover:no-underline"
           >
             GitHub
           </a>

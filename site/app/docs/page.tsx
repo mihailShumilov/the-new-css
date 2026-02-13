@@ -127,7 +127,7 @@ export default function DocsPage() {
       </p>
       <Link
         href="/docs/getting-started"
-        className="inline-flex items-center text-blue-600 font-semibold hover:underline mb-8"
+        className="inline-flex items-center text-blue-600 font-semibold underline hover:no-underline mb-8"
       >
         Read the getting started guide &rarr;
       </Link>

@@ -43,7 +43,7 @@ export default function BlogIndexPage() {
                 </a>
               </h2>
               <p className="text-gray-600 text-sm mb-3">{post.description}</p>
-              <a href={`/blog/${post.slug}`} className="text-blue-600 text-sm font-medium hover:underline">
+              <a href={`/blog/${post.slug}`} className="text-blue-600 text-sm font-medium underline hover:no-underline">
                 Read more &rarr;
               </a>
             </article>

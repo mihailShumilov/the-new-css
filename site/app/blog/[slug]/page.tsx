@@ -129,7 +129,7 @@ function renderInline(text: string): React.ReactNode {
 
     if (first.type === 'link') {
       parts.push(
-        <a key={key++} href={first.match![2]} className="text-blue-600 hover:underline">
+        <a key={key++} href={first.match![2]} className="text-blue-600 underline hover:no-underline">
           {first.match![1]}
         </a>
       );
