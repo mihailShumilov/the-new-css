@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack --port 3000",
+    "prebuild": "cd .. && npm ci && node scripts/build.js",
     "build": "next build",
     "start": "next start"
   },
