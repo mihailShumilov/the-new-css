@@ -3,7 +3,7 @@ import { docMeta } from '@/lib/seo';
 export const metadata = docMeta({
   title: 'FAQ',
   description:
-    'Frequently asked questions about The New CSS utility-first CSS library. Browser support, installation, customization, dark mode, and comparison with other frameworks.',
+    'Frequently asked questions about The New CSS. Browser support, installation, customization, dark mode, and comparison with other frameworks.',
   path: '/faq',
 });
 
@@ -11,7 +11,7 @@ const faqs = [
   {
     question: 'What is The New CSS?',
     answer:
-      'The New CSS is a utility-first CSS library that ships as plain CSS with no build step required. It uses modern CSS features like oklch() colors, @layer, CSS custom properties, and container queries while staying under 5KB gzipped.',
+      'The New CSS is a lightweight CSS base with sensible defaults and utility classes. It ships as plain CSS with no build step required. It uses modern CSS features like oklch() colors, @layer, CSS custom properties, and container queries while staying under 5KB gzipped.',
   },
   {
     question: 'Is The New CSS free to use?',

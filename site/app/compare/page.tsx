@@ -30,10 +30,10 @@ export default function ComparePage() {
       <h2 className="text-2xl font-bold mt-12 mb-4">Overview</h2>
 
       <p className="text-gray-600 mb-4">
-        <strong>The New CSS</strong> is a utility-first CSS library that ships as plain CSS with no
-        build step required. It is built entirely on modern CSS features including oklch() colors,
-        @layer ordering, container queries, and CSS custom properties. The full bundle stays under
-        5KB gzipped.
+        <strong>The New CSS</strong> is a lightweight CSS base with sensible defaults and utility classes
+        that ships as plain CSS with no build step required. It is built entirely on modern CSS features
+        including oklch() colors, @layer ordering, container queries, and CSS custom properties. The full
+        bundle stays under 5KB gzipped.
       </p>
       <p className="text-gray-600 mb-4">
         <strong>Tailwind CSS</strong> is the most widely adopted utility-first framework. It uses a

@@ -7,10 +7,10 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://thenewcss.com'),
   title: {
-    default: 'The New CSS - Lightweight Utility-First CSS Library',
+    default: 'The New CSS - Modern CSS. Clean by default.',
     template: '%s - The New CSS',
   },
-  description: 'A super lightweight, utility-first CSS library under 5KB gzipped. Modern CSS, no build step required.',
+  description: 'A lightweight, zero-config CSS base built for readable HTML and fast adoption. Sensible defaults, no build step, under 5KB gzipped.',
   icons: {
     icon: { url: '/assets/images/favicon.svg', type: 'image/svg+xml' },
   },
