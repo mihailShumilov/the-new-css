@@ -3,8 +3,8 @@ name: Release
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - 'site/**'
+    paths:
+      - 'src/**'
 
 jobs:
   release:
