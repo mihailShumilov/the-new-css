@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import '../styles/the-new-css.css';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -29,22 +30,12 @@ export const metadata: Metadata = {
   },
 };
 
-const cssHref =
-  process.env.NODE_ENV === 'production'
-    ? 'https://unpkg.com/the-new-css/dist/the-new-css.min.css'
-    : '/the-new-css.css';
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#f9fafb" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
-        <link rel="preconnect" href="https://unpkg.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://unpkg.com" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="stylesheet" href={cssHref} />
         <link rel="alternate" type="application/rss+xml" title="The New CSS Blog" href="/rss.xml" />
         <script
           dangerouslySetInnerHTML={{

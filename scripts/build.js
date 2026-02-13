@@ -38,10 +38,14 @@ try {
   // Core entry may not exist yet
 }
 
-// Copy unminified bundle to site/public/ for local dev
+// Copy bundles to site/ for local dev and build
 import { cpSync } from 'fs';
 try {
   cpSync(join(dist, 'the-new-css.css'), join(root, 'site', 'public', 'the-new-css.css'));
+  cpSync(join(dist, 'the-new-css.min.css'), join(root, 'site', 'public', 'the-new-css.min.css'));
+  // Copy unminified to app/styles/ so Next.js can bundle it with other CSS
+  mkdirSync(join(root, 'site', 'styles'), { recursive: true });
+  cpSync(join(dist, 'the-new-css.css'), join(root, 'site', 'styles', 'the-new-css.css'));
 } catch { /* site dir may not exist */ }
 
 console.log('Build complete.');

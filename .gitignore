@@ -4,6 +4,8 @@ site/.next/
 site/out/
 site/node_modules/
 site/public/the-new-css.css
+site/public/the-new-css.min.css
+site/styles/the-new-css.css
 .DS_Store
 *.log
 .cache/
