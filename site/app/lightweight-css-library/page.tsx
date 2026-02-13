@@ -79,24 +79,24 @@ export default function LightweightCssPage() {
             <table className="comparison-table">
               <thead>
                 <tr>
-                  <th>Library</th>
-                  <th>Gzipped size</th>
-                  <th>Build step</th>
+                  <th scope="col">Library</th>
+                  <th scope="col">Gzipped size</th>
+                  <th scope="col">Build step</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-medium">The New CSS</td>
+                  <th scope="row" className="font-medium">The New CSS</th>
                   <td className="text-green-600 font-semibold">~5KB</td>
                   <td className="text-green-600 font-semibold">No</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Bootstrap CSS</td>
+                  <th scope="row" className="font-medium">Bootstrap CSS</th>
                   <td>~23KB</td>
                   <td>No</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Tailwind (purged)</td>
+                  <th scope="row" className="font-medium">Tailwind (purged)</th>
                   <td>~10-30KB+</td>
                   <td>Yes</td>
                 </tr>

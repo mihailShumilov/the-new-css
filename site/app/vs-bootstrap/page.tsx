@@ -74,39 +74,39 @@ export default function VsBootstrapPage() {
             <table className="comparison-table">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>Bootstrap</th>
-                  <th>The New CSS</th>
+                  <th scope="col"></th>
+                  <th scope="col">Bootstrap</th>
+                  <th scope="col">The New CSS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-medium">Build step</td>
+                  <th scope="row" className="font-medium text-left">Build step</th>
                   <td>No</td>
                   <td className="text-green-600 font-semibold">No</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Approach</td>
+                  <th scope="row" className="font-medium text-left">Approach</th>
                   <td>Component-heavy</td>
                   <td className="text-green-600 font-semibold">Baseline + utilities</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Bundle size</td>
+                  <th scope="row" className="font-medium text-left">Bundle size</th>
                   <td>Moderate (~23KB gzipped)</td>
                   <td className="text-green-600 font-semibold">Small (~5KB gzipped)</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">CSS features</td>
+                  <th scope="row" className="font-medium text-left">CSS features</th>
                   <td>Traditional</td>
                   <td className="text-green-600 font-semibold">oklch, @layer, container queries</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Customization</td>
+                  <th scope="row" className="font-medium text-left">Customization</th>
                   <td>Sass / CSS variables</td>
                   <td className="text-green-600 font-semibold">CSS variables only</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">JavaScript required</td>
+                  <th scope="row" className="font-medium text-left">JavaScript required</th>
                   <td>Yes (for interactive components)</td>
                   <td className="text-green-600 font-semibold">No</td>
                 </tr>

@@ -55,27 +55,27 @@ export default function ComparePage() {
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Framework</th>
-              <th>CSS Size (gzipped)</th>
-              <th>JavaScript</th>
-              <th>Total Weight</th>
+              <th scope="col">Framework</th>
+              <th scope="col">CSS Size (gzipped)</th>
+              <th scope="col">JavaScript</th>
+              <th scope="col">Total Weight</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="font-medium">The New CSS</td>
+              <th scope="row" className="font-medium text-left">The New CSS</th>
               <td className="text-green-600 font-semibold">~5KB</td>
               <td>None</td>
               <td className="text-green-600 font-semibold">~5KB</td>
             </tr>
             <tr>
-              <td className="font-medium">Tailwind CSS</td>
+              <th scope="row" className="font-medium text-left">Tailwind CSS</th>
               <td>~30KB+ (varies by usage)</td>
               <td>None</td>
               <td>~30KB+</td>
             </tr>
             <tr>
-              <td className="font-medium">Bootstrap</td>
+              <th scope="row" className="font-medium text-left">Bootstrap</th>
               <td>~23KB CSS</td>
               <td>~16KB JS (optional)</td>
               <td>~39KB (with JS)</td>
@@ -105,27 +105,27 @@ export default function ComparePage() {
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Framework</th>
-              <th>Build Step</th>
-              <th>Configuration</th>
-              <th>Setup Complexity</th>
+              <th scope="col">Framework</th>
+              <th scope="col">Build Step</th>
+              <th scope="col">Configuration</th>
+              <th scope="col">Setup Complexity</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="font-medium">The New CSS</td>
+              <th scope="row" className="font-medium text-left">The New CSS</th>
               <td className="text-green-600 font-semibold">Not required</td>
               <td>None</td>
               <td className="text-green-600 font-semibold">Add a link tag</td>
             </tr>
             <tr>
-              <td className="font-medium">Tailwind CSS</td>
+              <th scope="row" className="font-medium text-left">Tailwind CSS</th>
               <td>Required (PostCSS or CLI)</td>
               <td>tailwind.config.js</td>
               <td>Moderate</td>
             </tr>
             <tr>
-              <td className="font-medium">Bootstrap</td>
+              <th scope="row" className="font-medium text-left">Bootstrap</th>
               <td>Not required for CSS</td>
               <td>Optional Sass setup</td>
               <td>Low (CSS) / Moderate (Sass)</td>
@@ -159,39 +159,39 @@ export default function ComparePage() {
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Feature</th>
-              <th>The New CSS</th>
-              <th>Tailwind CSS</th>
-              <th>Bootstrap</th>
+              <th scope="col">Feature</th>
+              <th scope="col">The New CSS</th>
+              <th scope="col">Tailwind CSS</th>
+              <th scope="col">Bootstrap</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="font-medium">oklch() Colors</td>
+              <th scope="row" className="font-medium text-left">oklch() Colors</th>
               <td className="text-green-600 font-semibold">Native</td>
               <td>Not default (plugin available)</td>
               <td>No</td>
             </tr>
             <tr>
-              <td className="font-medium">@layer</td>
+              <th scope="row" className="font-medium text-left">@layer</th>
               <td className="text-green-600 font-semibold">Yes (base, utilities, variants)</td>
               <td>Yes (since v3.x)</td>
               <td>No</td>
             </tr>
             <tr>
-              <td className="font-medium">Container Queries</td>
+              <th scope="row" className="font-medium text-left">Container Queries</th>
               <td className="text-green-600 font-semibold">Built-in</td>
               <td>Plugin (@tailwindcss/container-queries)</td>
               <td>No</td>
             </tr>
             <tr>
-              <td className="font-medium">CSS Custom Properties</td>
+              <th scope="row" className="font-medium text-left">CSS Custom Properties</th>
               <td className="text-green-600 font-semibold">All tokens</td>
               <td>Theme values</td>
               <td>Partial (since v5)</td>
             </tr>
             <tr>
-              <td className="font-medium">CSS Nesting</td>
+              <th scope="row" className="font-medium text-left">CSS Nesting</th>
               <td className="text-green-600 font-semibold">Used in source</td>
               <td>Generated output is flat</td>
               <td>Sass nesting (compiled out)</td>
@@ -222,24 +222,24 @@ export default function ComparePage() {
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Framework</th>
-              <th>Customization Method</th>
-              <th>Rebuild Required</th>
+              <th scope="col">Framework</th>
+              <th scope="col">Customization Method</th>
+              <th scope="col">Rebuild Required</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="font-medium">The New CSS</td>
+              <th scope="row" className="font-medium text-left">The New CSS</th>
               <td className="text-green-600 font-semibold">Override CSS custom properties</td>
               <td className="text-green-600 font-semibold">No</td>
             </tr>
             <tr>
-              <td className="font-medium">Tailwind CSS</td>
+              <th scope="row" className="font-medium text-left">Tailwind CSS</th>
               <td>tailwind.config.js / theme object</td>
               <td>Yes</td>
             </tr>
             <tr>
-              <td className="font-medium">Bootstrap</td>
+              <th scope="row" className="font-medium text-left">Bootstrap</th>
               <td>Sass variables or CSS custom properties</td>
               <td>Sass changes require rebuild</td>
             </tr>
@@ -273,27 +273,27 @@ export default function ComparePage() {
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Framework</th>
-              <th>Approach</th>
-              <th>Auto-Detection</th>
-              <th>Manual Toggle</th>
+              <th scope="col">Framework</th>
+              <th scope="col">Approach</th>
+              <th scope="col">Auto-Detection</th>
+              <th scope="col">Manual Toggle</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="font-medium">The New CSS</td>
+              <th scope="row" className="font-medium text-left">The New CSS</th>
               <td className="text-green-600 font-semibold">Gray token inversion</td>
               <td className="text-green-600 font-semibold">Yes (prefers-color-scheme)</td>
               <td className="text-green-600 font-semibold">Yes (data-theme attribute)</td>
             </tr>
             <tr>
-              <td className="font-medium">Tailwind CSS</td>
+              <th scope="row" className="font-medium text-left">Tailwind CSS</th>
               <td>dark: variant prefix</td>
               <td>Yes (media or class strategy)</td>
               <td>Yes (class strategy)</td>
             </tr>
             <tr>
-              <td className="font-medium">Bootstrap</td>
+              <th scope="row" className="font-medium text-left">Bootstrap</th>
               <td>data-bs-theme attribute</td>
               <td>No (manual only by default)</td>
               <td>Yes (data-bs-theme)</td>

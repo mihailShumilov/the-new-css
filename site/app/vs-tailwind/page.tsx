@@ -75,39 +75,39 @@ export default function VsTailwindPage() {
             <table className="comparison-table">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>Tailwind</th>
-                  <th>The New CSS</th>
+                  <th scope="col"></th>
+                  <th scope="col">Tailwind</th>
+                  <th scope="col">The New CSS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-medium">Build step</td>
+                  <th scope="row" className="font-medium text-left">Build step</th>
                   <td>Usually yes</td>
                   <td className="text-green-600 font-semibold">No</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">HTML readability</td>
+                  <th scope="row" className="font-medium text-left">HTML readability</th>
                   <td>Low (utility-heavy)</td>
                   <td className="text-green-600 font-semibold">High (semantic-first)</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Bundle size mindset</td>
+                  <th scope="row" className="font-medium text-left">Bundle size mindset</th>
                   <td>Depends on build</td>
                   <td className="text-green-600 font-semibold">Small by default</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Customization</td>
+                  <th scope="row" className="font-medium text-left">Customization</th>
                   <td>Config-driven</td>
                   <td className="text-green-600 font-semibold">CSS variables + real CSS</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Learning curve</td>
+                  <th scope="row" className="font-medium text-left">Learning curve</th>
                   <td>Medium</td>
                   <td className="text-green-600 font-semibold">Low</td>
                 </tr>
                 <tr>
-                  <td className="font-medium">Best for</td>
+                  <th scope="row" className="font-medium text-left">Best for</th>
                   <td>Apps with utility workflows</td>
                   <td className="text-green-600 font-semibold">Clean baselines + fast sites</td>
                 </tr>

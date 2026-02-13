@@ -42,6 +42,12 @@
     background: var(--color-gray-600);
   }
 
+  .copy-btn:focus-visible {
+    opacity: 1;
+    outline: 2px solid var(--color-blue-500);
+    outline-offset: 2px;
+  }
+
   /* Feature cards */
   .feature-icon {
     width: 3rem;
@@ -90,10 +96,16 @@
     border-bottom: 1px solid var(--color-gray-200);
   }
 
-  .comparison-table th {
+  .comparison-table thead th {
     background: var(--color-gray-50);
     font-weight: var(--font-semibold);
     font-size: var(--text-sm);
+  }
+
+  .comparison-table tbody th {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    background: transparent;
   }
 
   .comparison-table td {
@@ -128,7 +140,7 @@
     border-color: oklch(0.31 0.012 260);
   }
 
-  [data-theme="dark"] .comparison-table th {
+  [data-theme="dark"] .comparison-table thead th {
     background: oklch(0.17 0.007 260);
   }
 
@@ -171,7 +183,7 @@
       border-color: oklch(0.31 0.012 260);
     }
 
-    :root:not([data-theme="light"]) .comparison-table th {
+    :root:not([data-theme="light"]) .comparison-table thead th {
       background: oklch(0.17 0.007 260);
     }
 

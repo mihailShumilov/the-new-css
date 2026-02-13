@@ -17,8 +17,8 @@
   <!-- Title -->
   <text x="152" y="224" font-family="system-ui,-apple-system,sans-serif" font-size="48" font-weight="800" fill="white">The New CSS</text>
   <!-- Tagline -->
-  <text x="82" y="300" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">Utility-first CSS library under 5KB gzipped</text>
-  <text x="82" y="345" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">No build step required. Modern CSS features.</text>
+  <text x="82" y="300" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">Modern CSS. Clean by default. Under 5KB gzipped.</text>
+  <text x="82" y="345" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="#94a3b8">Sensible defaults, zero config, no build step.</text>
   <!-- Feature pills -->
   <rect x="82" y="400" width="130" height="40" rx="20" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
   <text x="147" y="426" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#60a5fa" text-anchor="middle">oklch()</text>
