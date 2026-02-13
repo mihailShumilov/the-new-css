@@ -39,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="stylesheet" href={cssHref} />
+        <link rel="alternate" type="application/rss+xml" title="The New CSS Blog" href="/rss.xml" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)})()`,
@@ -54,7 +55,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-NRX9LRG31V');`}
+gtag('config', 'G-NRX9LRG31V');
+document.addEventListener('click', function(e) {
+  var el = e.target.closest('[data-event]');
+  if (el) gtag('event', el.getAttribute('data-event'));
+});`}
         </Script>
         <Header />
         {children}

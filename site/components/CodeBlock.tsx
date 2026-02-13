@@ -2,15 +2,18 @@
 
 import { useState, useCallback, type ReactNode } from 'react';
 
-export default function CodeBlock({ code, children }: { code: string; children: ReactNode }) {
+export default function CodeBlock({ code, children, eventName }: { code: string; children: ReactNode; eventName?: string }) {
   const [copied, setCopied] = useState(false);
 
   const copy = useCallback(() => {
     navigator.clipboard.writeText(code).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
+      if (eventName && typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+        (window as any).gtag('event', eventName);
+      }
     });
-  }, [code]);
+  }, [code, eventName]);
 
   return (
     <div className="code-block">

@@ -12,6 +12,8 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-6">
           <a href="/docs" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Docs</a>
           <a href="/examples" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Examples</a>
+          <a href="/templates" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Templates</a>
+          <a href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Blog</a>
           <a href="/compare" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Compare</a>
           <a href="https://github.com/mihailShumilov/the-new-css" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">GitHub</a>
           <ThemeToggle />
