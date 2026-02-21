@@ -123,6 +123,43 @@ Ready-to-use HTML templates built with The New CSS:
 
 Each template is plain HTML + The New CSS. Copy the code and customize with CSS variables.
 
+## Official Addons
+
+Extend The New CSS with standalone addon packages. Each addon is plain CSS, uses the same design tokens, and requires no build step.
+
+| Package | Description | Size |
+|---------|-------------|------|
+| [@thenewcss/buttons](https://www.npmjs.com/package/@thenewcss/buttons) | Buttons with sizes, colors, outline/ghost/link styles, loading states, and groups | ~3KB |
+| [@thenewcss/badges](https://www.npmjs.com/package/@thenewcss/badges) | Badges, tags, and status indicators with color variants and dot styles | ~2KB |
+| [@thenewcss/cards](https://www.npmjs.com/package/@thenewcss/cards) | Cards with header/body/footer, hover effects, horizontal layout, and compact mode | ~2KB |
+| [@thenewcss/tables](https://www.npmjs.com/package/@thenewcss/tables) | Styled tables with striped rows, hover, bordered, responsive, and cell utilities | ~2KB |
+| [@thenewcss/colors-extended](https://www.npmjs.com/package/@thenewcss/colors-extended) | 13 additional color palettes with full shade ranges and utility classes | ~15KB |
+| [@thenewcss/typography-extended](https://www.npmjs.com/package/@thenewcss/typography-extended) | Display sizes (5xl–9xl), gradient text, prose formatting, and text-pretty | ~5KB |
+
+Install any addon via npm or CDN:
+
+```bash
+npm install @thenewcss/buttons @thenewcss/cards
+```
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@thenewcss/buttons/dist/index.min.css">
+```
+
+```html
+<button class="btn btn-primary">Save</button>
+<button class="btn btn-outline btn-danger">Delete</button>
+
+<div class="card card-hover">
+  <div class="card-body">
+    <h3>Feature</h3>
+    <p>Card content here.</p>
+  </div>
+</div>
+```
+
+Browse all addons at [thenewcss.com/addons](https://thenewcss.com/addons).
+
 ## Customization
 
 All design tokens are CSS custom properties. Override them in your own stylesheet:
@@ -174,6 +211,7 @@ npm run dev        # Serve docs site on localhost:3000
 
 - **Website:** [thenewcss.com](https://thenewcss.com)
 - **Docs:** [thenewcss.com/docs](https://thenewcss.com/docs)
+- **Addons:** [thenewcss.com/addons](https://thenewcss.com/addons)
 - **Blog:** [thenewcss.com/blog](https://thenewcss.com/blog)
 - **Templates:** [thenewcss.com/templates](https://thenewcss.com/templates)
 - **npm:** [npmjs.com/package/the-new-css](https://www.npmjs.com/package/the-new-css)
