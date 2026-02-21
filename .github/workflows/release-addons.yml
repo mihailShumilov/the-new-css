@@ -5,11 +5,14 @@ on:
     branches: [main]
     paths:
       - 'addons/**'
+  workflow_dispatch:
 
 jobs:
   detect-changes:
     # Skip commits pushed by this workflow (version bumps)
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      !contains(github.event.head_commit.message, '[skip ci]')
     runs-on: ubuntu-latest
     outputs:
       addons: ${{ steps.changed.outputs.addons }}
@@ -22,11 +25,16 @@ jobs:
       - name: Detect changed addons
         id: changed
         run: |
-          # Get list of addon directories that have changes in this push
-          CHANGED_ADDONS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- addons/ \
-            | cut -d/ -f2 \
-            | sort -u \
-            | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger: release all addons
+            CHANGED_ADDONS=$(ls -d addons/*/ | xargs -n1 basename | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          else
+            # Push trigger: only release addons with changes
+            CHANGED_ADDONS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- addons/ \
+              | cut -d/ -f2 \
+              | sort -u \
+              | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          fi
           echo "addons=$CHANGED_ADDONS" >> "$GITHUB_OUTPUT"
           echo "Changed addons: $CHANGED_ADDONS"
 
