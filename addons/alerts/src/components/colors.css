@@ -1,0 +1,25 @@
+@layer utilities {
+  .alert-info {
+    background-color: var(--color-blue-50, oklch(0.97 0.014 260));
+    color: var(--color-blue-800, oklch(0.35 0.15 260));
+    border-color: var(--color-blue-200, oklch(0.87 0.06 260));
+  }
+
+  .alert-success {
+    background-color: var(--color-green-50, oklch(0.97 0.014 155));
+    color: var(--color-green-800, oklch(0.35 0.1 155));
+    border-color: var(--color-green-200, oklch(0.87 0.06 155));
+  }
+
+  .alert-warning {
+    background-color: var(--color-yellow-50, oklch(0.98 0.014 65));
+    color: var(--color-yellow-800, oklch(0.52 0.12 65));
+    border-color: var(--color-yellow-200, oklch(0.87 0.06 65));
+  }
+
+  .alert-danger {
+    background-color: var(--color-red-50, oklch(0.97 0.014 25));
+    color: var(--color-red-800, oklch(0.4 0.16 25));
+    border-color: var(--color-red-200, oklch(0.87 0.06 25));
+  }
+}

@@ -1,0 +1,12 @@
+@layer utilities {
+  .alert {
+    padding: var(--spacing-4, 1rem);
+    margin-bottom: var(--spacing-4, 1rem);
+    border: 1px solid var(--color-blue-200, oklch(0.87 0.06 260));
+    border-radius: var(--radius-md, 0.375rem);
+    font-size: var(--text-sm, 0.875rem);
+    line-height: 1.5;
+    background-color: var(--color-blue-50, oklch(0.97 0.014 260));
+    color: var(--color-blue-800, oklch(0.35 0.15 260));
+  }
+}

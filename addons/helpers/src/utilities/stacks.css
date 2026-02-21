@@ -1,0 +1,17 @@
+@layer utilities {
+  .vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-self: stretch;
+    gap: var(--spacing-2, 0.5rem);
+  }
+
+  .hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    gap: var(--spacing-2, 0.5rem);
+  }
+}

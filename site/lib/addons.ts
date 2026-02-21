@@ -76,6 +76,94 @@ export const addons: Addon[] = [
     classes: ['.text-5xl', '.text-9xl', '.text-gradient', '.prose', '.text-pretty'],
     category: 'utilities',
   },
+  {
+    slug: 'forms',
+    name: 'Forms',
+    npmName: '@thenewcss/forms',
+    description:
+      'Styled form controls with custom inputs, selects, checkboxes, radios, switches, range sliders, input groups, floating labels, validation states, and size variants.',
+    shortDescription: 'Styled inputs, selects, checkboxes, and validation',
+    size: '~4KB',
+    classes: ['.form-control', '.form-select', '.form-check', '.form-switch', '.input-group', '.form-floating'],
+    category: 'components',
+  },
+  {
+    slug: 'alerts',
+    name: 'Alerts',
+    npmName: '@thenewcss/alerts',
+    description:
+      'Alert boxes with info, success, warning, and danger color variants. Includes a reusable close button and dismissible alert pattern.',
+    shortDescription: 'Alert boxes with color variants and close button',
+    size: '~2KB',
+    classes: ['.alert', '.alert-info', '.alert-success', '.alert-warning', '.alert-danger', '.btn-close'],
+    category: 'components',
+  },
+  {
+    slug: 'navigation',
+    name: 'Navigation',
+    npmName: '@thenewcss/navigation',
+    description:
+      'Navbar, nav tabs, nav pills, breadcrumbs, and pagination in one package. CSS-only mobile toggle using details/summary.',
+    shortDescription: 'Navbar, tabs, pills, breadcrumbs, and pagination',
+    size: '~4KB',
+    classes: ['.navbar', '.nav-tabs', '.nav-pills', '.breadcrumb', '.pagination', '.page-link'],
+    category: 'components',
+  },
+  {
+    slug: 'list-group',
+    name: 'List Group',
+    npmName: '@thenewcss/list-group',
+    description:
+      'List group component with actionable items, flush variant, numbered lists, and color variants for primary, success, warning, and danger states.',
+    shortDescription: 'List groups with actions and color variants',
+    size: '~2KB',
+    classes: ['.list-group', '.list-group-item', '.list-group-item-action', '.list-group-flush', '.list-group-numbered'],
+    category: 'components',
+  },
+  {
+    slug: 'progress',
+    name: 'Progress',
+    npmName: '@thenewcss/progress',
+    description:
+      'Progress bars with striped and animated variants, border and grow spinners, and placeholder skeleton loaders with glow and wave animations.',
+    shortDescription: 'Progress bars, spinners, and skeleton loaders',
+    size: '~3KB',
+    classes: ['.progress-bar', '.progress-bar-striped', '.spinner-border', '.spinner-grow', '.placeholder', '.placeholder-wave'],
+    category: 'components',
+  },
+  {
+    slug: 'accordion',
+    name: 'Accordion',
+    npmName: '@thenewcss/accordion',
+    description:
+      'CSS-only accordion using native details/summary elements. Custom chevron indicator, smooth transitions, flush variant, and exclusive mode via HTML name attribute.',
+    shortDescription: 'CSS-only collapsible accordion panels',
+    size: '~2KB',
+    classes: ['.accordion', '.accordion-item', '.accordion-header', '.accordion-body', '.accordion-flush'],
+    category: 'components',
+  },
+  {
+    slug: 'modal',
+    name: 'Modal',
+    npmName: '@thenewcss/modal',
+    description:
+      'Modal dialogs and offcanvas panels using native dialog element. Built-in backdrop, focus trap, Escape key, and size variants including fullscreen.',
+    shortDescription: 'Modal dialogs and offcanvas slide-in panels',
+    size: '~3KB',
+    classes: ['.modal', '.modal-header', '.modal-body', '.modal-footer', '.offcanvas', '.offcanvas-start'],
+    category: 'components',
+  },
+  {
+    slug: 'helpers',
+    name: 'Helpers',
+    npmName: '@thenewcss/helpers',
+    description:
+      'Miscellaneous utility helpers including clearfix, aspect ratios, stacks, stretched link, vertical rule, focus ring, object-fit, float, and vertical alignment.',
+    shortDescription: 'Clearfix, ratios, stacks, object-fit, and more',
+    size: '~2KB',
+    classes: ['.ratio-16x9', '.vstack', '.hstack', '.stretched-link', '.object-cover', '.focus-ring'],
+    category: 'utilities',
+  },
 ];
 
 export function getAddon(slug: string): Addon | undefined {

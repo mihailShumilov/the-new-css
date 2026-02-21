@@ -1,0 +1,6 @@
+@layer utilities {
+  .focus-ring:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem oklch(0.52 0.2 260 / 0.25);
+  }
+}

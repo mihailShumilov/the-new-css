@@ -1,0 +1,87 @@
+@layer utilities {
+  .form-control.is-valid {
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .form-control.is-valid:focus {
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+    box-shadow: 0 0 0 3px var(--color-green-100, oklch(0.94 0.03 155));
+  }
+
+  .form-control.is-invalid {
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .form-control.is-invalid:focus {
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+    box-shadow: 0 0 0 3px var(--color-red-100, oklch(0.94 0.03 25));
+  }
+
+  .form-select.is-valid {
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .form-select.is-valid:focus {
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+    box-shadow: 0 0 0 3px var(--color-green-100, oklch(0.94 0.03 155));
+  }
+
+  .form-select.is-invalid {
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .form-select.is-invalid:focus {
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+    box-shadow: 0 0 0 3px var(--color-red-100, oklch(0.94 0.03 25));
+  }
+
+  .form-check-input.is-valid {
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .form-check-input.is-valid:checked {
+    background-color: var(--color-green-600, oklch(0.52 0.14 155));
+    border-color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .form-check-input.is-valid:focus {
+    box-shadow: 0 0 0 3px var(--color-green-100, oklch(0.94 0.03 155));
+  }
+
+  .form-check-input.is-invalid {
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .form-check-input.is-invalid:checked {
+    background-color: var(--color-red-600, oklch(0.55 0.22 25));
+    border-color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .form-check-input.is-invalid:focus {
+    box-shadow: 0 0 0 3px var(--color-red-100, oklch(0.94 0.03 25));
+  }
+
+  .valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: var(--spacing-1, 0.25rem);
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: var(--spacing-1, 0.25rem);
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .is-valid ~ .valid-feedback {
+    display: block;
+  }
+
+  .is-invalid ~ .invalid-feedback {
+    display: block;
+  }
+}

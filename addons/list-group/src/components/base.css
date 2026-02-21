@@ -1,0 +1,77 @@
+@layer utilities {
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: var(--radius-lg, 0.5rem);
+    overflow: hidden;
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: var(--color-gray-800, oklch(0.27 0.01 260));
+    background-color: var(--color-white, oklch(1 0 0));
+    border-bottom: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+
+  .list-group-item:last-child {
+    border-bottom: 0;
+  }
+
+  .list-group-item-action {
+    cursor: pointer;
+    transition: background-color var(--duration-150, 150ms) var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .list-group-item-action:hover {
+    background-color: var(--color-gray-50, oklch(0.985 0.002 260));
+  }
+
+  .list-group-item.active {
+    background-color: var(--color-blue-600, oklch(0.52 0.2 260));
+    color: var(--color-white, oklch(1 0 0));
+    border-color: var(--color-blue-600, oklch(0.52 0.2 260));
+  }
+
+  .list-group-item.disabled {
+    color: var(--color-gray-400, oklch(0.71 0.01 260));
+    pointer-events: none;
+    background-color: var(--color-gray-50, oklch(0.985 0.002 260));
+  }
+
+  .list-group-flush {
+    border-radius: 0;
+  }
+
+  .list-group-flush .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+
+  .list-group-flush .list-group-item:first-child {
+    border-top: 0;
+  }
+
+  .list-group-flush .list-group-item:last-child {
+    border-bottom: 0;
+  }
+
+  .list-group-numbered {
+    list-style: none;
+    counter-reset: list-group;
+  }
+
+  .list-group-numbered .list-group-item {
+    counter-increment: list-group;
+  }
+
+  .list-group-numbered .list-group-item::before {
+    content: counter(list-group) ". ";
+    padding-right: var(--spacing-2, 0.5rem);
+    font-weight: var(--font-semibold, 600);
+  }
+}

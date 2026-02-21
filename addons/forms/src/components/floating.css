@@ -1,0 +1,56 @@
+@layer utilities {
+  .form-floating {
+    position: relative;
+  }
+
+  .form-floating > .form-control,
+  .form-floating > .form-select {
+    height: 3.5rem;
+    padding: 1.625rem var(--spacing-3, 0.75rem) 0.625rem;
+    line-height: 1.25;
+  }
+
+  .form-floating > .form-control::placeholder {
+    color: transparent;
+  }
+
+  .form-floating > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem var(--spacing-3, 0.75rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    color: var(--color-gray-500, oklch(0.55 0.014 260));
+    font-size: var(--text-base, 1rem);
+    transform-origin: 0 0;
+    transition-property: opacity, transform, color;
+    transition-duration: var(--duration-150, 150ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+    border: 1px solid transparent;
+  }
+
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label,
+  .form-floating > .form-select ~ label {
+    color: var(--color-blue-600, oklch(0.52 0.2 260));
+    transform: scale(0.75) translateY(-0.5rem);
+  }
+
+  .form-floating > .form-control:focus ~ label {
+    color: var(--color-blue-600, oklch(0.52 0.2 260));
+  }
+
+  .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: var(--color-gray-500, oklch(0.55 0.014 260));
+  }
+
+  .form-floating > textarea.form-control {
+    height: auto;
+    min-height: 3.5rem;
+  }
+}

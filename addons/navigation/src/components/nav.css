@@ -1,0 +1,33 @@
+@layer utilities {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+    color: var(--color-gray-600, oklch(0.45 0.014 260));
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: var(--duration-150, 150ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .nav-link:hover {
+    color: var(--color-blue-600, oklch(0.52 0.2 260));
+  }
+
+  .nav-link.active {
+    color: var(--color-blue-600, oklch(0.52 0.2 260));
+    font-weight: var(--font-semibold, 600);
+  }
+
+  .nav-link.disabled {
+    color: var(--color-gray-400, oklch(0.7 0.009 260));
+    pointer-events: none;
+  }
+}

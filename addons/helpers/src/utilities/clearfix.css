@@ -1,0 +1,7 @@
+@layer utilities {
+  .clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
