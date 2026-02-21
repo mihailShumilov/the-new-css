@@ -1,15 +1,10 @@
-import { describe, it, expect, beforeAll } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { gzipSizeSync } from 'gzip-size';
-import { execSync } from 'child_process';
 
 const root = join(import.meta.dirname, '..', '..', '..');
 const addonDist = join(root, 'addons', 'buttons', 'dist');
-
-beforeAll(() => {
-  execSync('node scripts/build-addons.js', { cwd: root });
-});
 
 describe('@thenewcss/buttons', () => {
   it('produces dist/index.css', () => {
