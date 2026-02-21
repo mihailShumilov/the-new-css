@@ -1,14 +1,21 @@
 {
   "name": "@thenewcss/tables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Table components for the-new-css",
   "main": "dist/index.min.css",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mihailShumilov/the-new-css",
     "directory": "addons/tables"
   },
-  "keywords": ["css", "tables", "components", "the-new-css"]
+  "keywords": [
+    "css",
+    "tables",
+    "components",
+    "the-new-css"
+  ]
 }
