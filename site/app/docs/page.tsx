@@ -3,7 +3,7 @@ import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import { addons } from '@/lib/addons';
 
 export const metadata = docMeta({
-  title: 'Documentation',
+  title: 'Documentation - Utility Reference and Guides',
   description:
     'Complete documentation for The New CSS utility-first CSS library. Installation guide, utility class reference, responsive design, dark mode, and customization.',
   path: '/docs',

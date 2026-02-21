@@ -3,7 +3,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Typography Extended',
+  title: 'Typography Extended Addon - Display and Prose',
   description:
     'Extended typography addon for The New CSS. Display sizes 5xl-9xl, gradient text, prose auto-styling, and text-pretty utilities.',
   path: '/addons/typography-extended',

@@ -1,9 +1,9 @@
 import { docMeta } from '@/lib/seo';
 
 export const metadata = docMeta({
-  title: 'FAQ',
+  title: 'Frequently Asked Questions',
   description:
-    'Frequently asked questions about The New CSS. Browser support, installation, customization, dark mode, and comparison with other frameworks.',
+    'Frequently asked questions about The New CSS. Browser support, installation, customization, dark mode, and comparison with other CSS frameworks.',
   path: '/faq',
 });
 

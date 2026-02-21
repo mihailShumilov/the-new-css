@@ -1,29 +1,24 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Minimal CSS framework for fast, clean websites',
+export const metadata = docMeta({
+  title: 'Minimal CSS Framework for Fast, Clean Websites',
   description:
-    'A minimal CSS framework with modern defaults. Ship less CSS, load faster, and keep your HTML readable.',
-  alternates: { canonical: 'https://thenewcss.com/minimal-css-framework' },
-  openGraph: {
-    type: 'article',
-    title: 'Minimal CSS framework for fast, clean websites | The New CSS',
-    description: 'A minimal CSS framework with modern defaults for performance and maintainability.',
-    url: 'https://thenewcss.com/minimal-css-framework',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Minimal CSS framework | The New CSS',
-    description: 'Ship less CSS, load faster, and keep your HTML readable.',
-    images: ['/og.svg'],
-  },
-};
+    'A minimal CSS framework with modern defaults. Ship less CSS, load faster, and keep your HTML readable. Under 5KB gzipped with no build step or configuration required.',
+  path: '/minimal-css-framework',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Minimal CSS Framework for Fast, Clean Websites',
+  description:
+    'A minimal CSS framework with modern defaults. Ship less CSS, load faster, and keep your HTML readable. Under 5KB gzipped with no build step or configuration required.',
+  path: '/minimal-css-framework',
+});
 
 export default function MinimalCssFrameworkPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
@@ -107,5 +102,6 @@ export default function MinimalCssFrameworkPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

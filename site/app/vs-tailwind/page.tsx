@@ -1,30 +1,24 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Tailwind alternative: semantic, zero-config CSS',
+export const metadata = docMeta({
+  title: 'Tailwind Alternative - Semantic, Zero-Config CSS',
   description:
-    'A lightweight Tailwind alternative focused on semantic HTML, zero build steps, and modern CSS defaults.',
-  alternates: { canonical: 'https://thenewcss.com/vs-tailwind' },
-  openGraph: {
-    type: 'article',
-    title: 'Tailwind alternative: semantic, zero-config CSS | The New CSS',
-    description:
-      'A lightweight Tailwind alternative focused on semantic HTML, zero build steps, and modern CSS defaults.',
-    url: 'https://thenewcss.com/vs-tailwind',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Tailwind alternative: semantic, zero-config CSS | The New CSS',
-    description: 'A lightweight Tailwind alternative focused on semantic HTML and zero build steps.',
-    images: ['/og.svg'],
-  },
-};
+    'A lightweight Tailwind CSS alternative focused on semantic HTML, zero build steps, and modern CSS defaults. Under 5KB gzipped with no configuration required.',
+  path: '/vs-tailwind',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Tailwind Alternative - Semantic, Zero-Config CSS',
+  description:
+    'A lightweight Tailwind CSS alternative focused on semantic HTML, zero build steps, and modern CSS defaults. Under 5KB gzipped with no configuration required.',
+  path: '/vs-tailwind',
+});
 
 export default function VsTailwindPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
@@ -139,5 +133,6 @@ export default function VsTailwindPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

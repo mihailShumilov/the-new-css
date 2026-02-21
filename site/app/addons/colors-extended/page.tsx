@@ -4,7 +4,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Colors Extended',
+  title: 'Colors Extended Addon - 13 Palettes',
   description:
     'Extended color palettes for The New CSS. 13 additional oklch color palettes with text, background, border, gradient, hover, and dark mode utilities.',
   path: '/addons/colors-extended',

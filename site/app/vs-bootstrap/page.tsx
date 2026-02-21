@@ -1,29 +1,24 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Bootstrap alternative: modern, lightweight CSS',
+export const metadata = docMeta({
+  title: 'Bootstrap Alternative - Modern, Lightweight CSS',
   description:
-    'A lightweight Bootstrap alternative for modern styling. Less component-heavy, more baseline, and built on modern CSS features.',
-  alternates: { canonical: 'https://thenewcss.com/vs-bootstrap' },
-  openGraph: {
-    type: 'article',
-    title: 'Bootstrap alternative: modern, lightweight CSS | The New CSS',
-    description: 'A lightweight Bootstrap alternative for modern styling with zero build steps.',
-    url: 'https://thenewcss.com/vs-bootstrap',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Bootstrap alternative: modern, lightweight CSS | The New CSS',
-    description: 'A lightweight Bootstrap alternative for modern styling.',
-    images: ['/og.svg'],
-  },
-};
+    'A lightweight Bootstrap alternative for modern styling. No JavaScript dependencies, under 5KB gzipped, built on oklch colors, @layer, and CSS custom properties.',
+  path: '/vs-bootstrap',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Bootstrap Alternative - Modern, Lightweight CSS',
+  description:
+    'A lightweight Bootstrap alternative for modern styling. No JavaScript dependencies, under 5KB gzipped, built on oklch colors, @layer, and CSS custom properties.',
+  path: '/vs-bootstrap',
+});
 
 export default function VsBootstrapPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
@@ -138,5 +133,6 @@ export default function VsBootstrapPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

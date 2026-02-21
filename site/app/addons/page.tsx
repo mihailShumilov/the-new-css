@@ -5,7 +5,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Addons',
+  title: 'Official Addons - Components and Utilities',
   description:
     'Official addon packages for The New CSS. Buttons, badges, cards, tables, extended colors, and typography. Install individually via npm or CDN.',
   path: '/addons',

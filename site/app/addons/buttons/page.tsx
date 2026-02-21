@@ -3,7 +3,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Buttons',
+  title: 'Buttons Addon - Sizes, Colors, and States',
   description:
     'A complete button component system for The New CSS. Sizes, colors, outline/ghost/link styles, loading states, button groups, and icon buttons.',
   path: '/addons/buttons',

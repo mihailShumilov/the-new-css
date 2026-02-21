@@ -1,29 +1,24 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Lightweight CSS library with modern defaults',
+export const metadata = docMeta({
+  title: 'Lightweight CSS Library with Modern Defaults',
   description:
-    'A lightweight CSS library built on modern CSS features. Small footprint, fast loading, and zero configuration.',
-  alternates: { canonical: 'https://thenewcss.com/lightweight-css-library' },
-  openGraph: {
-    type: 'article',
-    title: 'Lightweight CSS library with modern defaults | The New CSS',
-    description: 'Small footprint, fast loading, modern CSS features, zero configuration.',
-    url: 'https://thenewcss.com/lightweight-css-library',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Lightweight CSS library | The New CSS',
-    description: 'Small footprint, fast loading, modern CSS features.',
-    images: ['/og.svg'],
-  },
-};
+    'A lightweight CSS library built on oklch colors, @layer, and CSS custom properties. Under 5KB gzipped with zero configuration, fast loading, and semantic HTML defaults.',
+  path: '/lightweight-css-library',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Lightweight CSS Library with Modern Defaults',
+  description:
+    'A lightweight CSS library built on oklch colors, @layer, and CSS custom properties. Under 5KB gzipped with zero configuration, fast loading, and semantic HTML defaults.',
+  path: '/lightweight-css-library',
+});
 
 export default function LightweightCssPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
@@ -124,5 +119,6 @@ export default function LightweightCssPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

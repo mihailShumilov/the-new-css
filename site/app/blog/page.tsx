@@ -1,19 +1,12 @@
-import type { Metadata } from 'next';
 import { blogPosts } from '@/lib/blog-posts';
+import { docMeta } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Articles about modern CSS, semantic HTML, and building fast websites with less code.',
-  alternates: { canonical: 'https://thenewcss.com/blog' },
-  openGraph: {
-    type: 'website',
-    title: 'Blog | The New CSS',
-    description: 'Articles about modern CSS, semantic HTML, and building fast websites.',
-    url: 'https://thenewcss.com/blog',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-};
+export const metadata = docMeta({
+  title: 'Blog - Articles on CSS and Web Development',
+  description:
+    'Articles about modern CSS, semantic HTML, utility-first design, and building fast websites with less code. Tips, comparisons, and best practices for frontend developers.',
+  path: '/blog',
+});
 
 export default function BlogIndexPage() {
   return (

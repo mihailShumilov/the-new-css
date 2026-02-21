@@ -3,7 +3,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Badges',
+  title: 'Badges Addon - Tags and Status Indicators',
   description:
     'Pill-shaped badges and rectangular tags for status indicators, labels, and categorization. Includes color variants, sizes, outline/dot styles, and tag lists.',
   path: '/addons/badges',

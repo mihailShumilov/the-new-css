@@ -1,29 +1,24 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
-export const metadata: Metadata = {
-  title: 'Semantic CSS: readable HTML, real CSS, fewer hacks',
+export const metadata = docMeta({
+  title: 'Semantic CSS - Readable HTML, Real CSS, Fewer Hacks',
   description:
-    'Write semantic HTML that looks good by default. The New CSS focuses on meaningful markup, not utility class soup.',
-  alternates: { canonical: 'https://thenewcss.com/semantic-css' },
-  openGraph: {
-    type: 'article',
-    title: 'Semantic CSS: readable HTML, real CSS, fewer hacks | The New CSS',
-    description: 'Write semantic HTML that looks good by default. No utility class soup.',
-    url: 'https://thenewcss.com/semantic-css',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Semantic CSS | The New CSS',
-    description: 'Readable HTML, real CSS, fewer hacks.',
-    images: ['/og.svg'],
-  },
-};
+    'Write semantic HTML that looks good by default. The New CSS focuses on meaningful markup with sensible defaults, not utility class soup. Under 5KB gzipped, no build step.',
+  path: '/semantic-css',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Semantic CSS - Readable HTML, Real CSS, Fewer Hacks',
+  description:
+    'Write semantic HTML that looks good by default. The New CSS focuses on meaningful markup with sensible defaults, not utility class soup. Under 5KB gzipped, no build step.',
+  path: '/semantic-css',
+});
 
 export default function SemanticCssPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
@@ -103,5 +98,6 @@ export default function SemanticCssPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

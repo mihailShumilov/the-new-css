@@ -3,7 +3,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Tables Addon',
+  title: 'Tables Addon - Striped, Hover, and Responsive',
   description:
     'Styled table classes for The New CSS. Striped, hover, bordered, compact, fixed-layout, responsive wrapper, and cell utility classes.',
   path: '/addons/tables',

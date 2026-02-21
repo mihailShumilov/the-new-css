@@ -1,22 +1,23 @@
-import type { Metadata } from 'next';
+import { docMeta, techArticleJsonLd } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Templates - Ready-to-use HTML templates',
+export const metadata = docMeta({
+  title: 'Templates - Ready-to-Use HTML Layouts',
   description:
-    'Free HTML templates built with The New CSS. Landing page, dashboard, and blog layouts. Copy and paste, no build step required.',
-  alternates: { canonical: 'https://thenewcss.com/templates' },
-  openGraph: {
-    type: 'website',
-    title: 'Templates | The New CSS',
-    description: 'Free HTML templates built with The New CSS. Copy and paste, no build step.',
-    url: 'https://thenewcss.com/templates',
-    siteName: 'The New CSS',
-    images: [{ url: '/og.svg', width: 1200, height: 630, alt: 'The New CSS' }],
-  },
-};
+    'Free HTML templates built with The New CSS. Landing page, dashboard, and blog layouts. Copy the code, paste into your project, no build step required.',
+  path: '/templates',
+});
+
+const jsonLd = techArticleJsonLd({
+  headline: 'Templates - Ready-to-Use HTML Layouts',
+  description:
+    'Free HTML templates built with The New CSS. Landing page, dashboard, and blog layouts. Copy the code, paste into your project, no build step required.',
+  path: '/templates',
+});
 
 export default function TemplatesPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-center">Templates</h1>
@@ -55,5 +56,6 @@ export default function TemplatesPage() {
         </p>
       </div>
     </div>
+    </>
   );
 }

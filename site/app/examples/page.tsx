@@ -2,14 +2,14 @@ import { docMeta, techArticleJsonLd } from '@/lib/seo';
 import CodeBlock from '@/components/CodeBlock';
 
 export const metadata = docMeta({
-  title: 'Examples',
+  title: 'Examples - Copy-Paste UI Patterns',
   description:
     'Copy-paste examples built with The New CSS utility-first CSS library. Cards, navigation bars, hero sections, pricing tables, and responsive layouts.',
   path: '/examples',
 });
 
 const jsonLd = techArticleJsonLd({
-  headline: 'Examples',
+  headline: 'Examples - Copy-Paste UI Patterns',
   description:
     'Copy-paste examples built with The New CSS utility-first CSS library. Cards, navigation bars, hero sections, pricing tables, and responsive layouts.',
   path: '/examples',

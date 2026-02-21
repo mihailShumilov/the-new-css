@@ -3,7 +3,7 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Cards',
+  title: 'Cards Addon - Sections, Effects, and Layouts',
   description:
     'Flexible card components for The New CSS. Header, body, footer, and image sections with hover effects, horizontal layout, compact mode, and padding modifiers.',
   path: '/addons/cards',
