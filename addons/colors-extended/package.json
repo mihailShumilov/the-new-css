@@ -1,14 +1,21 @@
 {
   "name": "@thenewcss/colors-extended",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extended color palettes for the-new-css",
   "main": "dist/index.min.css",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mihailShumilov/the-new-css",
     "directory": "addons/colors-extended"
   },
-  "keywords": ["css", "colors", "utility-first", "the-new-css"]
+  "keywords": [
+    "css",
+    "colors",
+    "utility-first",
+    "the-new-css"
+  ]
 }
