@@ -1,0 +1,13 @@
+:root {
+  --color-fuchsia-50: oklch(0.97 0.015 320);
+  --color-fuchsia-100: oklch(0.93 0.035 320);
+  --color-fuchsia-200: oklch(0.87 0.06 320);
+  --color-fuchsia-300: oklch(0.78 0.11 320);
+  --color-fuchsia-400: oklch(0.67 0.17 320);
+  --color-fuchsia-500: oklch(0.59 0.22 320);
+  --color-fuchsia-600: oklch(0.52 0.22 320);
+  --color-fuchsia-700: oklch(0.45 0.19 320);
+  --color-fuchsia-800: oklch(0.38 0.16 320);
+  --color-fuchsia-900: oklch(0.32 0.12 320);
+  --color-fuchsia-950: oklch(0.24 0.09 320);
+}

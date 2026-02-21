@@ -1,0 +1,49 @@
+@layer utilities {
+  .btn-primary {
+    background-color: var(--color-blue-600, oklch(0.52 0.2 260));
+    color: var(--color-white, oklch(1 0 0));
+  }
+  .btn-primary:hover {
+    background-color: var(--color-blue-700, oklch(0.45 0.18 260));
+  }
+
+  .btn-secondary {
+    background-color: var(--color-gray-600, oklch(0.45 0.014 260));
+    color: var(--color-white, oklch(1 0 0));
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-gray-700, oklch(0.37 0.013 260));
+  }
+
+  .btn-danger {
+    background-color: var(--color-red-600, oklch(0.55 0.22 25));
+    color: var(--color-white, oklch(1 0 0));
+  }
+  .btn-danger:hover {
+    background-color: oklch(0.47 0.2 25);
+  }
+
+  .btn-success {
+    background-color: var(--color-green-600, oklch(0.52 0.14 155));
+    color: var(--color-white, oklch(1 0 0));
+  }
+  .btn-success:hover {
+    background-color: oklch(0.45 0.12 155);
+  }
+
+  .btn-warning {
+    background-color: var(--color-yellow-600, oklch(0.65 0.16 65));
+    color: var(--color-gray-900, oklch(0.21 0.008 260));
+  }
+  .btn-warning:hover {
+    background-color: oklch(0.57 0.14 65);
+  }
+
+  .btn-dark {
+    background-color: var(--color-gray-900, oklch(0.21 0.008 260));
+    color: var(--color-white, oklch(1 0 0));
+  }
+  .btn-dark:hover {
+    background-color: var(--color-gray-800, oklch(0.27 0.01 260));
+  }
+}

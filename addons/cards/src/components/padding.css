@@ -1,0 +1,19 @@
+@layer utilities {
+  .card-p-0 > .card-header,
+  .card-p-0 > .card-body,
+  .card-p-0 > .card-footer {
+    padding: 0;
+  }
+
+  .card-p-lg > .card-header {
+    padding: var(--spacing-6, 1.5rem) var(--spacing-8, 2rem);
+  }
+
+  .card-p-lg > .card-body {
+    padding: var(--spacing-8, 2rem);
+  }
+
+  .card-p-lg > .card-footer {
+    padding: var(--spacing-6, 1.5rem) var(--spacing-8, 2rem);
+  }
+}

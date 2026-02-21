@@ -1,0 +1,7 @@
+@layer utilities {
+  .text-5xl { font-size: var(--text-5xl); line-height: 1; }
+  .text-6xl { font-size: var(--text-6xl); line-height: 1; }
+  .text-7xl { font-size: var(--text-7xl); line-height: 1; }
+  .text-8xl { font-size: var(--text-8xl); line-height: 1; }
+  .text-9xl { font-size: var(--text-9xl); line-height: 1; }
+}

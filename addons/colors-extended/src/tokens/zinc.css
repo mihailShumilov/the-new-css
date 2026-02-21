@@ -1,0 +1,13 @@
+:root {
+  --color-zinc-50: oklch(0.985 0.002 240);
+  --color-zinc-100: oklch(0.967 0.004 240);
+  --color-zinc-200: oklch(0.920 0.006 240);
+  --color-zinc-300: oklch(0.871 0.008 240);
+  --color-zinc-400: oklch(0.705 0.012 240);
+  --color-zinc-500: oklch(0.552 0.014 240);
+  --color-zinc-600: oklch(0.442 0.014 240);
+  --color-zinc-700: oklch(0.370 0.013 240);
+  --color-zinc-800: oklch(0.274 0.010 240);
+  --color-zinc-900: oklch(0.210 0.008 240);
+  --color-zinc-950: oklch(0.141 0.005 240);
+}

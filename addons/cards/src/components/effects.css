@@ -1,0 +1,12 @@
+@layer utilities {
+  .card-hover {
+    transition-property: transform, box-shadow;
+    transition-duration: var(--duration-200, 200ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg, 0 10px 15px -3px oklch(0 0 0 / 0.1), 0 4px 6px -4px oklch(0 0 0 / 0.1));
+  }
+}

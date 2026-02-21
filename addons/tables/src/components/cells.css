@@ -1,0 +1,24 @@
+@layer utilities {
+  .cell-nowrap {
+    white-space: nowrap;
+  }
+
+  .cell-truncate {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cell-center {
+    text-align: center;
+  }
+
+  .cell-right {
+    text-align: end;
+  }
+
+  .cell-middle {
+    vertical-align: middle;
+  }
+}

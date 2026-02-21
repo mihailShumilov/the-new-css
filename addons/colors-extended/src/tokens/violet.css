@@ -1,0 +1,13 @@
+:root {
+  --color-violet-50: oklch(0.97 0.014 290);
+  --color-violet-100: oklch(0.93 0.034 290);
+  --color-violet-200: oklch(0.87 0.06 290);
+  --color-violet-300: oklch(0.78 0.1 290);
+  --color-violet-400: oklch(0.67 0.16 290);
+  --color-violet-500: oklch(0.59 0.2 290);
+  --color-violet-600: oklch(0.52 0.2 290);
+  --color-violet-700: oklch(0.45 0.18 290);
+  --color-violet-800: oklch(0.38 0.15 290);
+  --color-violet-900: oklch(0.32 0.12 290);
+  --color-violet-950: oklch(0.24 0.09 290);
+}

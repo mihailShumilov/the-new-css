@@ -1,0 +1,70 @@
+@layer utilities {
+  /* Indigo */
+  .text-indigo-500 { color: var(--color-indigo-500); }
+  .text-indigo-600 { color: var(--color-indigo-600); }
+  .text-indigo-700 { color: var(--color-indigo-700); }
+
+  /* Violet */
+  .text-violet-500 { color: var(--color-violet-500); }
+  .text-violet-600 { color: var(--color-violet-600); }
+  .text-violet-700 { color: var(--color-violet-700); }
+
+  /* Slate */
+  .text-slate-400 { color: var(--color-slate-400); }
+  .text-slate-500 { color: var(--color-slate-500); }
+  .text-slate-600 { color: var(--color-slate-600); }
+  .text-slate-700 { color: var(--color-slate-700); }
+
+  /* Emerald */
+  .text-emerald-500 { color: var(--color-emerald-500); }
+  .text-emerald-600 { color: var(--color-emerald-600); }
+  .text-emerald-700 { color: var(--color-emerald-700); }
+
+  /* Cyan */
+  .text-cyan-500 { color: var(--color-cyan-500); }
+  .text-cyan-600 { color: var(--color-cyan-600); }
+  .text-cyan-700 { color: var(--color-cyan-700); }
+
+  /* Rose */
+  .text-rose-500 { color: var(--color-rose-500); }
+  .text-rose-600 { color: var(--color-rose-600); }
+  .text-rose-700 { color: var(--color-rose-700); }
+
+  /* Amber */
+  .text-amber-500 { color: var(--color-amber-500); }
+  .text-amber-600 { color: var(--color-amber-600); }
+  .text-amber-700 { color: var(--color-amber-700); }
+
+  /* Lime */
+  .text-lime-500 { color: var(--color-lime-500); }
+  .text-lime-600 { color: var(--color-lime-600); }
+  .text-lime-700 { color: var(--color-lime-700); }
+
+  /* Fuchsia */
+  .text-fuchsia-500 { color: var(--color-fuchsia-500); }
+  .text-fuchsia-600 { color: var(--color-fuchsia-600); }
+  .text-fuchsia-700 { color: var(--color-fuchsia-700); }
+
+  /* Sky */
+  .text-sky-500 { color: var(--color-sky-500); }
+  .text-sky-600 { color: var(--color-sky-600); }
+  .text-sky-700 { color: var(--color-sky-700); }
+
+  /* Stone */
+  .text-stone-400 { color: var(--color-stone-400); }
+  .text-stone-500 { color: var(--color-stone-500); }
+  .text-stone-600 { color: var(--color-stone-600); }
+  .text-stone-700 { color: var(--color-stone-700); }
+
+  /* Zinc */
+  .text-zinc-400 { color: var(--color-zinc-400); }
+  .text-zinc-500 { color: var(--color-zinc-500); }
+  .text-zinc-600 { color: var(--color-zinc-600); }
+  .text-zinc-700 { color: var(--color-zinc-700); }
+
+  /* Neutral */
+  .text-neutral-400 { color: var(--color-neutral-400); }
+  .text-neutral-500 { color: var(--color-neutral-500); }
+  .text-neutral-600 { color: var(--color-neutral-600); }
+  .text-neutral-700 { color: var(--color-neutral-700); }
+}

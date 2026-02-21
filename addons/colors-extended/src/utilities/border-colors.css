@@ -1,0 +1,66 @@
+@layer utilities {
+  /* Indigo */
+  .border-indigo-200 { border-color: var(--color-indigo-200); }
+  .border-indigo-300 { border-color: var(--color-indigo-300); }
+  .border-indigo-500 { border-color: var(--color-indigo-500); }
+
+  /* Violet */
+  .border-violet-200 { border-color: var(--color-violet-200); }
+  .border-violet-300 { border-color: var(--color-violet-300); }
+  .border-violet-500 { border-color: var(--color-violet-500); }
+
+  /* Slate */
+  .border-slate-200 { border-color: var(--color-slate-200); }
+  .border-slate-300 { border-color: var(--color-slate-300); }
+  .border-slate-500 { border-color: var(--color-slate-500); }
+
+  /* Emerald */
+  .border-emerald-200 { border-color: var(--color-emerald-200); }
+  .border-emerald-300 { border-color: var(--color-emerald-300); }
+  .border-emerald-500 { border-color: var(--color-emerald-500); }
+
+  /* Cyan */
+  .border-cyan-200 { border-color: var(--color-cyan-200); }
+  .border-cyan-300 { border-color: var(--color-cyan-300); }
+  .border-cyan-500 { border-color: var(--color-cyan-500); }
+
+  /* Rose */
+  .border-rose-200 { border-color: var(--color-rose-200); }
+  .border-rose-300 { border-color: var(--color-rose-300); }
+  .border-rose-500 { border-color: var(--color-rose-500); }
+
+  /* Amber */
+  .border-amber-200 { border-color: var(--color-amber-200); }
+  .border-amber-300 { border-color: var(--color-amber-300); }
+  .border-amber-500 { border-color: var(--color-amber-500); }
+
+  /* Lime */
+  .border-lime-200 { border-color: var(--color-lime-200); }
+  .border-lime-300 { border-color: var(--color-lime-300); }
+  .border-lime-500 { border-color: var(--color-lime-500); }
+
+  /* Fuchsia */
+  .border-fuchsia-200 { border-color: var(--color-fuchsia-200); }
+  .border-fuchsia-300 { border-color: var(--color-fuchsia-300); }
+  .border-fuchsia-500 { border-color: var(--color-fuchsia-500); }
+
+  /* Sky */
+  .border-sky-200 { border-color: var(--color-sky-200); }
+  .border-sky-300 { border-color: var(--color-sky-300); }
+  .border-sky-500 { border-color: var(--color-sky-500); }
+
+  /* Stone */
+  .border-stone-200 { border-color: var(--color-stone-200); }
+  .border-stone-300 { border-color: var(--color-stone-300); }
+  .border-stone-500 { border-color: var(--color-stone-500); }
+
+  /* Zinc */
+  .border-zinc-200 { border-color: var(--color-zinc-200); }
+  .border-zinc-300 { border-color: var(--color-zinc-300); }
+  .border-zinc-500 { border-color: var(--color-zinc-500); }
+
+  /* Neutral */
+  .border-neutral-200 { border-color: var(--color-neutral-200); }
+  .border-neutral-300 { border-color: var(--color-neutral-300); }
+  .border-neutral-500 { border-color: var(--color-neutral-500); }
+}

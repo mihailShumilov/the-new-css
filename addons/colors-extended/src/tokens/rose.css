@@ -1,0 +1,13 @@
+:root {
+  --color-rose-50: oklch(0.97 0.015 10);
+  --color-rose-100: oklch(0.93 0.035 10);
+  --color-rose-200: oklch(0.87 0.06 10);
+  --color-rose-300: oklch(0.78 0.10 10);
+  --color-rose-400: oklch(0.67 0.17 10);
+  --color-rose-500: oklch(0.59 0.22 10);
+  --color-rose-600: oklch(0.52 0.22 10);
+  --color-rose-700: oklch(0.45 0.19 10);
+  --color-rose-800: oklch(0.38 0.16 10);
+  --color-rose-900: oklch(0.32 0.12 10);
+  --color-rose-950: oklch(0.24 0.09 10);
+}

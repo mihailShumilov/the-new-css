@@ -16,7 +16,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "test:all": "npm test && npm run test:e2e",
-    "seo:audit": "node scripts/seo-audit.js"
+    "seo:audit": "node scripts/seo-audit.js",
+    "build:addons": "node scripts/build-addons.js"
   },
   "keywords": [
     "css",
@@ -28,6 +29,9 @@
   "author": "",
   "type": "module",
   "license": "MIT",
+  "workspaces": [
+    "addons/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mihailShumilov/the-new-css"
