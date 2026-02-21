@@ -27,4 +27,16 @@ export const docsNav: NavSection[] = [
       { label: 'Customization', href: '/docs/customization' },
     ],
   },
+  {
+    title: 'Addons',
+    items: [
+      { label: 'Overview', href: '/addons' },
+      { label: 'Buttons', href: '/addons/buttons' },
+      { label: 'Badges', href: '/addons/badges' },
+      { label: 'Cards', href: '/addons/cards' },
+      { label: 'Tables', href: '/addons/tables' },
+      { label: 'Colors Extended', href: '/addons/colors-extended' },
+      { label: 'Typography Extended', href: '/addons/typography-extended' },
+    ],
+  },
 ];

@@ -8,6 +8,108 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'introducing-official-addons',
+    title: 'Introducing official addons for The New CSS',
+    description:
+      'Six new addon packages bring buttons, badges, cards, tables, extended colors, and typography to The New CSS — without breaking the 5KB core.',
+    date: '2026-02-21',
+    content: `The New CSS core library ships under 5KB gzipped. That constraint is a feature, not a limitation — it keeps your baseline fast. But real projects need buttons, cards, tables, and more colors.
+
+Today we are releasing six official addon packages that extend The New CSS with components and utilities you can install individually. Pick what you need, skip what you don't.
+
+## The addon philosophy
+
+Every addon follows the same principles as the core library:
+
+- **Plain CSS.** No build step, no JavaScript runtime, no configuration file.
+- **Same design tokens.** Addons reference the same \`--color-*\`, \`--spacing-*\`, and \`--radius-*\` custom properties as the core. They look consistent out of the box.
+- **@layer utilities.** Addon classes sit in the \`utilities\` layer, so your own styles always win.
+- **Standalone packages.** Each addon is its own npm package. Install one or all six — the core stays untouched.
+
+## What shipped
+
+### Component addons
+
+**[@thenewcss/buttons](/addons/buttons)** (~3KB) — A complete button system with six color variants (primary, secondary, danger, success, warning, dark), three style alternatives (outline, ghost, link), five sizes (xs through xl), loading state with spinner animation, icon buttons, full-width layout, and button groups.
+
+\`\`\`html
+<button class="btn btn-primary">Save</button>
+<button class="btn btn-outline btn-danger">Delete</button>
+<button class="btn btn-ghost btn-sm">Cancel</button>
+\`\`\`
+
+**[@thenewcss/badges](/addons/badges)** (~2KB) — Pill-shaped badges and rectangular tags for status indicators and labels. Includes color variants, outline and dot styles, and a tag list layout for wrapping groups.
+
+\`\`\`html
+<span class="badge badge-success">Active</span>
+<span class="badge badge-outline badge-warning">Pending</span>
+<span class="badge badge-dot badge-danger">Offline</span>
+\`\`\`
+
+**[@thenewcss/cards](/addons/cards)** (~2KB) — Flexible card components with header, body, footer, and image sections. Add hover lift effects, horizontal layouts, compact mode, or go flat without shadows.
+
+\`\`\`html
+<div class="card card-hover">
+  <div class="card-body">
+    <h3>Feature</h3>
+    <p>Card content here.</p>
+  </div>
+</div>
+\`\`\`
+
+**[@thenewcss/tables](/addons/tables)** (~2KB) — Styled tables with striped rows, hover highlights, bordered cells, compact mode, fixed layout, responsive horizontal scroll, and cell alignment utilities.
+
+\`\`\`html
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead>...</thead>
+    <tbody>...</tbody>
+  </table>
+</div>
+\`\`\`
+
+### Utility addons
+
+**[@thenewcss/colors-extended](/addons/colors-extended)** (~15KB) — 13 additional color palettes: indigo, violet, slate, emerald, cyan, rose, amber, lime, fuchsia, sky, stone, zinc, and neutral. Each palette provides all 11 shades (50 through 950) as CSS custom properties, plus utility classes for text, background, border, and gradient colors. Hover variants and dark mode support are included.
+
+**[@thenewcss/typography-extended](/addons/typography-extended)** (~5KB) — Display-size type scale from \`text-5xl\` through \`text-9xl\`, gradient text utility (\`.text-gradient\`), a \`.prose\` class that auto-styles rich HTML content (headings, paragraphs, lists, code blocks, blockquotes, tables), and \`.text-pretty\` for improved line wrapping.
+
+## Installation
+
+Install any addon via npm:
+
+\`\`\`bash
+npm install @thenewcss/buttons @thenewcss/cards
+\`\`\`
+
+Or load from a CDN:
+
+\`\`\`html
+<link rel="stylesheet" href="https://unpkg.com/@thenewcss/buttons/dist/index.min.css">
+\`\`\`
+
+Each addon works alongside the core library and uses the same design tokens. If you use the core via CDN, addons from CDN will match. If you override tokens on \`:root\`, addons pick up your custom theme automatically.
+
+## Size budget
+
+The core remains under 5KB gzipped. Addons add only what they provide:
+
+- Buttons: ~3KB
+- Badges: ~2KB
+- Cards: ~2KB
+- Tables: ~2KB
+- Colors Extended: ~15KB
+- Typography Extended: ~5KB
+
+Loading the core plus all six addons totals roughly 29KB gzipped — still smaller than most CSS frameworks, and you only load what you use.
+
+## What is next
+
+We are exploring addons for forms, modals, navigation, and tooltips. If you have a component you would like to see, [open an issue on GitHub](https://github.com/mihailShumilov/the-new-css/issues).
+
+[Browse all addons](/addons) or [get started with the core library](/#quickstart).`,
+  },
+  {
     slug: 'why-css-frameworks-feel-overengineered',
     title: 'Why CSS frameworks feel overengineered in 2026',
     description:

@@ -32,6 +32,7 @@ export default function MobileNav() {
         >
           <div className="container mx-auto px-4 py-4 flex flex-col gap-1">
             <a href="/docs" className="block py-3 px-2 text-gray-600 rounded-lg hover:bg-gray-100">Docs</a>
+            <a href="/addons" className="block py-3 px-2 text-gray-600 rounded-lg hover:bg-gray-100">Addons</a>
             <a href="/examples" className="block py-3 px-2 text-gray-600 rounded-lg hover:bg-gray-100">Examples</a>
             <a href="/templates" className="block py-3 px-2 text-gray-600 rounded-lg hover:bg-gray-100">Templates</a>
             <a href="/blog" className="block py-3 px-2 text-gray-600 rounded-lg hover:bg-gray-100">Blog</a>

@@ -12,6 +12,7 @@ export default function Footer() {
               <p className="text-sm font-medium mb-2" id="footer-resources">Resources</p>
               <nav className="flex flex-col gap-1 text-sm text-gray-500" aria-labelledby="footer-resources">
                 <a href="/docs" className="hover:text-blue-600 transition-colors">Docs</a>
+                <a href="/addons" className="hover:text-blue-600 transition-colors">Addons</a>
                 <a href="/#examples" className="hover:text-blue-600 transition-colors">Examples</a>
                 <a href="/templates" className="hover:text-blue-600 transition-colors">Templates</a>
                 <a href="/blog" className="hover:text-blue-600 transition-colors">Blog</a>

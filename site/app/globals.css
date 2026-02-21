@@ -120,6 +120,26 @@
      should stay dark-on-light regardless of gray token inversion.
      Duplicated for both manual toggle and auto prefers-color-scheme. */
 
+  /* Cards keep white bg in dark mode — force dark text inside them */
+  [data-theme="dark"] .card {
+    color: oklch(0.13 0.005 260);
+  }
+
+  [data-theme="dark"] .card .text-gray-600 {
+    color: oklch(0.45 0.014 260);
+  }
+
+  /* Light-bg callouts need dark text in dark mode */
+  [data-theme="dark"] .bg-blue-50 {
+    background: oklch(0.17 0.04 260);
+    border-color: oklch(0.30 0.08 260);
+  }
+
+  [data-theme="dark"] .bg-blue-50 .text-blue-800,
+  [data-theme="dark"] .bg-blue-50 p {
+    color: oklch(0.75 0.10 260);
+  }
+
   /* Manual toggle */
   [data-theme="dark"] .code-block {
     background-color: oklch(0.13 0.005 260);
@@ -164,6 +184,24 @@
 
   /* Auto dark mode (prefers-color-scheme) */
   @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .card {
+      color: oklch(0.13 0.005 260);
+    }
+
+    :root:not([data-theme="light"]) .card .text-gray-600 {
+      color: oklch(0.45 0.014 260);
+    }
+
+    :root:not([data-theme="light"]) .bg-blue-50 {
+      background: oklch(0.17 0.04 260);
+      border-color: oklch(0.30 0.08 260);
+    }
+
+    :root:not([data-theme="light"]) .bg-blue-50 .text-blue-800,
+    :root:not([data-theme="light"]) .bg-blue-50 p {
+      color: oklch(0.75 0.10 260);
+    }
+
     :root:not([data-theme="light"]) .code-block {
       background-color: oklch(0.13 0.005 260);
       color: oklch(0.92 0.004 260);

@@ -39,13 +39,27 @@ try {
 }
 
 // Copy bundles to site/ for local dev and build
-import { cpSync } from 'fs';
+import { cpSync, readdirSync, existsSync } from 'fs';
 try {
   cpSync(join(dist, 'the-new-css.css'), join(root, 'site', 'public', 'the-new-css.css'));
   cpSync(join(dist, 'the-new-css.min.css'), join(root, 'site', 'public', 'the-new-css.min.css'));
   // Copy unminified to app/styles/ so Next.js can bundle it with other CSS
   mkdirSync(join(root, 'site', 'styles'), { recursive: true });
   cpSync(join(dist, 'the-new-css.css'), join(root, 'site', 'styles', 'the-new-css.css'));
+
+  // Copy addon CSS to site/styles/addons/
+  const addonsDir = join(root, 'addons');
+  if (existsSync(addonsDir)) {
+    const siteAddonsDir = join(root, 'site', 'styles', 'addons');
+    mkdirSync(siteAddonsDir, { recursive: true });
+    for (const entry of readdirSync(addonsDir, { withFileTypes: true })) {
+      if (!entry.isDirectory()) continue;
+      const addonCss = join(addonsDir, entry.name, 'dist', 'index.css');
+      if (existsSync(addonCss)) {
+        cpSync(addonCss, join(siteAddonsDir, `${entry.name}.css`));
+      }
+    }
+  }
 } catch { /* site dir may not exist */ }
 
 console.log('Build complete.');

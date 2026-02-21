@@ -3,6 +3,12 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../styles/the-new-css.css';
+import '../styles/addons/buttons.css';
+import '../styles/addons/badges.css';
+import '../styles/addons/cards.css';
+import '../styles/addons/tables.css';
+import '../styles/addons/colors-extended.css';
+import '../styles/addons/typography-extended.css';
 import './globals.css';
 
 export const metadata: Metadata = {

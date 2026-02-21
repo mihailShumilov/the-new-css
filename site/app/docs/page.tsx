@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { docMeta, techArticleJsonLd } from '@/lib/seo';
+import { addons } from '@/lib/addons';
 
 export const metadata = docMeta({
   title: 'Documentation',
@@ -174,6 +175,36 @@ export default function DocsPage() {
           </Link>
         ))}
       </div>
+
+      {/* Addons */}
+      <h2 className="text-xl font-semibold mt-8 mb-4">Addons</h2>
+      <p className="text-gray-600 mb-6">
+        Official addon packages extend The New CSS with components and extended utilities. Each
+        addon is a standalone npm package — install only what you need. The core library stays
+        under 5KB gzipped while addons give you buttons, badges, cards, tables, extended colors,
+        and typography.
+      </p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+        {addons.map((addon) => (
+          <Link
+            key={addon.slug}
+            href={`/addons/${addon.slug}`}
+            className="block p-4 border border-gray-200 rounded-lg hover:border-blue-300 transition-colors"
+          >
+            <div className="flex items-center justify-between mb-1">
+              <h3 className="font-semibold">{addon.name}</h3>
+              <span className="badge badge-sm">{addon.size}</span>
+            </div>
+            <p className="text-gray-600 text-sm">{addon.shortDescription}</p>
+          </Link>
+        ))}
+      </div>
+      <Link
+        href="/addons"
+        className="inline-flex items-center text-blue-600 font-semibold underline hover:no-underline mb-8"
+      >
+        Browse all addons &rarr;
+      </Link>
 
       {/* Additional context for SEO */}
       <h2 className="text-xl font-semibold mt-8 mb-4">How the Docs Are Organized</h2>

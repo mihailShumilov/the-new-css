@@ -160,6 +160,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── What's New: Addons ─── */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="badge badge-primary">New</span>
+            <h2 className="text-2xl md:text-3xl font-bold">Official Addons</h2>
+          </div>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+            The core stays under 5KB. Addons give you buttons, badges, cards, tables, extended colors, and
+            typography — install only what you need.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <a href="/addons/buttons" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Buttons</h3>
+              <p className="text-sm text-gray-600 mb-3">Sizes, colors, outlines, loading states, and groups.</p>
+              <div className="flex gap-2">
+                <span className="btn btn-primary btn-xs">Primary</span>
+                <span className="btn btn-outline btn-xs">Outline</span>
+                <span className="btn btn-ghost btn-xs">Ghost</span>
+              </div>
+            </a>
+            <a href="/addons/badges" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Badges</h3>
+              <p className="text-sm text-gray-600 mb-3">Status indicators, labels, tags, and dot badges.</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="badge badge-primary">New</span>
+                <span className="badge badge-success">Active</span>
+                <span className="badge badge-warning">Pending</span>
+                <span className="badge badge-danger">Error</span>
+              </div>
+            </a>
+            <a href="/addons/cards" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Cards</h3>
+              <p className="text-sm text-gray-600 mb-3">Sections, hover effects, horizontal layout, and variants.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/tables" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Tables</h3>
+              <p className="text-sm text-gray-600 mb-3">Striped, hover, bordered, compact, and responsive.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/colors-extended" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Colors Extended</h3>
+              <p className="text-sm text-gray-600 mb-3">13 color palettes with text, bg, border, and gradient utilities.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/typography-extended" className="card card-hover p-5">
+              <h3 className="font-semibold mb-1">Typography Extended</h3>
+              <p className="text-sm text-gray-600 mb-3">Display sizes, gradient text, prose formatting, text-pretty.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+          </div>
+          <p className="text-center">
+            <a href="/addons" className="btn btn-primary" data-event="click_browse_addons">
+              Browse all addons
+            </a>
+          </p>
+        </div>
+      </section>
+
       {/* ─── The Problem ─── */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -316,11 +376,12 @@ export default function HomePage() {
           <div className="space-y-8">
             <SplitExample
               title="Buttons + forms"
-              code={`<button class="px-4 py-2 bg-blue-600\n  text-white rounded-lg font-medium">\n  Primary\n</button>\n<button class="px-4 py-2 bg-gray-100\n  border border-gray-300 rounded-lg">\n  Secondary\n</button>\n<input placeholder="Email"\n  class="px-3 py-2 border\n  border-gray-300 rounded-lg" />`}
+              code={`<button class="btn btn-primary">Primary</button>\n<button class="btn btn-outline">Outline</button>\n<button class="btn btn-ghost">Ghost</button>\n<input placeholder="Email"\n  class="px-3 py-2 border\n  border-gray-300 rounded-lg" />`}
               preview={
                 <div className="flex flex-wrap gap-3 items-center">
-                  <button className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium">Primary</button>
-                  <button className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg font-medium">Secondary</button>
+                  <button className="btn btn-primary">Primary</button>
+                  <button className="btn btn-outline">Outline</button>
+                  <button className="btn btn-ghost">Ghost</button>
                   <input placeholder="Email" className="px-3 py-2 border border-gray-300 rounded-lg text-sm" />
                 </div>
               }
@@ -341,21 +402,27 @@ export default function HomePage() {
             />
 
             <SplitExample
-              title="Grid layout"
-              code={`<div class="grid sm:grid-cols-3 gap-4">\n  <div class="p-4 bg-gray-100\n    rounded-lg">\n    <h3 class="font-semibold">Fast</h3>\n    <p class="text-sm text-gray-600">\n      Ship less CSS.\n    </p>\n  </div>\n  <div class="p-4 bg-gray-100\n    rounded-lg">\n    <h3 class="font-semibold">Simple</h3>\n    <p class="text-sm text-gray-600">\n      No config required.\n    </p>\n  </div>\n  <div class="p-4 bg-gray-100\n    rounded-lg">\n    <h3 class="font-semibold">Clean</h3>\n    <p class="text-sm text-gray-600">\n      Readable HTML.\n    </p>\n  </div>\n</div>`}
+              title="Cards + grid"
+              code={`<div class="grid sm:grid-cols-3 gap-4">\n  <div class="card card-hover">\n    <div class="card-body">\n      <h3 class="font-semibold">Fast</h3>\n      <p class="text-sm text-gray-600">\n        Ship less CSS.\n      </p>\n    </div>\n  </div>\n  <div class="card card-hover">\n    <div class="card-body">\n      <h3 class="font-semibold">Simple</h3>\n      <p class="text-sm text-gray-600">\n        No config required.\n      </p>\n    </div>\n  </div>\n  <div class="card card-hover">\n    <div class="card-body">\n      <h3 class="font-semibold">Clean</h3>\n      <p class="text-sm text-gray-600">\n        Readable HTML.\n      </p>\n    </div>\n  </div>\n</div>`}
               preview={
                 <div className="grid sm:grid-cols-3 gap-3">
-                  <div className="p-4 bg-gray-100 rounded-lg">
-                    <h4 className="font-semibold mb-1">Fast</h4>
-                    <p className="text-sm text-gray-600">Ship less CSS.</p>
+                  <div className="card card-hover">
+                    <div className="card-body">
+                      <h4 className="font-semibold mb-1">Fast</h4>
+                      <p className="text-sm text-gray-600">Ship less CSS.</p>
+                    </div>
                   </div>
-                  <div className="p-4 bg-gray-100 rounded-lg">
-                    <h4 className="font-semibold mb-1">Simple</h4>
-                    <p className="text-sm text-gray-600">No config required.</p>
+                  <div className="card card-hover">
+                    <div className="card-body">
+                      <h4 className="font-semibold mb-1">Simple</h4>
+                      <p className="text-sm text-gray-600">No config required.</p>
+                    </div>
                   </div>
-                  <div className="p-4 bg-gray-100 rounded-lg">
-                    <h4 className="font-semibold mb-1">Clean</h4>
-                    <p className="text-sm text-gray-600">Readable HTML.</p>
+                  <div className="card card-hover">
+                    <div className="card-body">
+                      <h4 className="font-semibold mb-1">Clean</h4>
+                      <p className="text-sm text-gray-600">Readable HTML.</p>
+                    </div>
                   </div>
                 </div>
               }
@@ -428,7 +495,8 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="https://github.com/mihailShumilov/the-new-css"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
+              className="donate-btn-github inline-flex items-center justify-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+              style={{ minWidth: '15rem' }}
               data-event="click_star_github"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -436,7 +504,8 @@ export default function HomePage() {
             </a>
             <a
               href="#quickstart"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              style={{ minWidth: '15rem' }}
               data-event="click_install_cta"
             >
               npm install the-new-css
@@ -497,8 +566,9 @@ export default function HomePage() {
               <summary className="p-4 font-semibold cursor-pointer">Is this a full component framework?</summary>
               <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  No. It&apos;s a lightweight baseline + sensible defaults. It gives your HTML a
-                  professional look without writing custom CSS. Add your own components on top.
+                  The core library is a lightweight baseline. For components like buttons, badges, cards,
+                  and tables, install our official <a href="/addons" className="text-blue-600 underline hover:no-underline">addons</a> — each
+                  is a separate package you add only when needed.
                 </p>
               </div>
             </details>

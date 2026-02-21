@@ -11,6 +11,7 @@ export default function Header() {
         </a>
         <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
           <a href="/docs" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Docs</a>
+          <a href="/addons" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Addons</a>
           <a href="/examples" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Examples</a>
           <a href="/templates" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Templates</a>
           <a href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Blog</a>
