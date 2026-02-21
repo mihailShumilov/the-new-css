@@ -72,6 +72,9 @@ jobs:
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "Bumped $NAME to $VERSION"
 
+      - name: Update lock file
+        run: npm install --package-lock-only
+
       - name: Build addons
         run: npm run build:addons
 
@@ -82,7 +85,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add addons/${{ matrix.addon }}/package.json
+          git add addons/${{ matrix.addon }}/package.json package-lock.json
           git commit -m "chore: release ${{ steps.version.outputs.name }}@${{ steps.version.outputs.version }} [skip ci]"
           git pull --rebase origin main
           TAG="${{ steps.version.outputs.name }}@${{ steps.version.outputs.version }}"
