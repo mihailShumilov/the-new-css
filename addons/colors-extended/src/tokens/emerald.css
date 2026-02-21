@@ -1,0 +1,13 @@
+:root {
+  --color-emerald-50: oklch(0.97 0.02 160);
+  --color-emerald-100: oklch(0.93 0.04 160);
+  --color-emerald-200: oklch(0.87 0.07 160);
+  --color-emerald-300: oklch(0.78 0.11 160);
+  --color-emerald-400: oklch(0.67 0.14 160);
+  --color-emerald-500: oklch(0.60 0.16 160);
+  --color-emerald-600: oklch(0.52 0.14 160);
+  --color-emerald-700: oklch(0.45 0.12 160);
+  --color-emerald-800: oklch(0.38 0.10 160);
+  --color-emerald-900: oklch(0.32 0.08 160);
+  --color-emerald-950: oklch(0.24 0.06 160);
+}

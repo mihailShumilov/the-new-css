@@ -1,0 +1,27 @@
+@layer utilities {
+  .table-striped tbody tr:nth-child(even) {
+    background-color: var(--color-gray-50, oklch(0.985 0 0));
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: var(--color-gray-100, oklch(0.97 0.001 260));
+  }
+
+  .table-bordered {
+    border: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+
+  .table-compact th,
+  .table-compact td {
+    padding: var(--spacing-2, 0.5rem) var(--spacing-3, 0.75rem);
+  }
+
+  .table-fixed {
+    table-layout: fixed;
+  }
+}

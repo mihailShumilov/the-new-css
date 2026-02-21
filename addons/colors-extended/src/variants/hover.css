@@ -1,0 +1,79 @@
+@layer variants {
+  /* Indigo */
+  .hover\:text-indigo-600:hover { color: var(--color-indigo-600); }
+  .hover\:text-indigo-700:hover { color: var(--color-indigo-700); }
+  .hover\:bg-indigo-600:hover { background-color: var(--color-indigo-600); }
+  .hover\:bg-indigo-700:hover { background-color: var(--color-indigo-700); }
+
+  /* Violet */
+  .hover\:text-violet-600:hover { color: var(--color-violet-600); }
+  .hover\:text-violet-700:hover { color: var(--color-violet-700); }
+  .hover\:bg-violet-600:hover { background-color: var(--color-violet-600); }
+  .hover\:bg-violet-700:hover { background-color: var(--color-violet-700); }
+
+  /* Slate */
+  .hover\:text-slate-600:hover { color: var(--color-slate-600); }
+  .hover\:text-slate-700:hover { color: var(--color-slate-700); }
+  .hover\:bg-slate-600:hover { background-color: var(--color-slate-600); }
+  .hover\:bg-slate-700:hover { background-color: var(--color-slate-700); }
+
+  /* Emerald */
+  .hover\:text-emerald-600:hover { color: var(--color-emerald-600); }
+  .hover\:text-emerald-700:hover { color: var(--color-emerald-700); }
+  .hover\:bg-emerald-600:hover { background-color: var(--color-emerald-600); }
+  .hover\:bg-emerald-700:hover { background-color: var(--color-emerald-700); }
+
+  /* Cyan */
+  .hover\:text-cyan-600:hover { color: var(--color-cyan-600); }
+  .hover\:text-cyan-700:hover { color: var(--color-cyan-700); }
+  .hover\:bg-cyan-600:hover { background-color: var(--color-cyan-600); }
+  .hover\:bg-cyan-700:hover { background-color: var(--color-cyan-700); }
+
+  /* Rose */
+  .hover\:text-rose-600:hover { color: var(--color-rose-600); }
+  .hover\:text-rose-700:hover { color: var(--color-rose-700); }
+  .hover\:bg-rose-600:hover { background-color: var(--color-rose-600); }
+  .hover\:bg-rose-700:hover { background-color: var(--color-rose-700); }
+
+  /* Amber */
+  .hover\:text-amber-600:hover { color: var(--color-amber-600); }
+  .hover\:text-amber-700:hover { color: var(--color-amber-700); }
+  .hover\:bg-amber-600:hover { background-color: var(--color-amber-600); }
+  .hover\:bg-amber-700:hover { background-color: var(--color-amber-700); }
+
+  /* Lime */
+  .hover\:text-lime-600:hover { color: var(--color-lime-600); }
+  .hover\:text-lime-700:hover { color: var(--color-lime-700); }
+  .hover\:bg-lime-600:hover { background-color: var(--color-lime-600); }
+  .hover\:bg-lime-700:hover { background-color: var(--color-lime-700); }
+
+  /* Fuchsia */
+  .hover\:text-fuchsia-600:hover { color: var(--color-fuchsia-600); }
+  .hover\:text-fuchsia-700:hover { color: var(--color-fuchsia-700); }
+  .hover\:bg-fuchsia-600:hover { background-color: var(--color-fuchsia-600); }
+  .hover\:bg-fuchsia-700:hover { background-color: var(--color-fuchsia-700); }
+
+  /* Sky */
+  .hover\:text-sky-600:hover { color: var(--color-sky-600); }
+  .hover\:text-sky-700:hover { color: var(--color-sky-700); }
+  .hover\:bg-sky-600:hover { background-color: var(--color-sky-600); }
+  .hover\:bg-sky-700:hover { background-color: var(--color-sky-700); }
+
+  /* Stone */
+  .hover\:text-stone-600:hover { color: var(--color-stone-600); }
+  .hover\:text-stone-700:hover { color: var(--color-stone-700); }
+  .hover\:bg-stone-600:hover { background-color: var(--color-stone-600); }
+  .hover\:bg-stone-700:hover { background-color: var(--color-stone-700); }
+
+  /* Zinc */
+  .hover\:text-zinc-600:hover { color: var(--color-zinc-600); }
+  .hover\:text-zinc-700:hover { color: var(--color-zinc-700); }
+  .hover\:bg-zinc-600:hover { background-color: var(--color-zinc-600); }
+  .hover\:bg-zinc-700:hover { background-color: var(--color-zinc-700); }
+
+  /* Neutral */
+  .hover\:text-neutral-600:hover { color: var(--color-neutral-600); }
+  .hover\:text-neutral-700:hover { color: var(--color-neutral-700); }
+  .hover\:bg-neutral-600:hover { background-color: var(--color-neutral-600); }
+  .hover\:bg-neutral-700:hover { background-color: var(--color-neutral-700); }
+}

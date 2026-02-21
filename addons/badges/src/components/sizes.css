@@ -1,0 +1,11 @@
+@layer utilities {
+  .badge-sm {
+    padding: 0 var(--spacing-1, 0.25rem);
+    font-size: 0.625rem;
+  }
+
+  .badge-lg {
+    padding: var(--spacing-1, 0.25rem) var(--spacing-3, 0.75rem);
+    font-size: var(--text-sm, 0.875rem);
+  }
+}

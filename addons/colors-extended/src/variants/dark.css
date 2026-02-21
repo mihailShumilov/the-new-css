@@ -1,0 +1,113 @@
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    /* Slate: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+    --color-slate-50: oklch(0.129 0.007 250);
+    --color-slate-100: oklch(0.208 0.012 250);
+    --color-slate-200: oklch(0.279 0.016 250);
+    --color-slate-300: oklch(0.372 0.021 250);
+    --color-slate-400: oklch(0.446 0.024 250);
+    --color-slate-500: oklch(0.554 0.023 250);
+    --color-slate-600: oklch(0.704 0.022 250);
+    --color-slate-700: oklch(0.869 0.015 250);
+    --color-slate-800: oklch(0.918 0.012 250);
+    --color-slate-900: oklch(0.968 0.007 250);
+    --color-slate-950: oklch(0.984 0.003 250);
+
+    /* Stone: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+    --color-stone-50: oklch(0.147 0.004 60);
+    --color-stone-100: oklch(0.216 0.006 60);
+    --color-stone-200: oklch(0.268 0.008 60);
+    --color-stone-300: oklch(0.374 0.011 60);
+    --color-stone-400: oklch(0.444 0.013 60);
+    --color-stone-500: oklch(0.553 0.013 60);
+    --color-stone-600: oklch(0.709 0.012 60);
+    --color-stone-700: oklch(0.869 0.008 60);
+    --color-stone-800: oklch(0.923 0.006 60);
+    --color-stone-900: oklch(0.970 0.004 60);
+    --color-stone-950: oklch(0.985 0.002 60);
+
+    /* Zinc: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+    --color-zinc-50: oklch(0.141 0.005 240);
+    --color-zinc-100: oklch(0.210 0.008 240);
+    --color-zinc-200: oklch(0.274 0.010 240);
+    --color-zinc-300: oklch(0.370 0.013 240);
+    --color-zinc-400: oklch(0.442 0.014 240);
+    --color-zinc-500: oklch(0.552 0.014 240);
+    --color-zinc-600: oklch(0.705 0.012 240);
+    --color-zinc-700: oklch(0.871 0.008 240);
+    --color-zinc-800: oklch(0.920 0.006 240);
+    --color-zinc-900: oklch(0.967 0.004 240);
+    --color-zinc-950: oklch(0.985 0.002 240);
+
+    /* Neutral: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+    --color-neutral-50: oklch(0.145 0 0);
+    --color-neutral-100: oklch(0.212 0 0);
+    --color-neutral-200: oklch(0.269 0 0);
+    --color-neutral-300: oklch(0.371 0 0);
+    --color-neutral-400: oklch(0.439 0 0);
+    --color-neutral-500: oklch(0.556 0 0);
+    --color-neutral-600: oklch(0.708 0 0);
+    --color-neutral-700: oklch(0.870 0 0);
+    --color-neutral-800: oklch(0.922 0 0);
+    --color-neutral-900: oklch(0.970 0 0);
+    --color-neutral-950: oklch(0.985 0 0);
+  }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Slate: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+  --color-slate-50: oklch(0.129 0.007 250);
+  --color-slate-100: oklch(0.208 0.012 250);
+  --color-slate-200: oklch(0.279 0.016 250);
+  --color-slate-300: oklch(0.372 0.021 250);
+  --color-slate-400: oklch(0.446 0.024 250);
+  --color-slate-500: oklch(0.554 0.023 250);
+  --color-slate-600: oklch(0.704 0.022 250);
+  --color-slate-700: oklch(0.869 0.015 250);
+  --color-slate-800: oklch(0.918 0.012 250);
+  --color-slate-900: oklch(0.968 0.007 250);
+  --color-slate-950: oklch(0.984 0.003 250);
+
+  /* Stone: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+  --color-stone-50: oklch(0.147 0.004 60);
+  --color-stone-100: oklch(0.216 0.006 60);
+  --color-stone-200: oklch(0.268 0.008 60);
+  --color-stone-300: oklch(0.374 0.011 60);
+  --color-stone-400: oklch(0.444 0.013 60);
+  --color-stone-500: oklch(0.553 0.013 60);
+  --color-stone-600: oklch(0.709 0.012 60);
+  --color-stone-700: oklch(0.869 0.008 60);
+  --color-stone-800: oklch(0.923 0.006 60);
+  --color-stone-900: oklch(0.970 0.004 60);
+  --color-stone-950: oklch(0.985 0.002 60);
+
+  /* Zinc: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+  --color-zinc-50: oklch(0.141 0.005 240);
+  --color-zinc-100: oklch(0.210 0.008 240);
+  --color-zinc-200: oklch(0.274 0.010 240);
+  --color-zinc-300: oklch(0.370 0.013 240);
+  --color-zinc-400: oklch(0.442 0.014 240);
+  --color-zinc-500: oklch(0.552 0.014 240);
+  --color-zinc-600: oklch(0.705 0.012 240);
+  --color-zinc-700: oklch(0.871 0.008 240);
+  --color-zinc-800: oklch(0.920 0.006 240);
+  --color-zinc-900: oklch(0.967 0.004 240);
+  --color-zinc-950: oklch(0.985 0.002 240);
+
+  /* Neutral: 50↔950, 100↔900, 200↔800, 300↔700, 400↔600 */
+  --color-neutral-50: oklch(0.145 0 0);
+  --color-neutral-100: oklch(0.212 0 0);
+  --color-neutral-200: oklch(0.269 0 0);
+  --color-neutral-300: oklch(0.371 0 0);
+  --color-neutral-400: oklch(0.439 0 0);
+  --color-neutral-500: oklch(0.556 0 0);
+  --color-neutral-600: oklch(0.708 0 0);
+  --color-neutral-700: oklch(0.870 0 0);
+  --color-neutral-800: oklch(0.922 0 0);
+  --color-neutral-900: oklch(0.970 0 0);
+  --color-neutral-950: oklch(0.985 0 0);
+}

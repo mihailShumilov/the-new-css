@@ -1,0 +1,20 @@
+@layer utilities {
+  .badge-outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+  }
+
+  .badge-dot {
+    padding-inline-start: var(--spacing-1, 0.25rem);
+  }
+
+  .badge-dot::before {
+    content: "";
+    display: inline-block;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: var(--radius-full, 9999px);
+    background-color: currentColor;
+    margin-inline-end: var(--spacing-1, 0.25rem);
+  }
+}

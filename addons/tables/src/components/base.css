@@ -1,0 +1,22 @@
+@layer utilities {
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm, 0.875rem);
+    text-align: start;
+  }
+
+  .table th {
+    font-weight: var(--font-semibold, 600);
+    text-align: inherit;
+    padding: var(--spacing-3, 0.75rem) var(--spacing-4, 1rem);
+    color: var(--color-gray-700, oklch(0.37 0.013 260));
+    border-bottom: 2px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+
+  .table td {
+    padding: var(--spacing-3, 0.75rem) var(--spacing-4, 1rem);
+    border-bottom: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@thenewcss/cards",
+  "version": "1.0.0",
+  "description": "Card components for the-new-css",
+  "main": "dist/index.min.css",
+  "files": ["dist/"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/cards"
+  },
+  "keywords": ["css", "cards", "components", "the-new-css"]
+}

@@ -1,0 +1,13 @@
+:root {
+  --color-stone-50: oklch(0.985 0.002 60);
+  --color-stone-100: oklch(0.970 0.004 60);
+  --color-stone-200: oklch(0.923 0.006 60);
+  --color-stone-300: oklch(0.869 0.008 60);
+  --color-stone-400: oklch(0.709 0.012 60);
+  --color-stone-500: oklch(0.553 0.013 60);
+  --color-stone-600: oklch(0.444 0.013 60);
+  --color-stone-700: oklch(0.374 0.011 60);
+  --color-stone-800: oklch(0.268 0.008 60);
+  --color-stone-900: oklch(0.216 0.006 60);
+  --color-stone-950: oklch(0.147 0.004 60);
+}

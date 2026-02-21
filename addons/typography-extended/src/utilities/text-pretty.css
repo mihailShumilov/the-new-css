@@ -1,0 +1,3 @@
+@layer utilities {
+  .text-pretty { text-wrap: pretty; }
+}

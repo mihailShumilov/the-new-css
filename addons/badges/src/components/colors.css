@@ -1,0 +1,26 @@
+@layer utilities {
+  .badge-primary {
+    background-color: var(--color-blue-50, oklch(0.97 0.014 250));
+    color: var(--color-blue-600, oklch(0.52 0.2 260));
+  }
+
+  .badge-danger {
+    background-color: var(--color-red-50, oklch(0.97 0.015 20));
+    color: var(--color-red-600, oklch(0.55 0.22 25));
+  }
+
+  .badge-success {
+    background-color: var(--color-green-50, oklch(0.97 0.02 150));
+    color: var(--color-green-600, oklch(0.52 0.14 155));
+  }
+
+  .badge-warning {
+    background-color: var(--color-yellow-50, oklch(0.98 0.02 95));
+    color: var(--color-yellow-600, oklch(0.65 0.16 65));
+  }
+
+  .badge-dark {
+    background-color: var(--color-gray-900, oklch(0.21 0.008 260));
+    color: var(--color-white, oklch(1 0 0));
+  }
+}

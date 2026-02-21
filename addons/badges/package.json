@@ -1,0 +1,14 @@
+{
+  "name": "@thenewcss/badges",
+  "version": "1.0.0",
+  "description": "Badge and tag components for the-new-css",
+  "main": "dist/index.min.css",
+  "files": ["dist/"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/badges"
+  },
+  "keywords": ["css", "badges", "tags", "components", "the-new-css"]
+}

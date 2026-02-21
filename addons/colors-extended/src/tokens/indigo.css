@@ -1,0 +1,13 @@
+:root {
+  --color-indigo-50: oklch(0.97 0.014 270);
+  --color-indigo-100: oklch(0.93 0.034 270);
+  --color-indigo-200: oklch(0.87 0.06 270);
+  --color-indigo-300: oklch(0.78 0.1 270);
+  --color-indigo-400: oklch(0.67 0.16 270);
+  --color-indigo-500: oklch(0.59 0.21 270);
+  --color-indigo-600: oklch(0.52 0.21 270);
+  --color-indigo-700: oklch(0.45 0.19 270);
+  --color-indigo-800: oklch(0.38 0.16 270);
+  --color-indigo-900: oklch(0.32 0.12 270);
+  --color-indigo-950: oklch(0.24 0.09 270);
+}

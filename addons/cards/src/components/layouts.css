@@ -1,0 +1,31 @@
+@layer utilities {
+  .card-horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-horizontal > .card-img-top {
+    width: auto;
+    max-width: 40%;
+    object-fit: cover;
+    border-radius: var(--radius-lg, 0.5rem) 0 0 var(--radius-lg, 0.5rem);
+  }
+
+  .card-compact > .card-header {
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+  }
+
+  .card-compact > .card-body {
+    padding: var(--spacing-4, 1rem);
+  }
+
+  .card-compact > .card-footer {
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+  }
+
+  .card-flat {
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-gray-100, oklch(0.97 0.001 260));
+  }
+}

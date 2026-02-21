@@ -1,5 +1,6 @@
 node_modules/
 dist/
+addons/*/dist/
 site/.next/
 site/out/
 site/node_modules/
