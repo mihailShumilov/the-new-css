@@ -1,0 +1,61 @@
+@layer utilities {
+  .modal {
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-lg, 0.5rem);
+    box-shadow: 0 25px 50px -12px oklch(0 0 0 / 0.25);
+    max-width: 500px;
+    width: calc(100% - 2rem);
+    background-color: var(--color-white, oklch(1 0 0));
+    color: var(--color-gray-900, oklch(0.21 0.008 260));
+  }
+
+  .modal::backdrop {
+    background: oklch(0 0 0 / 0.5);
+  }
+
+  .modal[open] {
+    display: flex;
+    flex-direction: column;
+    animation: modal-fade-in var(--duration-300, 300ms) var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  @keyframes modal-fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-4, 1rem) var(--spacing-6, 1.5rem);
+    border-bottom: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+
+  .modal-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: var(--font-semibold, 600);
+  }
+
+  .modal-body {
+    padding: var(--spacing-6, 1.5rem);
+    flex: 1 1 auto;
+  }
+
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-2, 0.5rem);
+    padding: var(--spacing-4, 1rem) var(--spacing-6, 1.5rem);
+    border-top: 1px solid var(--color-gray-200, oklch(0.92 0.004 260));
+  }
+}

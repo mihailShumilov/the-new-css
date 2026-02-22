@@ -1,0 +1,21 @@
+@layer utilities {
+  .list-group-item-primary {
+    background-color: var(--color-blue-50, oklch(0.97 0.014 260));
+    color: var(--color-blue-700, oklch(0.45 0.18 260));
+  }
+
+  .list-group-item-success {
+    background-color: var(--color-green-50, oklch(0.97 0.014 155));
+    color: var(--color-green-800, oklch(0.35 0.1 155));
+  }
+
+  .list-group-item-warning {
+    background-color: var(--color-yellow-50, oklch(0.98 0.014 65));
+    color: var(--color-yellow-800, oklch(0.52 0.12 65));
+  }
+
+  .list-group-item-danger {
+    background-color: var(--color-red-50, oklch(0.97 0.014 25));
+    color: var(--color-red-800, oklch(0.4 0.16 25));
+  }
+}

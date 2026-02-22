@@ -1,0 +1,22 @@
+{
+  "name": "@thenewcss/list-group",
+  "version": "1.0.0",
+  "description": "List group components for the-new-css",
+  "main": "dist/index.min.css",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/list-group"
+  },
+  "keywords": [
+    "css",
+    "list-group",
+    "lists",
+    "components",
+    "the-new-css"
+  ]
+}

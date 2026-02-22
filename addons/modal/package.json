@@ -1,0 +1,23 @@
+{
+  "name": "@thenewcss/modal",
+  "version": "1.0.0",
+  "description": "Modal and offcanvas dialog components for the-new-css",
+  "main": "dist/index.min.css",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/modal"
+  },
+  "keywords": [
+    "css",
+    "modal",
+    "dialog",
+    "offcanvas",
+    "components",
+    "the-new-css"
+  ]
+}

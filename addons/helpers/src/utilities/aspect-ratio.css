@@ -1,0 +1,36 @@
+@layer utilities {
+  .ratio {
+    position: relative;
+    width: 100%;
+  }
+
+  .ratio::before {
+    display: block;
+    padding-top: var(--ratio-aspect, 100%);
+    content: "";
+  }
+
+  .ratio > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ratio-1x1 {
+    --ratio-aspect: 100%;
+  }
+
+  .ratio-4x3 {
+    --ratio-aspect: 75%;
+  }
+
+  .ratio-16x9 {
+    --ratio-aspect: 56.25%;
+  }
+
+  .ratio-21x9 {
+    --ratio-aspect: 42.857%;
+  }
+}

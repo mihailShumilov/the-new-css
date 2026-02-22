@@ -1,0 +1,57 @@
+@layer utilities {
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-2, 0.5rem) var(--spacing-3, 0.75rem);
+    font-size: var(--text-base, 1rem);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-gray-900, oklch(0.21 0.008 260));
+    background-color: var(--color-white, oklch(1 0 0));
+    background-clip: padding-box;
+    border: 1px solid var(--color-gray-300, oklch(0.87 0.006 260));
+    border-radius: var(--radius-md, 0.375rem);
+    transition-property: border-color, box-shadow;
+    transition-duration: var(--duration-150, 150ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .form-control::placeholder {
+    color: var(--color-gray-400, oklch(0.71 0.01 260));
+    opacity: 1;
+  }
+
+  .form-control:focus {
+    border-color: var(--color-blue-600, oklch(0.52 0.2 260));
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--color-blue-100, oklch(0.93 0.034 260));
+  }
+
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: var(--color-gray-100, oklch(0.96 0.003 260));
+    color: var(--color-gray-500, oklch(0.55 0.014 260));
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  textarea.form-control {
+    min-height: 5rem;
+    resize: vertical;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: var(--spacing-2, 0.5rem);
+    font-weight: var(--font-medium, 500);
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-gray-700, oklch(0.37 0.013 260));
+  }
+
+  .form-text {
+    display: block;
+    margin-top: var(--spacing-1, 0.25rem);
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--color-gray-500, oklch(0.55 0.014 260));
+  }
+}

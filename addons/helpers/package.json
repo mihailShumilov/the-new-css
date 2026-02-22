@@ -1,0 +1,21 @@
+{
+  "name": "@thenewcss/helpers",
+  "version": "1.0.0",
+  "description": "Utility helpers for the-new-css",
+  "main": "dist/index.min.css",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/helpers"
+  },
+  "keywords": [
+    "css",
+    "helpers",
+    "utilities",
+    "the-new-css"
+  ]
+}

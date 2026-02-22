@@ -1,0 +1,29 @@
+@layer utilities {
+  .btn-close {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    padding: var(--spacing-2, 0.5rem);
+    width: 1rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: var(--duration-150, 150ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .btn-close:hover {
+    opacity: 0.75;
+  }
+
+  .btn-close:focus {
+    opacity: 1;
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--color-blue-600, oklch(0.52 0.2 260));
+  }
+}

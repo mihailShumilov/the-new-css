@@ -1,0 +1,41 @@
+@layer utilities {
+  .form-select {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-2, 0.5rem) var(--spacing-8, 2rem) var(--spacing-2, 0.5rem) var(--spacing-3, 0.75rem);
+    font-size: var(--text-base, 1rem);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-gray-900, oklch(0.21 0.008 260));
+    background-color: var(--color-white, oklch(1 0 0));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23636c76' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--spacing-3, 0.75rem) center;
+    background-size: 1em;
+    background-clip: padding-box;
+    border: 1px solid var(--color-gray-300, oklch(0.87 0.006 260));
+    border-radius: var(--radius-md, 0.375rem);
+    appearance: none;
+    transition-property: border-color, box-shadow;
+    transition-duration: var(--duration-150, 150ms);
+    transition-timing-function: var(--ease-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .form-select:focus {
+    border-color: var(--color-blue-600, oklch(0.52 0.2 260));
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--color-blue-100, oklch(0.93 0.034 260));
+  }
+
+  .form-select:disabled {
+    background-color: var(--color-gray-100, oklch(0.96 0.003 260));
+    color: var(--color-gray-500, oklch(0.55 0.014 260));
+    cursor: not-allowed;
+  }
+
+  .form-select[multiple],
+  .form-select[size]:not([size="1"]) {
+    padding-right: var(--spacing-3, 0.75rem);
+    background-image: none;
+  }
+}

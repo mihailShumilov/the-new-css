@@ -1,0 +1,23 @@
+{
+  "name": "@thenewcss/progress",
+  "version": "1.0.0",
+  "description": "Progress bars, spinners, and placeholder components for the-new-css",
+  "main": "dist/index.min.css",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailShumilov/the-new-css",
+    "directory": "addons/progress"
+  },
+  "keywords": [
+    "css",
+    "progress",
+    "spinners",
+    "placeholders",
+    "components",
+    "the-new-css"
+  ]
+}

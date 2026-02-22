@@ -1,0 +1,22 @@
+@layer utilities {
+  .alert-dismissible {
+    position: relative;
+    padding-right: var(--spacing-4, 1rem);
+    padding-right: 3rem;
+  }
+
+  .alert-dismissible .btn-close {
+    position: absolute;
+    top: var(--spacing-3, 0.75rem);
+    right: var(--spacing-3, 0.75rem);
+  }
+
+  .alert-dismiss-check {
+    display: none;
+  }
+
+  .alert-dismiss-check:checked + .alert-dismissible,
+  .alert-dismiss-check:checked ~ .alert-dismissible {
+    display: none;
+  }
+}

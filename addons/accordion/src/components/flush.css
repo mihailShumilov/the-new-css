@@ -1,0 +1,15 @@
+@layer utilities {
+  .accordion-flush .accordion-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+
+  .accordion-flush .accordion-item:first-child {
+    border-top: 0;
+  }
+
+  .accordion-flush .accordion-item:last-child {
+    border-bottom: 0;
+  }
+}
