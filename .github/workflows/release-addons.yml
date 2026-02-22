@@ -60,11 +60,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          registry-url: 'https://registry.npmjs.org'
 
-      - name: Upgrade npm and configure registry
-        run: |
-          npm install -g npm@latest
-          echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+      - name: Upgrade npm
+        run: npm install -g npm@latest
 
       - name: Install dependencies
         run: npm install
@@ -115,3 +114,5 @@ jobs:
       - name: Publish addon to npm
         working-directory: addons/${{ matrix.addon }}
         run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

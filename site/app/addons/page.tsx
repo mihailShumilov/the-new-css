@@ -5,16 +5,16 @@ import CodeBlock from '@/components/CodeBlock';
 import TabSwitcher from '@/components/TabSwitcher';
 
 export const metadata = docMeta({
-  title: 'Official Addons - Components and Utilities',
+  title: 'Official Addons - 14 CSS Component and Utility Packages',
   description:
-    'Official addon packages for The New CSS. Buttons, badges, cards, tables, extended colors, and typography. Install individually via npm or CDN.',
+    'Official addon packages for The New CSS. Buttons, forms, navigation, modals, alerts, cards, tables, accordion, progress, badges, list groups, extended colors, typography, and helpers. Install individually via npm or CDN.',
   path: '/addons',
 });
 
 const jsonLd = techArticleJsonLd({
-  headline: 'The New CSS Addons',
+  headline: 'The New CSS Addons — 14 Official Packages',
   description:
-    'Official addon packages for The New CSS. Buttons, badges, cards, tables, extended colors, and typography.',
+    'Official addon packages for The New CSS. Buttons, forms, navigation, modals, alerts, cards, tables, accordion, progress, badges, list groups, extended colors, typography, and helpers.',
   path: '/addons',
 });
 
@@ -101,7 +101,7 @@ export default function AddonsPage() {
       {/* Utility Addons */}
       <h2 className="text-xl font-semibold mt-10 mb-4">Utilities</h2>
       <p className="text-gray-600 mb-6">
-        Extended design tokens and utility classes for colors and typography.
+        Extended design tokens, utility classes for colors and typography, and miscellaneous helpers.
       </p>
       <div className="grid gap-4 mb-8">
         {utilityAddons.map((addon) => (

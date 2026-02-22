@@ -127,19 +127,34 @@ Each template is plain HTML + The New CSS. Copy the code and customize with CSS 
 
 Extend The New CSS with standalone addon packages. Each addon is plain CSS, uses the same design tokens, and requires no build step.
 
+### Components
+
 | Package | Description | Size |
 |---------|-------------|------|
 | [@thenewcss/buttons](https://www.npmjs.com/package/@thenewcss/buttons) | Buttons with sizes, colors, outline/ghost/link styles, loading states, and groups | ~3KB |
 | [@thenewcss/badges](https://www.npmjs.com/package/@thenewcss/badges) | Badges, tags, and status indicators with color variants and dot styles | ~2KB |
 | [@thenewcss/cards](https://www.npmjs.com/package/@thenewcss/cards) | Cards with header/body/footer, hover effects, horizontal layout, and compact mode | ~2KB |
 | [@thenewcss/tables](https://www.npmjs.com/package/@thenewcss/tables) | Styled tables with striped rows, hover, bordered, responsive, and cell utilities | ~2KB |
+| [@thenewcss/forms](https://www.npmjs.com/package/@thenewcss/forms) | Styled inputs, selects, checkboxes, radios, switches, floating labels, and validation | ~4KB |
+| [@thenewcss/alerts](https://www.npmjs.com/package/@thenewcss/alerts) | Alert boxes with info/success/warning/danger variants and dismissible pattern | ~2KB |
+| [@thenewcss/navigation](https://www.npmjs.com/package/@thenewcss/navigation) | Navbar, tabs, pills, breadcrumbs, and pagination with CSS-only mobile toggle | ~4KB |
+| [@thenewcss/list-group](https://www.npmjs.com/package/@thenewcss/list-group) | List groups with actionable items, flush variant, numbered lists, and color variants | ~2KB |
+| [@thenewcss/progress](https://www.npmjs.com/package/@thenewcss/progress) | Progress bars, spinners, and skeleton placeholder loaders with animations | ~3KB |
+| [@thenewcss/accordion](https://www.npmjs.com/package/@thenewcss/accordion) | CSS-only accordion using native details/summary with smooth transitions | ~2KB |
+| [@thenewcss/modal](https://www.npmjs.com/package/@thenewcss/modal) | Modal dialogs and offcanvas panels using native dialog element | ~3KB |
+
+### Utilities
+
+| Package | Description | Size |
+|---------|-------------|------|
 | [@thenewcss/colors-extended](https://www.npmjs.com/package/@thenewcss/colors-extended) | 13 additional color palettes with full shade ranges and utility classes | ~15KB |
 | [@thenewcss/typography-extended](https://www.npmjs.com/package/@thenewcss/typography-extended) | Display sizes (5xl–9xl), gradient text, prose formatting, and text-pretty | ~5KB |
+| [@thenewcss/helpers](https://www.npmjs.com/package/@thenewcss/helpers) | Clearfix, aspect ratios, stacks, stretched link, object-fit, and more | ~2KB |
 
 Install any addon via npm or CDN:
 
 ```bash
-npm install @thenewcss/buttons @thenewcss/cards
+npm install @thenewcss/buttons @thenewcss/forms @thenewcss/navigation
 ```
 
 ```html
@@ -150,12 +165,12 @@ npm install @thenewcss/buttons @thenewcss/cards
 <button class="btn btn-primary">Save</button>
 <button class="btn btn-outline btn-danger">Delete</button>
 
-<div class="card card-hover">
-  <div class="card-body">
-    <h3>Feature</h3>
-    <p>Card content here.</p>
-  </div>
-</div>
+<div class="alert alert-success">Changes saved successfully.</div>
+
+<details class="accordion-item" name="faq">
+  <summary class="accordion-header">How does it work?</summary>
+  <div class="accordion-body">Pure CSS, no JavaScript.</div>
+</details>
 ```
 
 Browse all addons at [thenewcss.com/addons](https://thenewcss.com/addons).

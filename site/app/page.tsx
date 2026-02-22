@@ -98,7 +98,7 @@ const jsonLd = [
         name: 'Is The New CSS a full component framework?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "No. It's a lightweight baseline with sensible defaults and utility classes. Use it alone or alongside your own components.",
+          text: "The core library is a lightweight baseline. For components like buttons, forms, modals, navigation, alerts, cards, tables, and more, install the official addon packages — 14 standalone CSS packages you add only when needed.",
         },
       },
       {
@@ -160,20 +160,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── What's New: Addons ─── */}
+      {/* ─── Official Addons ─── */}
       <section className="py-12 md:py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="badge badge-primary">New</span>
+            <span className="badge badge-primary">14 Packages</span>
             <h2 className="text-2xl md:text-3xl font-bold">Official Addons</h2>
           </div>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8 leading-relaxed">
-            The core stays under 5KB. Addons give you buttons, badges, cards, tables, extended colors, and
-            typography — install only what you need.
+            The core stays under 5KB. Addons give you forms, navigation, modals, alerts, and more —
+            all pure CSS, no JavaScript. Install only what you need.
           </p>
+
+          <h3 className="font-semibold text-lg mb-4">Components</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             <a href="/addons/buttons" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Buttons</h3>
+              <h4 className="font-semibold mb-1">Buttons</h4>
               <p className="text-sm text-gray-600 mb-3">Sizes, colors, outlines, loading states, and groups.</p>
               <div className="flex gap-2">
                 <span className="btn btn-primary btn-xs">Primary</span>
@@ -182,36 +184,80 @@ export default function HomePage() {
               </div>
             </a>
             <a href="/addons/badges" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Badges</h3>
+              <h4 className="font-semibold mb-1">Badges</h4>
               <p className="text-sm text-gray-600 mb-3">Status indicators, labels, tags, and dot badges.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-primary">New</span>
                 <span className="badge badge-success">Active</span>
                 <span className="badge badge-warning">Pending</span>
-                <span className="badge badge-danger">Error</span>
               </div>
             </a>
+            <a href="/addons/forms" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Forms</h4>
+              <p className="text-sm text-gray-600 mb-3">Inputs, selects, checkboxes, switches, floating labels, validation.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/navigation" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Navigation</h4>
+              <p className="text-sm text-gray-600 mb-3">Navbar, tabs, pills, breadcrumbs, and pagination.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/modal" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Modal</h4>
+              <p className="text-sm text-gray-600 mb-3">Dialogs and offcanvas panels using native dialog element.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/alerts" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Alerts</h4>
+              <p className="text-sm text-gray-600 mb-3">Color-coded alert boxes with dismissible pattern.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
             <a href="/addons/cards" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Cards</h3>
+              <h4 className="font-semibold mb-1">Cards</h4>
               <p className="text-sm text-gray-600 mb-3">Sections, hover effects, horizontal layout, and variants.</p>
               <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
             </a>
             <a href="/addons/tables" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Tables</h3>
+              <h4 className="font-semibold mb-1">Tables</h4>
               <p className="text-sm text-gray-600 mb-3">Striped, hover, bordered, compact, and responsive.</p>
               <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
             </a>
+            <a href="/addons/accordion" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Accordion</h4>
+              <p className="text-sm text-gray-600 mb-3">CSS-only collapsible panels with smooth transitions.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/progress" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Progress</h4>
+              <p className="text-sm text-gray-600 mb-3">Progress bars, spinners, and skeleton loaders.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+            <a href="/addons/list-group" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">List Group</h4>
+              <p className="text-sm text-gray-600 mb-3">List items with actions, flush variant, and colors.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
+          </div>
+
+          <h3 className="font-semibold text-lg mb-4">Utilities</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             <a href="/addons/colors-extended" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Colors Extended</h3>
+              <h4 className="font-semibold mb-1">Colors Extended</h4>
               <p className="text-sm text-gray-600 mb-3">13 color palettes with text, bg, border, and gradient utilities.</p>
               <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
             </a>
             <a href="/addons/typography-extended" className="card card-hover p-5">
-              <h3 className="font-semibold mb-1">Typography Extended</h3>
+              <h4 className="font-semibold mb-1">Typography Extended</h4>
               <p className="text-sm text-gray-600 mb-3">Display sizes, gradient text, prose formatting, text-pretty.</p>
               <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
             </a>
+            <a href="/addons/helpers" className="card card-hover p-5">
+              <h4 className="font-semibold mb-1">Helpers</h4>
+              <p className="text-sm text-gray-600 mb-3">Clearfix, ratios, stacks, object-fit, float, and more.</p>
+              <span className="text-sm text-blue-600 font-medium">View docs &rarr;</span>
+            </a>
           </div>
+
           <p className="text-center">
             <a href="/addons" className="btn btn-primary" data-event="click_browse_addons">
               Browse all addons
@@ -566,9 +612,9 @@ export default function HomePage() {
               <summary className="p-4 font-semibold cursor-pointer">Is this a full component framework?</summary>
               <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  The core library is a lightweight baseline. For components like buttons, badges, cards,
-                  and tables, install our official <a href="/addons" className="text-blue-600 underline hover:no-underline">addons</a> — each
-                  is a separate package you add only when needed.
+                  The core library is a lightweight baseline. For components like buttons, forms, modals,
+                  navigation, alerts, cards, and more, install our official <a href="/addons" className="text-blue-600 underline hover:no-underline">14 addon packages</a> — each
+                  is standalone CSS you add only when needed.
                 </p>
               </div>
             </details>
